@@ -255,9 +255,10 @@ Public Class Form1
 
 		SpentCP = SpentCP + Int(costSphere1.Text) * skillSphere1.Value
 		SpentCP = SpentCP + Int(costSphere2.Text) * skillSphere2.Value
-		SpentCP = SpentCP + Int(costSphere3.Text) * skillSphere3.Value
+        SpentCP = SpentCP + Int(costSphere3.Text) * skillSphere3.Value
+        SpentCP = SpentCP + Int(costAdvRitual.Text) * skillAdvRitual.Value
 
-		SpentCP = SpentCP + Int(costAmbidexterity.Text) * skillAmbidexterity.Value
+        SpentCP = SpentCP + Int(costAmbidexterity.Text) * skillAmbidexterity.Value
 		SpentCP = SpentCP + Int(costFlorentine.Text) * skillFlorentine.Value
 		SpentCP = SpentCP + Int(costFlurryOfBlows.Text) * skillFlurryOfBlows.Value
 		SpentCP = SpentCP + Int(costHeavyArmour.Text) * skillHeavyArmour.Value
@@ -384,13 +385,14 @@ Public Class Form1
 		End If
 
 
-		If skillSphere3.Value > 0 Then
-			boxSkillBreakdown.AppendText("Sphere 3: " & ddlSphere3.SelectedItem & "   ")
-			If ddlSphere3.SelectedItem = "Elemental" Then boxSkillBreakdown.AppendText(ddlEleAttunement1.SelectedItem & "   " & costSphere3.Text * skillSphere3.Value & vbNewLine) Else boxSkillBreakdown.AppendText("   " & costSphere3.Text * skillSphere3.Value & vbNewLine)
-		End If
+        If skillSphere3.Value > 0 Then
+            boxSkillBreakdown.AppendText("Sphere 3: " & ddlSphere3.SelectedItem & "   ")
+            If ddlSphere3.SelectedItem = "Elemental" Then boxSkillBreakdown.AppendText(ddlEleAttunement1.SelectedItem & "   " & costSphere3.Text * skillSphere3.Value & vbNewLine) Else boxSkillBreakdown.AppendText("   " & costSphere3.Text * skillSphere3.Value & vbNewLine)
+        End If
 
+        If skillAdvRitual.Value > 0 Then boxSkillBreakdown.AppendText(lblAdvRitual.Text & "   " & costAdvRitual.Text * skillAdvRitual.Value & vbNewLine)
 
-		If skillAmbidexterity.Value > 0 Then boxSkillBreakdown.AppendText(lblAmbidexterity.Text & "   " & costAmbidexterity.Text * skillAmbidexterity.Value & vbNewLine)
+        If skillAmbidexterity.Value > 0 Then boxSkillBreakdown.AppendText(lblAmbidexterity.Text & "   " & costAmbidexterity.Text * skillAmbidexterity.Value & vbNewLine)
 		If skillFlorentine.Value > 0 Then boxSkillBreakdown.AppendText(lblFlorentine.Text & "   " & costFlorentine.Text * skillFlorentine.Value & vbNewLine)
 		If skillFlurryOfBlows.Value > 0 Then boxSkillBreakdown.AppendText(lblFlurryofBlows.Text & " X " & skillFlurryOfBlows.Value & "   " & costFlurryOfBlows.Text * skillFlurryOfBlows.Value & vbNewLine)
 		If skillHeavyArmour.Value > 0 Then boxSkillBreakdown.AppendText(lblHeavyArmour.Text & "   " & costHeavyArmour.Text * skillHeavyArmour.Value & vbNewLine)
@@ -662,13 +664,13 @@ Public Class Form1
 				costSpell2.Text = 20
 				costSpell3.Text = 40
 				costSpell4.Text = 40
-				costSpell5.Text = 0
-				costSpell6.Text = 0
-				costSpell7.Text = 0
-				costSpell8.Text = 0
-				costSpell9.Text = 0
-				CostRitualCircle.Text = 0
-			Case 1011 To 1013
+                costSpell5.Text = 50
+                costSpell6.Text = 60
+                costSpell7.Text = 70
+                costSpell8.Text = 80
+                costSpell9.Text = 100
+                CostRitualCircle.Text = 30
+            Case 1011 To 1013
 				costSpell1.Text = 10
 				costSpell2.Text = 10
 				costSpell3.Text = 20
@@ -718,8 +720,9 @@ Public Class Form1
 				costReadMagicRitual.Text = 90
 				costSphere1.Text = 100
 				costSphere2.Text = 200
-				costSphere3.Text = 300
-			Case 1001
+                costSphere3.Text = 300
+                costAdvRitual.Text = 300
+            Case 1001
 				costAnatomy.Text = 40
 				costDemonAngelArts.Text = 75
 				costEleAttunement.Text = 25
@@ -732,8 +735,9 @@ Public Class Form1
 				costReadMagicRitual.Text = 80
 				costSphere1.Text = 100
 				costSphere2.Text = 200
-				costSphere3.Text = 300
-			Case 1002
+                costSphere3.Text = 300
+                costAdvRitual.Text = 300
+            Case 1002
 				costAnatomy.Text = 40
 				costDemonAngelArts.Text = 60
 				costEleAttunement.Text = 25
@@ -746,8 +750,9 @@ Public Class Form1
 				costReadMagicRitual.Text = 50
 				costSphere1.Text = 75
 				costSphere2.Text = 175
-				costSphere3.Text = 275
-			Case 1003
+                costSphere3.Text = 275
+                costAdvRitual.Text = 275
+            Case 1003
 				costAnatomy.Text = 40
 				costDemonAngelArts.Text = 75
 				costEleAttunement.Text = 25
@@ -760,8 +765,9 @@ Public Class Form1
 				costReadMagicRitual.Text = 60
 				costSphere1.Text = 75
 				costSphere2.Text = 175
-				costSphere3.Text = 275
-			Case 1004
+                costSphere3.Text = 275
+                costAdvRitual.Text = 275
+            Case 1004
 				costAnatomy.Text = 40
 				costDemonAngelArts.Text = 75
 				costEleAttunement.Text = 25
@@ -774,8 +780,9 @@ Public Class Form1
 				costReadMagicRitual.Text = 90
 				costSphere1.Text = 100
 				costSphere2.Text = 200
-				costSphere3.Text = 300
-			Case 1005
+                costSphere3.Text = 300
+                costAdvRitual.Text = 300
+            Case 1005
 				costAnatomy.Text = 40
 				costDemonAngelArts.Text = 60
 				costEleAttunement.Text = 25
@@ -788,8 +795,9 @@ Public Class Form1
 				costReadMagicRitual.Text = 60
 				costSphere1.Text = 75
 				costSphere2.Text = 175
-				costSphere3.Text = 275
-			Case 1006
+                costSphere3.Text = 275
+                costAdvRitual.Text = 275
+            Case 1006
 				costAnatomy.Text = 40
 				costDemonAngelArts.Text = 55
 				costEleAttunement.Text = 25
@@ -802,8 +810,9 @@ Public Class Form1
 				costReadMagicRitual.Text = 40
 				costSphere1.Text = 25
 				costSphere2.Text = 150
-				costSphere3.Text = 200
-			Case 1007
+                costSphere3.Text = 200
+                costAdvRitual.Text = 200
+            Case 1007
 				costAnatomy.Text = 40
 				costDemonAngelArts.Text = 60
 				costEleAttunement.Text = 25
@@ -816,8 +825,9 @@ Public Class Form1
 				costReadMagicRitual.Text = 40
 				costSphere1.Text = 50
 				costSphere2.Text = 175
-				costSphere3.Text = 225
-			Case 1008
+                costSphere3.Text = 225
+                costAdvRitual.Text = 225
+            Case 1008
 				costAnatomy.Text = 35
 				costDemonAngelArts.Text = 50
 				costEleAttunement.Text = 25
@@ -830,8 +840,9 @@ Public Class Form1
 				costReadMagicRitual.Text = 50
 				costSphere1.Text = 50
 				costSphere2.Text = 175
-				costSphere3.Text = 225
-			Case 1009 To 1010
+                costSphere3.Text = 225
+                costAdvRitual.Text = 225
+            Case 1009 To 1010
 				costAnatomy.Text = 40
 				costDemonAngelArts.Text = 55
 				costEleAttunement.Text = 25
@@ -841,11 +852,12 @@ Public Class Form1
 				costReadAndWrite.Text = 50
 				costReadMagic.Text = 30
 				costReadMagicAvd.Text = 50
-				costReadMagicRitual.Text = 0
-				costSphere1.Text = 50
+                costReadMagicRitual.Text = 50
+                costSphere1.Text = 50
 				costSphere2.Text = 200
-				costSphere3.Text = 0
-			Case 1011 To 1013
+                costSphere3.Text = 300
+                costAdvRitual.Text = 200
+            Case 1011 To 1013
 				costAnatomy.Text = 40
 				costDemonAngelArts.Text = 45
 				costEleAttunement.Text = 25
@@ -858,8 +870,9 @@ Public Class Form1
 				costReadMagicRitual.Text = 40
 				costSphere1.Text = 50
 				costSphere2.Text = 175
-				costSphere3.Text = 225
-		End Select
+                costSphere3.Text = 225
+                costAdvRitual.Text = 200
+        End Select
 
 	End Sub
 
@@ -1800,13 +1813,21 @@ Public Class Form1
 			skillSphere2.Value = 0
 		End If
 
-		If skillSphere2.Value > 0 Then
-			skillSphere3.Enabled = True
-		Else
-			skillSphere3.Enabled = False
-			skillSphere3.Value = 0
-		End If
-		If skillAmbidexterity.Value > 0 Then
+        If skillSphere2.Value > 0 Then
+            skillSphere3.Enabled = True
+        Else
+            skillSphere3.Enabled = False
+            skillSphere3.Value = 0
+        End If
+
+        If skillSpellRitual.Value > 0 Then
+            skillAdvRitual.Enabled = True
+        Else
+            skillAdvRitual.Enabled = False
+            skillAdvRitual.Value = 0
+        End If
+
+        If skillAmbidexterity.Value > 0 Then
 			skillFlorentine.Enabled = True
 		Else
 			skillFlorentine.Value = 0
@@ -2203,9 +2224,9 @@ Public Class Form1
 				lblJob3.Text = "Black Sacrifice"
 				lblJob4.Text = "Death Siphon"
 			Case 1012
-				lblJob1.Text = "Greater Bless"
-				lblJob2.Text = "Sanctify"
-				lblJob3.Text = "Faith Healer"
+                lblJob1.Text = "Altar"
+                lblJob2.Text = "Church"
+                lblJob3.Text = "Faith Healer"
 				lblJob4.Text = "Guardian Angel"
 			Case 1013
 				lblJob1.Text = "Detect the Divine"
@@ -3231,45 +3252,27 @@ Public Class Form1
 		End Select
 		If Race = 806 Then RaceCP = 50
 		listRacial.Items.Clear()
-		If Race = 809 Then
-			listRacial.Items.Add("Yes")
-			listRacial.Items.Add("No")
-		ElseIf Race = 810 Then
-			listRacial.Items.Add("Ajaunti")
-			listRacial.Items.Add("Angel")
-			listRacial.Items.Add("Avian")
-			listRacial.Items.Add("Carnal Fae")
-			listRacial.Items.Add("Dark Elf")
-			listRacial.Items.Add("Demon")
-			listRacial.Items.Add("Draconian")
-			listRacial.Items.Add("Einher")
-			listRacial.Items.Add("Faun")
-			listRacial.Items.Add("Faceless")
-			listRacial.Items.Add("Firbolg")
-			listRacial.Items.Add("Fire Elf")
-			listRacial.Items.Add("Gargylen")
-			listRacial.Items.Add("Gnome")
-			listRacial.Items.Add("Goblin")
-			listRacial.Items.Add("High Elf")
-			listRacial.Items.Add("Hobling")
-			listRacial.Items.Add("Human")
-			listRacial.Items.Add("Ice Elf")
-			listRacial.Items.Add("Kobold")
-			listRacial.Items.Add("Minotaur")
-			listRacial.Items.Add("Monstrous")
-			listRacial.Items.Add("Mountain Dwarf")
-			listRacial.Items.Add("Ogre")
-			listRacial.Items.Add("Orc")
-			listRacial.Items.Add("Pax Mordibish")
-			listRacial.Items.Add("Risen")
-			listRacial.Items.Add("Savar")
-			listRacial.Items.Add("Sidhe")
-			listRacial.Items.Add("Stone Elf")
-			listRacial.Items.Add("Undead")
-			listRacial.Items.Add("Wild Elf")
-			listRacial.Items.Add("Wolven")
-			listRacial.Items.Add("Wood Fae")
-		End If
+        If Race = 809 Then
+            listRacial.Items.Add("Yes")
+            listRacial.Items.Add("No")
+        ElseIf Race = 810 Then
+            listRacial.Items.Add("Angels/Demons")
+            listRacial.Items.Add("Animals")
+            listRacial.Items.Add("Bestial")
+            listRacial.Items.Add("Brood")
+            listRacial.Items.Add("Constructs")
+            listRacial.Items.Add("Draconic")
+            listRacial.Items.Add("Dwarves")
+            listRacial.Items.Add("Elementals")
+            listRacial.Items.Add("Elves")
+            listRacial.Items.Add("Fae")
+            listRacial.Items.Add("Goblinoids")
+            listRacial.Items.Add("Humanoids")
+            listRacial.Items.Add("Plants")
+            listRacial.Items.Add("Spirits")
+            listRacial.Items.Add("Undead")
+            listRacial.Items.Add("Vermin")
+        End If
 		TotalCP = BlanketCP + RaceCP + InitialCP
 		boxTotalCP.Text = TotalCP
 		RaceName = ddlCharRace.SelectedItem
@@ -3773,9 +3776,10 @@ Public Class Form1
 		skillSpellRitual.Value = 0
 		skillSphere1.Value = 0
 		skillSphere2.Value = 0
-		skillSphere3.Value = 0
+        skillSphere3.Value = 0
+        skillAdvRitual.Value = 0
 
-		skillAmbidexterity.Value = 0
+        skillAmbidexterity.Value = 0
 		skillFlorentine.Value = 0
 		skillFlurryOfBlows.Value = 0
 		skillHeavyArmour.Value = 0
@@ -3875,7 +3879,7 @@ Public Class Form1
 
             ' If the file name is not an empty string open it for saving.
             If saveFileDialog1.FileName <> "" Then
-                B64b.Text = PlayerName & "," & CharacterName & "," & Race & "," & Job & "," & numericBlanketAmt.Value & "," & skillAlchemy.Value & "," & skillBlacksmith.Value & "," & skillCraft1.Value & "," & skillCreateScroll.Value & "," & skillTrapsmith.Value & "," & skillAnatomy.Value & "," & skillMysticism.Value & "," & skillDemonAngelArts.Value & "," & skillEleAttunement.Value & "," & skillFirstAid.Value & "," & skillNecroArts.Value & "," & skillPhysician.Value & "," & skillReadAndWrite.Value & "," & skillReadMagic.Value & "," & skillReadMagicAvd.Value & "," & skillReadMagicRitual.Value & "," & skillSpell1.Value & "," & skillSpell2.Value & "," & skillSpell3.Value & "," & skillSpell4.Value & "," & skillSpell5.Value & "," & skillSpell6.Value & "," & skillSpell7.Value & "," & skillSpell8.Value & "," & skillSpell9.Value & "," & skillSpellRitual.Value & "," & skillSphere1.Value & "," & skillSphere2.Value & "," & skillSphere3.Value & "," & skillAmbidexterity.Value & "," & skillFlorentine.Value & "," & skillFlurryOfBlows.Value & "," & skillHeavyArmour.Value & "," & skillSelfMut.Value & "," & skillShield.Value & "," & skillSlayParry.Value & "," & skillSlayParryMaster.Value & "," & skillSpecGroup.Value & "," & skillSpecSpecific.Value & "," & skillSimpleProf.Value & "," & skillMedProf.Value & "," & skillLargeProf.Value & "," & skillExoticProf.Value & "," & skillWeaponRefocus.Value & "," & skillCritSpecific.Value & "," & skillCritGroup.Value & "," & skillDodge.Value & "," & skillExecute.Value & "," & skillExecuteMaster.Value & "," & skillGarrote.Value & "," & skillLocksmith.Value & "," & skillSap.Value & "," & skillVitalBlow.Value & "," & skillJob1.Value & "," & skillJob2.Value & "," & skillJob3.Value & "," & skillJob4.Value & "," & skillRacial2.Value & "," & skillBPB.Value & "," & skillStr.Value & "," & ddlSphere1.SelectedItem & "," & ddlSphere2.SelectedItem & "," & ddlSphere3.SelectedItem & "," & ddlSpecGroup.SelectedIndex & "," & ddlSpecSpecific.SelectedIndex & "," & ddlExoticWeapon.SelectedIndex & "," & ddlSlayParryWeapon.SelectedIndex & "," & ddlSlayParryMasterWeapon.SelectedIndex & "," & ddlCritSpecificWeapon.SelectedIndex & "," & ddlCritGroup.SelectedIndex & "," & ddlExecute.SelectedIndex & "," & skillRacial1.Value & "," & listRacial.SelectedIndex & "," & skillFrag1.Value & "," & skillFrag2.Value & "," & skillFrag3.Value & "," & skillHeavyDrinker.Value & "," & skillLooting.Value & "," & skillSpellVersa1.Value & "," & skillSpellVersa2.Value & "," & skillSpellVersa3.Value & "," & skillSpellVersa4.Value & "," & skillSpellVersa5.Value & "," & skillSpellVersa6.Value & "," & skillSpellVersa7.Value & "," & skillSpellVersa8.Value & "," & skillSpellVersa9.Value & "," & ddlEleAttunement1.SelectedIndex & "," & ddlEleAttunement2.SelectedIndex & "," & ddlEleAttunement3.SelectedIndex & "," & ddlEleAttunement4.SelectedIndex & "," & FavouredCheck.Checked & "," & skillCraft2.Value & "," & skillcraft3.Value & "," & skillCraft4.Value & "," & boxCraft1.Text & "," & boxCraft2.Text & "," & boxCraft3.Text & "," & boxCraft4.Text
+                B64b.Text = PlayerName & "," & CharacterName & "," & Race & "," & Job & "," & numericBlanketAmt.Value & "," & skillAlchemy.Value & "," & skillBlacksmith.Value & "," & skillCraft1.Value & "," & skillCreateScroll.Value & "," & skillTrapsmith.Value & "," & skillAnatomy.Value & "," & skillMysticism.Value & "," & skillDemonAngelArts.Value & "," & skillEleAttunement.Value & "," & skillFirstAid.Value & "," & skillNecroArts.Value & "," & skillPhysician.Value & "," & skillReadAndWrite.Value & "," & skillReadMagic.Value & "," & skillReadMagicAvd.Value & "," & skillReadMagicRitual.Value & "," & skillSpell1.Value & "," & skillSpell2.Value & "," & skillSpell3.Value & "," & skillSpell4.Value & "," & skillSpell5.Value & "," & skillSpell6.Value & "," & skillSpell7.Value & "," & skillSpell8.Value & "," & skillSpell9.Value & "," & skillSpellRitual.Value & "," & skillSphere1.Value & "," & skillSphere2.Value & "," & skillSphere3.Value & "," & skillAmbidexterity.Value & "," & skillFlorentine.Value & "," & skillFlurryOfBlows.Value & "," & skillHeavyArmour.Value & "," & skillSelfMut.Value & "," & skillShield.Value & "," & skillSlayParry.Value & "," & skillSlayParryMaster.Value & "," & skillSpecGroup.Value & "," & skillSpecSpecific.Value & "," & skillSimpleProf.Value & "," & skillMedProf.Value & "," & skillLargeProf.Value & "," & skillExoticProf.Value & "," & skillWeaponRefocus.Value & "," & skillCritSpecific.Value & "," & skillCritGroup.Value & "," & skillDodge.Value & "," & skillExecute.Value & "," & skillExecuteMaster.Value & "," & skillGarrote.Value & "," & skillLocksmith.Value & "," & skillSap.Value & "," & skillVitalBlow.Value & "," & skillJob1.Value & "," & skillJob2.Value & "," & skillJob3.Value & "," & skillJob4.Value & "," & skillRacial2.Value & "," & skillBPB.Value & "," & skillStr.Value & "," & ddlSphere1.SelectedItem & "," & ddlSphere2.SelectedItem & "," & ddlSphere3.SelectedItem & "," & ddlSpecGroup.SelectedIndex & "," & ddlSpecSpecific.SelectedIndex & "," & ddlExoticWeapon.SelectedIndex & "," & ddlSlayParryWeapon.SelectedIndex & "," & ddlSlayParryMasterWeapon.SelectedIndex & "," & ddlCritSpecificWeapon.SelectedIndex & "," & ddlCritGroup.SelectedIndex & "," & ddlExecute.SelectedIndex & "," & skillRacial1.Value & "," & listRacial.SelectedIndex & "," & skillFrag1.Value & "," & skillFrag2.Value & "," & skillFrag3.Value & "," & skillHeavyDrinker.Value & "," & skillLooting.Value & "," & skillSpellVersa1.Value & "," & skillSpellVersa2.Value & "," & skillSpellVersa3.Value & "," & skillSpellVersa4.Value & "," & skillSpellVersa5.Value & "," & skillSpellVersa6.Value & "," & skillSpellVersa7.Value & "," & skillSpellVersa8.Value & "," & skillSpellVersa9.Value & "," & ddlEleAttunement1.SelectedIndex & "," & ddlEleAttunement2.SelectedIndex & "," & ddlEleAttunement3.SelectedIndex & "," & ddlEleAttunement4.SelectedIndex & "," & FavouredCheck.Checked & "," & skillCraft2.Value & "," & skillcraft3.Value & "," & skillCraft4.Value & "," & boxCraft1.Text & "," & boxCraft2.Text & "," & boxCraft3.Text & "," & boxCraft4.Text & "," & skillAdvRitual.Value
                 My.Computer.FileSystem.WriteAllText(saveFileDialog1.FileName, B64b.Text, False)
 			End If
 		End If
@@ -4126,6 +4130,7 @@ Public Class Form1
             boxCraft2.Text = InBox.Items(101)
             boxCraft3.Text = InBox.Items(102)
             boxCraft4.Text = InBox.Items(103)
+            If InBox.Items.Count > 104 Then skillAdvRitual.Value = InBox.Items(104)
 
             OpenSave = False
         End If
@@ -4310,11 +4315,15 @@ Public Class Form1
 	Private Sub SkillSphere2_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillSphere2.ValueChanged
 		Recalc()
 	End Sub
-	Private Sub SkillSphere3_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillSphere3.ValueChanged
-		Recalc()
-	End Sub
+    Private Sub SkillSphere3_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillSphere3.ValueChanged
+        Recalc()
+    End Sub
 
-	Private Sub SkillSpellRitual_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillSpellRitual.ValueChanged
+    Private Sub SkillAdvRitual_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillAdvRitual.ValueChanged
+        Recalc()
+    End Sub
+
+    Private Sub SkillSpellRitual_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillSpellRitual.ValueChanged
 		Recalc()
 	End Sub
 

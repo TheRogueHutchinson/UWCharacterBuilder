@@ -1709,6 +1709,7 @@ Partial Class Form1
         Me.skillAdvRitual.TabIndex = 276
         Me.skillAdvRitual.TabStop = False
         Me.skillAdvRitual.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.skillAdvRitual.Value = 0
         '
         'Label31
         '
@@ -3072,7 +3073,7 @@ Partial Class Form1
         Me.lblCraft4.Name = "lblCraft4"
         Me.lblCraft4.Size = New System.Drawing.Size(54, 13)
         Me.lblCraft4.TabIndex = 334
-        Me.lblCraft4.Text = "Craftsmen"
+        Me.lblCraft4.Text = "Tradesman"
         '
         'costCraft4
         '
@@ -3099,7 +3100,7 @@ Partial Class Form1
         Me.lblCraft3.Name = "lblCraft3"
         Me.lblCraft3.Size = New System.Drawing.Size(54, 13)
         Me.lblCraft3.TabIndex = 331
-        Me.lblCraft3.Text = "Craftsmen"
+        Me.lblCraft3.Text = "Tradesman"
         '
         'costCraft3
         '
@@ -3126,7 +3127,7 @@ Partial Class Form1
         Me.lblCraft2.Name = "lblCraft2"
         Me.lblCraft2.Size = New System.Drawing.Size(54, 13)
         Me.lblCraft2.TabIndex = 328
-        Me.lblCraft2.Text = "Craftsmen"
+        Me.lblCraft2.Text = "Tradesman"
         '
         'costCraft2
         '
@@ -3601,7 +3602,7 @@ Partial Class Form1
         '
         Me.listRacial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.listRacial.FormattingEnabled = True
-        Me.listRacial.Items.AddRange(New Object() {"Ajaunti", "Dark Elf", "Einher", "Gargylen", "High Elf", "Hobling", "Human", "Mountain Dwarf", "Orc", "Savar", "Wild Elf", "Wood Fae", "Angel", "Demon", "Monstrous", "Undead"})
+        Me.listRacial.Items.AddRange(New Object() {"Angels/Demons", "Animals", "Bestial", "Brood", "Constructs", "Draconic", "Dwarves", "Elementals", "Elves", "Fae", "Goblinoids", "Humanoids", "Plants", "Spirits", "Undead", "Vermin"})
         Me.listRacial.Location = New System.Drawing.Point(34, 265)
         Me.listRacial.Name = "listRacial"
         Me.listRacial.Size = New System.Drawing.Size(145, 21)
@@ -3678,7 +3679,7 @@ Partial Class Form1
         Me.lblCraft1.Name = "lblCraft1"
         Me.lblCraft1.Size = New System.Drawing.Size(54, 13)
         Me.lblCraft1.TabIndex = 29
-        Me.lblCraft1.Text = "Craftsmen"
+        Me.lblCraft1.Text = "Tradesman"
         '
         'costCraft1
         '

@@ -1,0 +1,4 @@
+*.suo
+*storage.ide
+*-shm
+*-wal

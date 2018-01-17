@@ -56,3 +56,4 @@ C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\
 C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldBuilder.exe
 C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldBuilder.xml
 C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldBuilder.pdb
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldCharacterBuilder.vbprojResolveAssemblyReference.cache
