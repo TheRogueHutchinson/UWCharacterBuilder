@@ -41,3 +41,18 @@ C:\Users\User\Downloads\Underworld Charcter Builder\Underworld Charcter Builder\
 C:\Users\User\Downloads\Underworld Charcter Builder\Underworld Charcter Builder\WindowsApplication3\obj\Release\UnderworldBuilder.exe
 C:\Users\User\Downloads\Underworld Charcter Builder\Underworld Charcter Builder\WindowsApplication3\obj\Release\UnderworldBuilder.xml
 C:\Users\User\Downloads\Underworld Charcter Builder\Underworld Charcter Builder\WindowsApplication3\obj\Release\UnderworldBuilder.pdb
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\bin\Release\UnderworldBuilder.exe.manifest
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\bin\Release\UnderworldBuilder.application
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\bin\Release\UnderworldBuilder.exe
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\bin\Release\UnderworldBuilder.pdb
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\bin\Release\UnderworldBuilder.xml
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldBuilder.Form1.resources
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldBuilder.Resources.resources
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldCharacterBuilder.vbproj.GenerateResource.Cache
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldCharacterBuilder.vbproj.CoreCompileInputs.cache
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldBuilder.TrustInfo.xml
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldBuilder.exe.manifest
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldBuilder.application
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldBuilder.exe
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldBuilder.xml
+C:\Users\User\Google Drive\Underworld\Character Builder\WindowsApplication3\obj\Release\UnderworldBuilder.pdb
