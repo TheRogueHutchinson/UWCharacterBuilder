@@ -1828,26 +1828,13 @@ Public Class Form1
         End If
 
         If skillAmbidexterity.Value > 0 Then
-			skillFlorentine.Enabled = True
-		Else
-			skillFlorentine.Value = 0
-			skillFlorentine.Enabled = False
-		End If
-		If skillSpecGroup.Value > 0 Then
-			skillSlayParryMaster.Enabled = True
-		Else
-			skillSlayParryMaster.Value = 0
-			skillSlayParryMaster.Enabled = False
-		End If
+            skillFlorentine.Enabled = True
+        Else
+            skillFlorentine.Value = 0
+            skillFlorentine.Enabled = False
+        End If
 
-		If skillCritGroup.Value > 0 Then
-			skillExecuteMaster.Enabled = True
-		Else
-			skillExecuteMaster.Value = 0
-			skillExecuteMaster.Enabled = False
-		End If
-
-		If skillReadMagic.Value > 0 AndAlso SPhere700 = True Then
+        If skillReadMagic.Value > 0 AndAlso SPhere700 = True Then
 			skillEleAttunement.Enabled = True
 		Else
 			skillEleAttunement.Value = 0
@@ -1855,8 +1842,9 @@ Public Class Form1
 		End If
 
 		If skillSpecGroup.Value > 0 Or skillSpecSpecific.Value > 0 Then
-			skillSlayParry.Enabled = True
-		Else
+            skillSlayParry.Enabled = True
+            skillSlayParry.Maximum = skillSpecGroup.Value + skillSpecSpecific.Value - skillSlayParryMaster.Value
+        Else
 			skillSlayParry.Value = 0
 			skillSlayParry.Enabled = False
 		End If
@@ -1896,14 +1884,39 @@ Public Class Form1
 			skillDodge.Enabled = False
 		End If
 
-		If skillCritSpecific.Value > 0 Or skillCritGroup.Value > 0 Then
-			skillExecute.Enabled = True
-		Else
-			skillExecute.Value = 0
-			skillExecute.Enabled = False
-		End If
+        If skillCritSpecific.Value > 0 Or skillCritGroup.Value > 0 Then
+            skillExecute.Enabled = True
+            skillExecute.Maximum = skillCritSpecific.Value + skillCritGroup.Value - skillExecuteMaster.Value
+        Else
+            skillExecute.Value = 0
+            skillExecute.Enabled = False
+        End If
 
-		If skillSpecGroup.Value = 0 Then
+        If skillSpecGroup.Value > 0 Then
+            skillSlayParryMaster.Enabled = True
+            If skillSlayParry.Value > skillSpecSpecific.Value Then
+                skillSlayParryMaster.Maximum = skillSpecGroup.Value + skillSpecSpecific.Value - skillSlayParry.Value
+            Else
+                skillSlayParryMaster.Maximum = skillSpecGroup.Value
+            End If
+        Else
+            skillSlayParryMaster.Value = 0
+            skillSlayParryMaster.Enabled = False
+        End If
+
+        If skillCritGroup.Value > 0 Then
+            skillExecuteMaster.Enabled = True
+            If skillExecute.Value > skillCritSpecific.Value Then
+                skillExecuteMaster.Maximum = skillCritGroup.Value + skillCritSpecific.Value - skillExecute.Value
+            Else
+                skillExecuteMaster.Maximum = skillCritGroup.Value
+            End If
+        Else
+            skillExecuteMaster.Value = 0
+            skillExecuteMaster.Enabled = False
+        End If
+
+        If skillSpecGroup.Value = 0 Then
 			ddlSpecGroup.Enabled = False
 		Else
 			ddlSpecGroup.Enabled = True
