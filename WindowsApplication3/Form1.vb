@@ -1889,10 +1889,10 @@ Public Class Form1
 			skillCritGroup.Enabled = False
 		End If
 
-		If skillCritSpecific.Value > 0 Or skillCritGroup.Value > 0 Or Job = 1003 AndAlso skillJob2.Value > 0 Then
-			skillDodge.Enabled = True
-		Else
-			skillDodge.Value = 0
+        If skillCritSpecific.Value > 0 Or skillCritGroup.Value > 0 Or Job = 1003 AndAlso skillJob1.Value > 0 Then
+            skillDodge.Enabled = True
+        Else
+            skillDodge.Value = 0
 			skillDodge.Enabled = False
 		End If
 
