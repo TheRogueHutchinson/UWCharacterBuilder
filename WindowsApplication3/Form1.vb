@@ -113,9 +113,10 @@ Public Class Form1
 		skillSpellRitual.Enabled = True
 		skillSphere1.Enabled = True
 		skillSphere2.Enabled = True
-		skillSphere3.Enabled = True
+        skillSphere3.Enabled = True
+        ddlPyramid.Enabled = True
 
-		skillAmbidexterity.Enabled = True
+        skillAmbidexterity.Enabled = True
 		skillFlorentine.Enabled = True
 		skillFlurryOfBlows.Enabled = True
 		skillHeavyArmour.Enabled = True
@@ -1659,9 +1660,13 @@ Public Class Form1
             If skillSphere1.Value > 0 Then
                 skillSpell1.Enabled = True
                 If skillSpell1.Value - skillSpell2.Value = 2 Then skillSpell1.Enabled = False
+                ddlPyramid.Enabled = True
             Else
                 skillSpell1.Enabled = False
                 skillSpell1.Value = 0
+
+                ddlPyramid.Enabled = False
+                ddlPyramid.SelectedIndex = 0
             End If
 
 
@@ -3741,9 +3746,11 @@ Public Class Form1
 		skillSpellVersa6.Value = 0
 		skillSpellVersa7.Value = 0
 		skillSpellVersa8.Value = 0
-		skillSpellVersa9.Value = 0
+        skillSpellVersa9.Value = 0
 
-		skillAnatomy.Value = 0
+        ddlPyramid.SelectedIndex = 0
+
+        skillAnatomy.Value = 0
 		skillMysticism.Value = 0
 		skillDemonAngelArts.Value = 0
 		skillEleAttunement.Value = 0
@@ -4393,14 +4400,126 @@ Public Class Form1
 		Recalc()
 	End Sub
 
-	Private Sub DDLEleAttunement4_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ddlEleAttunement4.SelectedIndexChanged
-		Recalc()
-	End Sub
+    Private Sub DDLEleAttunement4_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ddlEleAttunement4.SelectedIndexChanged
+        Recalc()
+    End Sub
+
+    Private Sub ddlPyramid_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlPyramid.SelectedIndexChanged
+
+        If ddlPyramid.SelectedIndex = 0 Then
+            skillSpell1.Value = 0
+            skillSpell2.Value = 0
+            skillSpell3.Value = 0
+            skillSpell4.Value = 0
+            skillSpell5.Value = 0
+            skillSpell6.Value = 0
+            skillSpell7.Value = 0
+            skillSpell8.Value = 0
+            skillSpell9.Value = 0
+        ElseIf ddlPyramid.SelectedIndex = 1 Then
+            skillSpell1.Value = 1
+            skillSpell2.Value = 0
+            skillSpell3.Value = 0
+            skillSpell4.Value = 0
+            skillSpell5.Value = 0
+            skillSpell6.Value = 0
+            skillSpell7.Value = 0
+            skillSpell8.Value = 0
+            skillSpell9.Value = 0
+        ElseIf ddlPyramid.SelectedIndex = 2 Then
+            skillSpell1.Value = 2
+            skillSpell2.Value = 1
+            skillSpell3.Value = 0
+            skillSpell4.Value = 0
+            skillSpell5.Value = 0
+            skillSpell6.Value = 0
+            skillSpell7.Value = 0
+            skillSpell8.Value = 0
+            skillSpell9.Value = 0
+        ElseIf ddlPyramid.SelectedIndex = 3 Then
+            skillSpell1.Value = 3
+            skillSpell2.Value = 2
+            skillSpell3.Value = 1
+            skillSpell4.Value = 0
+            skillSpell5.Value = 0
+            skillSpell6.Value = 0
+            skillSpell7.Value = 0
+            skillSpell8.Value = 0
+            skillSpell9.Value = 0
+        ElseIf ddlPyramid.SelectedIndex = 4 Then
+            skillSpell1.Value = 4
+            skillSpell2.Value = 3
+            skillSpell3.Value = 2
+            skillSpell4.Value = 1
+            skillSpell5.Value = 0
+            skillSpell6.Value = 0
+            skillSpell7.Value = 0
+            skillSpell8.Value = 0
+            skillSpell9.Value = 0
+        ElseIf ddlPyramid.SelectedIndex = 5 Then
+            skillReadMagicAvd.Value = 1
+            skillSpell1.Value = 5
+            skillSpell2.Value = 4
+            skillSpell3.Value = 3
+            skillSpell4.Value = 2
+            skillSpell5.Value = 1
+            skillSpell6.Value = 0
+            skillSpell7.Value = 0
+            skillSpell8.Value = 0
+            skillSpell9.Value = 0
+        ElseIf ddlPyramid.SelectedIndex = 6 Then
+            skillReadMagicAvd.Value = 1
+            skillSpell1.Value = 5
+            skillSpell2.Value = 5
+            skillSpell3.Value = 4
+            skillSpell4.Value = 3
+            skillSpell5.Value = 2
+            skillSpell6.Value = 1
+            skillSpell7.Value = 0
+            skillSpell8.Value = 0
+            skillSpell9.Value = 0
+        ElseIf ddlPyramid.SelectedIndex = 7 Then
+            skillReadMagicAvd.Value = 1
+            skillSpell1.Value = 5
+            skillSpell2.Value = 5
+            skillSpell3.Value = 5
+            skillSpell4.Value = 4
+            skillSpell5.Value = 3
+            skillSpell6.Value = 2
+            skillSpell7.Value = 1
+            skillSpell8.Value = 0
+            skillSpell9.Value = 0
+        ElseIf ddlPyramid.SelectedIndex = 8 Then
+            skillReadMagicAvd.Value = 1
+            skillSpell1.Value = 5
+            skillSpell2.Value = 5
+            skillSpell3.Value = 5
+            skillSpell4.Value = 5
+            skillSpell5.Value = 4
+            skillSpell6.Value = 3
+            skillSpell7.Value = 2
+            skillSpell8.Value = 1
+            skillSpell9.Value = 0
+        ElseIf ddlPyramid.SelectedIndex = 9 Then
+            skillReadMagicAvd.Value = 1
+            skillSpell1.Value = 5
+            skillSpell2.Value = 5
+            skillSpell3.Value = 5
+            skillSpell4.Value = 5
+            skillSpell5.Value = 5
+            skillSpell6.Value = 4
+            skillSpell7.Value = 3
+            skillSpell8.Value = 2
+            skillSpell9.Value = 1
+        End If
+
+        Recalc()
+    End Sub
 
 #End Region
 
 #Region "Warrior Handles"
-	Private Sub SkillFlorentine_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillFlorentine.ValueChanged
+    Private Sub SkillFlorentine_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillFlorentine.ValueChanged
 		Recalc()
 	End Sub
 	Private Sub SkillFlurryOfBlows_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillFlurryOfBlows.ValueChanged
