@@ -1686,6 +1686,7 @@ Public Class Form1
             If skillSpell1.Value > 0 Then
                 skillSpell2.Enabled = True
                 skillSpellVersa1.Enabled = True
+                skillSpellVersa1.Maximum = skillSpell1.Value
                 If skillSpell2.Value - skillSpell3.Value = 2 Then skillSpell2.Enabled = False
             Else
                 skillSpell2.Enabled = False
@@ -1699,6 +1700,7 @@ Public Class Form1
             If skillSpell2.Value > 0 Then
                 skillSpell3.Enabled = True
                 skillSpellVersa2.Enabled = True
+                skillSpellVersa2.Maximum = skillSpell2.Value
                 If skillSpell3.Value - skillSpell4.Value = 2 Then skillSpell3.Enabled = False
             Else
                 skillSpell3.Enabled = False
@@ -1712,6 +1714,7 @@ Public Class Form1
             If skillSpell3.Value > 0 Then
                 skillSpell4.Enabled = True
                 skillSpellVersa3.Enabled = True
+                skillSpellVersa3.Maximum = skillSpell3.Value
                 If skillSpell4.Value - skillSpell5.Value = 2 Then skillSpell4.Enabled = False
             Else
                 skillSpell4.Enabled = False
@@ -1724,6 +1727,7 @@ Public Class Form1
             If skillSpell4.Value > 0 AndAlso skillReadMagicAvd.Value > 0 Then
                 skillSpell5.Enabled = True
                 skillSpellVersa4.Enabled = True
+                skillSpellVersa4.Maximum = skillSpell4.Value
                 If skillSpell5.Value - skillSpell4.Value = 2 Then skillSpell5.Enabled = False
             Else
                 skillSpell5.Enabled = False
@@ -1737,6 +1741,7 @@ Public Class Form1
             If skillSpell5.Value > 0 Then
                 skillSpell6.Enabled = True
                 skillSpellVersa5.Enabled = True
+                skillSpellVersa5.Maximum = skillSpell5.Value
                 If skillSpell6.Value - skillSpell5.Value = 2 Then skillSpell6.Enabled = False
             Else
                 skillSpell6.Enabled = False
@@ -1750,6 +1755,7 @@ Public Class Form1
             If skillSpell6.Value > 0 Then
                 skillSpell7.Enabled = True
                 skillSpellVersa6.Enabled = True
+                skillSpellVersa6.Maximum = skillSpell6.Value
                 If skillSpell7.Value - skillSpell6.Value = 2 Then skillSpell7.Enabled = False
             Else
                 skillSpell7.Enabled = False
@@ -1763,6 +1769,7 @@ Public Class Form1
             If skillSpell7.Value > 0 Then
                 skillSpell8.Enabled = True
                 skillSpellVersa7.Enabled = True
+                skillSpellVersa7.Maximum = skillSpell7.Value
                 If skillSpell8.Value - skillSpell7.Value = 2 Then skillSpell8.Enabled = False
             Else
                 skillSpell8.Enabled = False
@@ -1776,6 +1783,7 @@ Public Class Form1
             If skillSpell8.Value > 0 Then
                 skillSpell9.Enabled = True
                 skillSpellVersa8.Enabled = True
+                skillSpellVersa8.Maximum = skillSpell8.Value
                 If skillSpell9.Value - skillSpell8.Value = 2 Then skillSpell9.Enabled = False
             Else
                 skillSpell9.Enabled = False
@@ -1789,6 +1797,7 @@ Public Class Form1
             If skillSpell9.Value > 0 AndAlso skillReadMagicRitual.Value > 0 Then
                 skillSpellRitual.Enabled = True
                 skillSpellVersa9.Enabled = True
+                skillSpellVersa9.Maximum = skillSpell9.Value
             Else
                 skillSpellRitual.Enabled = False
                 skillSpellRitual.Value = 0

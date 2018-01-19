@@ -2737,7 +2737,6 @@ Partial Class Form1
         'skillSpellVersa1
         '
         Me.skillSpellVersa1.Location = New System.Drawing.Point(120, 400)
-        Me.skillSpellVersa1.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.skillSpellVersa1.Name = "skillSpellVersa1"
         Me.skillSpellVersa1.ReadOnly = True
         Me.skillSpellVersa1.Size = New System.Drawing.Size(30, 20)
@@ -2749,7 +2748,6 @@ Partial Class Form1
         'skillSpellVersa2
         '
         Me.skillSpellVersa2.Location = New System.Drawing.Point(156, 400)
-        Me.skillSpellVersa2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.skillSpellVersa2.Name = "skillSpellVersa2"
         Me.skillSpellVersa2.ReadOnly = True
         Me.skillSpellVersa2.Size = New System.Drawing.Size(30, 20)
@@ -2761,7 +2759,6 @@ Partial Class Form1
         'skillSpellVersa3
         '
         Me.skillSpellVersa3.Location = New System.Drawing.Point(192, 400)
-        Me.skillSpellVersa3.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.skillSpellVersa3.Name = "skillSpellVersa3"
         Me.skillSpellVersa3.ReadOnly = True
         Me.skillSpellVersa3.Size = New System.Drawing.Size(30, 20)
@@ -2773,7 +2770,6 @@ Partial Class Form1
         'skillSpellVersa4
         '
         Me.skillSpellVersa4.Location = New System.Drawing.Point(228, 400)
-        Me.skillSpellVersa4.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.skillSpellVersa4.Name = "skillSpellVersa4"
         Me.skillSpellVersa4.ReadOnly = True
         Me.skillSpellVersa4.Size = New System.Drawing.Size(30, 20)
@@ -2785,7 +2781,6 @@ Partial Class Form1
         'skillSpellVersa5
         '
         Me.skillSpellVersa5.Location = New System.Drawing.Point(264, 400)
-        Me.skillSpellVersa5.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.skillSpellVersa5.Name = "skillSpellVersa5"
         Me.skillSpellVersa5.ReadOnly = True
         Me.skillSpellVersa5.Size = New System.Drawing.Size(30, 20)
@@ -2797,7 +2792,6 @@ Partial Class Form1
         'skillSpellVersa9
         '
         Me.skillSpellVersa9.Location = New System.Drawing.Point(408, 400)
-        Me.skillSpellVersa9.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.skillSpellVersa9.Name = "skillSpellVersa9"
         Me.skillSpellVersa9.ReadOnly = True
         Me.skillSpellVersa9.Size = New System.Drawing.Size(30, 20)
@@ -2809,7 +2803,6 @@ Partial Class Form1
         'skillSpellVersa8
         '
         Me.skillSpellVersa8.Location = New System.Drawing.Point(372, 400)
-        Me.skillSpellVersa8.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.skillSpellVersa8.Name = "skillSpellVersa8"
         Me.skillSpellVersa8.ReadOnly = True
         Me.skillSpellVersa8.Size = New System.Drawing.Size(30, 20)
@@ -2821,7 +2814,6 @@ Partial Class Form1
         'skillSpellVersa7
         '
         Me.skillSpellVersa7.Location = New System.Drawing.Point(336, 400)
-        Me.skillSpellVersa7.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.skillSpellVersa7.Name = "skillSpellVersa7"
         Me.skillSpellVersa7.ReadOnly = True
         Me.skillSpellVersa7.Size = New System.Drawing.Size(30, 20)
@@ -2833,7 +2825,6 @@ Partial Class Form1
         'skillSpellVersa6
         '
         Me.skillSpellVersa6.Location = New System.Drawing.Point(300, 400)
-        Me.skillSpellVersa6.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.skillSpellVersa6.Name = "skillSpellVersa6"
         Me.skillSpellVersa6.ReadOnly = True
         Me.skillSpellVersa6.Size = New System.Drawing.Size(30, 20)
