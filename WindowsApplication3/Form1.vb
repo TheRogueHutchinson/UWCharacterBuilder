@@ -58,8 +58,8 @@ Public Class Form1
 			Circles()
 			ScholarSkills()
 			WarriorSkills()
-			RogueSkills()
-		End If
+            RogueSkills()
+        End If
 		SetJobSkills()
 		DependCheck()
 		SPhere700 = False
@@ -1177,448 +1177,485 @@ Public Class Form1
 			Job = ddlCharJob.SelectedIndex + 1000
 		End If
 
-		Select Case Job
+        Select Case Job
 
-			Case 1000 To 1002
+            Case 1000 To 1002
 
-				lblFrag1.Visible = True
-				lblFrag2.Visible = True
-				lblFrag3.Visible = True
-				lblFrag4.Visible = True
-				lblFrag5.Visible = True
-				lblFrag6.Visible = True
-				lblSpellVersa.Visible = False
-				lblSpellVersa1.Visible = False
-				lblSpellVersa2.Visible = False
-				lblSpellVersa3.Visible = False
-				lblSpellVersa4.Visible = False
-				lblSpellVersa5.Visible = False
-				lblSpellVersa6.Visible = False
-				lblSpellVersa7.Visible = False
-				lblSpellVersa8.Visible = False
-				lblSpellVersa9.Visible = False
+                lblFrag1.Visible = True
+                lblFrag2.Visible = True
+                lblFrag3.Visible = True
+                lblFrag4.Visible = True
+                lblFrag5.Visible = True
+                lblFrag6.Visible = True
+                lblSpellVersa.Visible = False
+                lblSpellVersa1.Visible = False
+                lblSpellVersa2.Visible = False
+                lblSpellVersa3.Visible = False
+                lblSpellVersa4.Visible = False
+                lblSpellVersa5.Visible = False
+                lblSpellVersa6.Visible = False
+                lblSpellVersa7.Visible = False
+                lblSpellVersa8.Visible = False
+                lblSpellVersa9.Visible = False
 
-				costFrag1.Visible = True
-				costFrag2.Visible = True
-				costFrag3.Visible = True
-				costFrag4.Visible = True
-				costFrag5.Visible = True
-				costFrag6.Visible = True
-				costSpellVersa1.Visible = False
-				costSpellVersa2.Visible = False
-				costSpellVersa3.Visible = False
-				costSpellVersa4.Visible = False
-				costSpellVersa5.Visible = False
-				costSpellVersa6.Visible = False
-				costSpellVersa7.Visible = False
-				costSpellVersa8.Visible = False
-				costSpellVersa9.Visible = False
+                costFrag1.Visible = True
+                costFrag2.Visible = True
+                costFrag3.Visible = True
+                costFrag4.Visible = True
+                costFrag5.Visible = True
+                costFrag6.Visible = True
+                costSpellVersa1.Visible = False
+                costSpellVersa2.Visible = False
+                costSpellVersa3.Visible = False
+                costSpellVersa4.Visible = False
+                costSpellVersa5.Visible = False
+                costSpellVersa6.Visible = False
+                costSpellVersa7.Visible = False
+                costSpellVersa8.Visible = False
+                costSpellVersa9.Visible = False
 
-				skillFrag1.Visible = True
-				skillFrag2.Visible = True
-				skillFrag3.Visible = True
-				skillFrag4.Visible = True
-				skillFrag5.Visible = True
-				skillFrag6.Visible = True
-				skillSpellVersa1.Visible = False
-				skillSpellVersa2.Visible = False
-				skillSpellVersa3.Visible = False
-				skillSpellVersa4.Visible = False
-				skillSpellVersa5.Visible = False
-				skillSpellVersa6.Visible = False
-				skillSpellVersa7.Visible = False
-				skillSpellVersa8.Visible = False
-				skillSpellVersa9.Visible = False
+                skillFrag1.Visible = True
+                skillFrag2.Visible = True
+                skillFrag3.Visible = True
+                skillFrag4.Visible = True
+                skillFrag5.Visible = True
+                skillFrag6.Visible = True
+                skillSpellVersa1.Visible = False
+                skillSpellVersa2.Visible = False
+                skillSpellVersa3.Visible = False
+                skillSpellVersa4.Visible = False
+                skillSpellVersa5.Visible = False
+                skillSpellVersa6.Visible = False
+                skillSpellVersa7.Visible = False
+                skillSpellVersa8.Visible = False
+                skillSpellVersa9.Visible = False
 
-				skillFrag1.Enabled = True
+                skillFrag1.Enabled = True
 
-				If skillFlurryOfBlows.Value > 0 Then
-					skillFrag2.Enabled = True
-				Else
-					skillFrag2.Enabled = False
-					skillFrag2.Value = 0
-				End If
+                If skillFlurryOfBlows.Value > 0 Then
+                    skillFrag2.Enabled = True
+                Else
+                    skillFrag2.Enabled = False
+                    skillFrag2.Value = 0
+                End If
 
-				If skillSlayParry.Value > 0 Or skillSlayParryMaster.Value > 0 Then
-					skillFrag3.Enabled = True
-				Else
-					skillFrag3.Enabled = False
-					skillFrag3.Value = 0
-				End If
+                If skillSlayParry.Value > 0 Or skillSlayParryMaster.Value > 0 Then
+                    skillFrag3.Enabled = True
+                Else
+                    skillFrag3.Enabled = False
+                    skillFrag3.Value = 0
+                End If
 
-				skillFrag4.Enabled = True
-				skillFrag5.Enabled = True
-				skillFrag6.Enabled = True
+                skillFrag4.Enabled = True
+                skillFrag5.Enabled = True
+                skillFrag6.Enabled = True
 
-				lblFrag1.Text = "Trip"
-				lblFrag2.Text = "Whirlwind of Blows"
-				lblFrag3.Text = "Decapitate"
-				lblFrag4.Text = "Battle Field Repair"
-				lblFrag5.Text = "Cripple"
-				lblFrag6.Text = "Dirt in the Eye"
+                lblFrag1.Text = "Trip"
+                lblFrag2.Text = "Whirlwind of Blows"
+                lblFrag3.Text = "Decapitate"
+                lblFrag4.Text = "Battle Field Repair"
+                lblFrag5.Text = "Cripple"
+                lblFrag6.Text = "Dirt in the Eye"
 
-				costFrag1.Text = 30
-				costFrag2.Text = 75
-				costFrag3.Text = 150
-				costFrag4.Text = 30
-				costFrag5.Text = 40
-				costFrag6.Text = 45
+                costFrag1.Text = 30
+                costFrag2.Text = 75
+                costFrag3.Text = 150
+                costFrag4.Text = 30
+                costFrag5.Text = 40
+                costFrag6.Text = 45
 
-				costLooting.Text = 15
+                costLooting.Text = 15
 
-			Case 1003 To 1005
+            Case 1003 To 1005
 
-				lblFrag1.Visible = True
-				lblFrag2.Visible = True
-				lblFrag3.Visible = True
-				lblFrag4.Visible = True
-				lblFrag5.Visible = True
-				lblFrag6.Visible = False
-				lblSpellVersa.Visible = False
-				lblSpellVersa1.Visible = False
-				lblSpellVersa2.Visible = False
-				lblSpellVersa3.Visible = False
-				lblSpellVersa4.Visible = False
-				lblSpellVersa5.Visible = False
-				lblSpellVersa6.Visible = False
-				lblSpellVersa7.Visible = False
-				lblSpellVersa8.Visible = False
-				lblSpellVersa9.Visible = False
+                lblFrag1.Visible = True
+                lblFrag2.Visible = True
+                lblFrag3.Visible = True
+                lblFrag4.Visible = True
+                lblFrag5.Visible = True
+                lblFrag6.Visible = False
+                lblSpellVersa.Visible = False
+                lblSpellVersa1.Visible = False
+                lblSpellVersa2.Visible = False
+                lblSpellVersa3.Visible = False
+                lblSpellVersa4.Visible = False
+                lblSpellVersa5.Visible = False
+                lblSpellVersa6.Visible = False
+                lblSpellVersa7.Visible = False
+                lblSpellVersa8.Visible = False
+                lblSpellVersa9.Visible = False
 
-				costFrag1.Visible = True
-				costFrag2.Visible = True
-				costFrag3.Visible = True
-				costFrag4.Visible = True
-				costFrag5.Visible = True
-				costFrag6.Visible = False
-				costSpellVersa1.Visible = False
-				costSpellVersa2.Visible = False
-				costSpellVersa3.Visible = False
-				costSpellVersa4.Visible = False
-				costSpellVersa5.Visible = False
-				costSpellVersa6.Visible = False
-				costSpellVersa7.Visible = False
-				costSpellVersa8.Visible = False
-				costSpellVersa9.Visible = False
+                costFrag1.Visible = True
+                costFrag2.Visible = True
+                costFrag3.Visible = True
+                costFrag4.Visible = True
+                costFrag5.Visible = True
+                costFrag6.Visible = False
+                costSpellVersa1.Visible = False
+                costSpellVersa2.Visible = False
+                costSpellVersa3.Visible = False
+                costSpellVersa4.Visible = False
+                costSpellVersa5.Visible = False
+                costSpellVersa6.Visible = False
+                costSpellVersa7.Visible = False
+                costSpellVersa8.Visible = False
+                costSpellVersa9.Visible = False
 
-				skillFrag1.Visible = True
-				skillFrag2.Visible = True
-				skillFrag3.Visible = True
-				skillFrag4.Visible = True
-				skillFrag5.Visible = True
-				skillFrag6.Visible = False
-				skillSpellVersa1.Visible = False
-				skillSpellVersa2.Visible = False
-				skillSpellVersa3.Visible = False
-				skillSpellVersa4.Visible = False
-				skillSpellVersa5.Visible = False
-				skillSpellVersa6.Visible = False
-				skillSpellVersa7.Visible = False
-				skillSpellVersa8.Visible = False
-				skillSpellVersa9.Visible = False
+                skillFrag1.Visible = True
+                skillFrag2.Visible = True
+                skillFrag3.Visible = True
+                skillFrag4.Visible = True
+                skillFrag5.Visible = True
+                skillFrag6.Visible = False
+                skillSpellVersa1.Visible = False
+                skillSpellVersa2.Visible = False
+                skillSpellVersa3.Visible = False
+                skillSpellVersa4.Visible = False
+                skillSpellVersa5.Visible = False
+                skillSpellVersa6.Visible = False
+                skillSpellVersa7.Visible = False
+                skillSpellVersa8.Visible = False
+                skillSpellVersa9.Visible = False
 
-				skillFrag1.Enabled = True
-				skillFrag2.Enabled = True
-				skillFrag3.Enabled = True
+                skillFrag1.Enabled = True
+                skillFrag2.Enabled = True
+                skillFrag3.Enabled = True
 
-				If skillLocksmith.Value > 0 Then
-					skillFrag4.Enabled = True
-				Else
-					skillFrag4.Enabled = False
-					skillFrag4.Value = 0
-				End If
+                If skillLocksmith.Value > 0 Then
+                    skillFrag4.Enabled = True
+                Else
+                    skillFrag4.Enabled = False
+                    skillFrag4.Value = 0
+                End If
 
-				skillFrag5.Enabled = True
+                skillFrag5.Enabled = True
 
-				lblFrag1.Text = "Sucker Punch"
-				lblFrag2.Text = "Thieves Cant"
-				lblFrag3.Text = "Tumble"
-				lblFrag4.Text = "Escape"
-				lblFrag5.Text = "Riposte"
-				lblFrag6.Text = ""
+                lblFrag1.Text = "Sucker Punch"
+                lblFrag2.Text = "Thieves Cant"
+                lblFrag3.Text = "Tumble"
+                lblFrag4.Text = "Escape"
+                lblFrag5.Text = "Riposte"
+                lblFrag6.Text = ""
 
-				costFrag1.Text = 65
-				costFrag2.Text = 25
-				If Job = 1005 Then
-					costFrag3.Text = 50
-				Else
-					costFrag3.Text = 65
-				End If
-				costFrag4.Text = 20
-				costFrag5.Text = 150
-				costFrag6.Text = 0
+                costFrag1.Text = 65
+                costFrag2.Text = 25
+                If Job = 1005 Then
+                    costFrag3.Text = 50
+                Else
+                    costFrag3.Text = 65
+                End If
+                costFrag4.Text = 20
+                costFrag5.Text = 150
+                costFrag6.Text = 0
 
-				If Job = 1003 Then costLooting.Text = 10 Else costLooting.Text = 15
+                If Job = 1003 Then costLooting.Text = 10 Else costLooting.Text = 15
 
             Case 1006 To 1008
 
                 lblFrag1.Visible = True
-				lblFrag2.Visible = True
-				lblFrag3.Visible = True
-				lblFrag4.Visible = True
-				lblFrag5.Visible = True
-				lblFrag6.Visible = True
-				lblSpellVersa.Visible = True
-				lblSpellVersa1.Visible = True
-				lblSpellVersa2.Visible = True
-				lblSpellVersa3.Visible = True
-				lblSpellVersa4.Visible = True
-				lblSpellVersa5.Visible = True
-				lblSpellVersa6.Visible = True
-				lblSpellVersa7.Visible = True
-				lblSpellVersa8.Visible = True
-				lblSpellVersa9.Visible = True
+                lblFrag2.Visible = True
+                lblFrag3.Visible = True
+                lblFrag4.Visible = True
+                lblFrag5.Visible = True
+                lblFrag6.Visible = True
+                lblSpellVersa.Visible = True
+                lblSpellVersa1.Visible = True
+                lblSpellVersa2.Visible = True
+                lblSpellVersa3.Visible = True
+                lblSpellVersa4.Visible = True
+                lblSpellVersa5.Visible = True
+                lblSpellVersa6.Visible = True
+                lblSpellVersa7.Visible = True
+                lblSpellVersa8.Visible = True
+                lblSpellVersa9.Visible = True
 
-				costFrag1.Visible = True
-				costFrag2.Visible = True
-				costFrag3.Visible = True
-				costFrag4.Visible = True
-				costFrag5.Visible = True
-				costFrag6.Visible = True
-				costSpellVersa1.Visible = True
-				costSpellVersa2.Visible = True
-				costSpellVersa3.Visible = True
-				costSpellVersa4.Visible = True
-				costSpellVersa5.Visible = True
-				costSpellVersa6.Visible = True
-				costSpellVersa7.Visible = True
-				costSpellVersa8.Visible = True
-				costSpellVersa9.Visible = True
+                costFrag1.Visible = True
+                costFrag2.Visible = True
+                costFrag3.Visible = True
+                costFrag4.Visible = True
+                costFrag5.Visible = True
+                costFrag6.Visible = True
+                costSpellVersa1.Visible = True
+                costSpellVersa2.Visible = True
+                costSpellVersa3.Visible = True
+                costSpellVersa4.Visible = True
+                costSpellVersa5.Visible = True
+                costSpellVersa6.Visible = True
+                costSpellVersa7.Visible = True
+                costSpellVersa8.Visible = True
+                costSpellVersa9.Visible = True
 
-				skillFrag1.Visible = True
-				skillFrag2.Visible = True
-				skillFrag3.Visible = True
-				skillFrag4.Visible = True
-				skillFrag5.Visible = True
-				skillFrag6.Visible = True
-				skillSpellVersa1.Visible = True
-				skillSpellVersa2.Visible = True
-				skillSpellVersa3.Visible = True
-				skillSpellVersa4.Visible = True
-				skillSpellVersa5.Visible = True
-				skillSpellVersa6.Visible = True
-				skillSpellVersa7.Visible = True
-				skillSpellVersa8.Visible = True
-				skillSpellVersa9.Visible = True
+                skillFrag1.Visible = True
+                skillFrag2.Visible = True
+                skillFrag3.Visible = True
+                skillFrag4.Visible = True
+                skillFrag5.Visible = True
+                skillFrag6.Visible = True
+                skillSpellVersa1.Visible = True
+                skillSpellVersa2.Visible = True
+                skillSpellVersa3.Visible = True
+                skillSpellVersa4.Visible = True
+                skillSpellVersa5.Visible = True
+                skillSpellVersa6.Visible = True
+                skillSpellVersa7.Visible = True
+                skillSpellVersa8.Visible = True
+                skillSpellVersa9.Visible = True
 
-				skillFrag1.Enabled = True
-				If skillSelfMut.Value > 0 Then
-					skillFrag2.Enabled = True
-				Else
-					skillFrag2.Enabled = False
-					skillFrag2.Value = 0
-				End If
+                skillFrag1.Enabled = True
+                If skillSelfMut.Value > 0 Then
+                    skillFrag2.Enabled = True
+                Else
+                    skillFrag2.Enabled = False
+                    skillFrag2.Value = 0
+                End If
 
-				skillFrag3.Enabled = True
-				skillFrag4.Enabled = True
-				skillFrag5.Enabled = True
-				skillFrag6.Enabled = True
+                skillFrag3.Enabled = True
+                skillFrag4.Enabled = True
+                skillFrag5.Enabled = True
+                skillFrag6.Enabled = True
 
-				lblFrag1.Text = "Rite of Retaliation"
-				lblFrag2.Text = "Combat Wizardry"
-				lblFrag3.Text = "Spell Switch"
-				lblFrag4.Text = "Refocus"
-				lblFrag5.Text = "Harvest"
-				lblFrag6.Text = "Spell Parry"
+                lblFrag1.Text = "Rite of Retaliation"
+                lblFrag2.Text = "Combat Wizardry"
+                lblFrag3.Text = "Spell Switch"
+                lblFrag4.Text = "Refocus"
+                lblFrag5.Text = "Harvest"
+                lblFrag6.Text = "Spell Parry"
 
-				costFrag1.Text = 20
-				costFrag2.Text = 50
-				costFrag3.Text = 50
-				costFrag4.Text = 30
-				costFrag5.Text = 50
-				costFrag6.Text = 35
+                costFrag1.Text = 20
+                costFrag2.Text = 50
+                costFrag3.Text = 50
+                costFrag4.Text = 30
+                costFrag5.Text = 50
+                costFrag6.Text = 35
 
-				costLooting.Text = 15
+                costLooting.Text = 15
 
-			Case 1009 To 1010
+            Case 1009 To 1010
 
-				lblFrag1.Visible = True
-				lblFrag2.Visible = True
-				lblFrag3.Visible = True
-				lblFrag4.Visible = True
-				lblFrag5.Visible = True
-				lblFrag6.Visible = True
-				lblSpellVersa.Visible = False
-				lblSpellVersa1.Visible = False
-				lblSpellVersa2.Visible = False
-				lblSpellVersa3.Visible = False
-				lblSpellVersa4.Visible = False
-				lblSpellVersa5.Visible = False
-				lblSpellVersa6.Visible = False
-				lblSpellVersa7.Visible = False
-				lblSpellVersa8.Visible = False
-				lblSpellVersa9.Visible = False
+                lblFrag1.Visible = True
+                lblFrag2.Visible = True
+                lblFrag3.Visible = True
+                lblFrag4.Visible = True
+                lblFrag5.Visible = True
+                lblFrag6.Visible = True
+                lblSpellVersa.Visible = False
+                lblSpellVersa1.Visible = False
+                lblSpellVersa2.Visible = False
+                lblSpellVersa3.Visible = False
+                lblSpellVersa4.Visible = False
+                lblSpellVersa5.Visible = False
+                lblSpellVersa6.Visible = False
+                lblSpellVersa7.Visible = False
+                lblSpellVersa8.Visible = False
+                lblSpellVersa9.Visible = False
 
-				costFrag1.Visible = True
-				costFrag2.Visible = True
-				costFrag3.Visible = True
-				costFrag4.Visible = True
-				costFrag5.Visible = True
-				costFrag6.Visible = True
-				costSpellVersa1.Visible = False
-				costSpellVersa2.Visible = False
-				costSpellVersa3.Visible = False
-				costSpellVersa4.Visible = False
-				costSpellVersa5.Visible = False
-				costSpellVersa6.Visible = False
-				costSpellVersa7.Visible = False
-				costSpellVersa8.Visible = False
-				costSpellVersa9.Visible = False
+                costFrag1.Visible = True
+                costFrag2.Visible = True
+                costFrag3.Visible = True
+                costFrag4.Visible = True
+                costFrag5.Visible = True
+                costFrag6.Visible = True
+                costSpellVersa1.Visible = False
+                costSpellVersa2.Visible = False
+                costSpellVersa3.Visible = False
+                costSpellVersa4.Visible = False
+                costSpellVersa5.Visible = False
+                costSpellVersa6.Visible = False
+                costSpellVersa7.Visible = False
+                costSpellVersa8.Visible = False
+                costSpellVersa9.Visible = False
 
-				skillFrag1.Visible = True
-				skillFrag2.Visible = True
-				skillFrag3.Visible = True
-				skillFrag4.Visible = True
-				skillFrag5.Visible = True
-				skillFrag6.Visible = True
-				skillSpellVersa1.Visible = False
-				skillSpellVersa2.Visible = False
-				skillSpellVersa3.Visible = False
-				skillSpellVersa4.Visible = False
-				skillSpellVersa5.Visible = False
-				skillSpellVersa6.Visible = False
-				skillSpellVersa7.Visible = False
-				skillSpellVersa8.Visible = False
-				skillSpellVersa9.Visible = False
+                skillFrag1.Visible = True
+                skillFrag2.Visible = True
+                skillFrag3.Visible = True
+                skillFrag4.Visible = True
+                skillFrag5.Visible = True
+                skillFrag6.Visible = True
+                skillSpellVersa1.Visible = False
+                skillSpellVersa2.Visible = False
+                skillSpellVersa3.Visible = False
+                skillSpellVersa4.Visible = False
+                skillSpellVersa5.Visible = False
+                skillSpellVersa6.Visible = False
+                skillSpellVersa7.Visible = False
+                skillSpellVersa8.Visible = False
+                skillSpellVersa9.Visible = False
 
-				skillFrag1.Enabled = True
-				If skillFlurryOfBlows.Value > 0 Then
-					skillFrag2.Enabled = True
-				Else
-					skillFrag2.Enabled = False
-					skillFrag2.Value = 0
-				End If
+                skillFrag1.Enabled = True
+                If skillFlurryOfBlows.Value > 0 Then
+                    skillFrag2.Enabled = True
+                Else
+                    skillFrag2.Enabled = False
+                    skillFrag2.Value = 0
+                End If
 
-				If skillSlayParry.Value > 0 Or skillSlayParryMaster.Value > 0 Then
-					skillFrag3.Enabled = True
-				Else
-					skillFrag3.Enabled = False
-					skillFrag3.Value = 0
-				End If
+                If skillSlayParry.Value > 0 Or skillSlayParryMaster.Value > 0 Then
+                    skillFrag3.Enabled = True
+                Else
+                    skillFrag3.Enabled = False
+                    skillFrag3.Value = 0
+                End If
 
-				skillFrag4.Enabled = True
-				skillFrag5.Enabled = True
-				skillFrag6.Enabled = True
+                skillFrag4.Enabled = True
+                skillFrag5.Enabled = True
+                skillFrag6.Enabled = True
 
-				lblFrag1.Text = "Trip"
-				lblFrag2.Text = "Whirlwind of Blows"
-				lblFrag3.Text = "Decapitate"
-				lblFrag4.Text = "Battle Field Repair"
-				lblFrag5.Text = "Cripple"
-				lblFrag6.Text = "Dirt in the Eye"
+                lblFrag1.Text = "Trip"
+                lblFrag2.Text = "Whirlwind of Blows"
+                lblFrag3.Text = "Decapitate"
+                lblFrag4.Text = "Battle Field Repair"
+                lblFrag5.Text = "Cripple"
+                lblFrag6.Text = "Dirt in the Eye"
 
-				costFrag1.Text = 30
-				costFrag2.Text = 75
-				costFrag3.Text = 150
-				costFrag4.Text = 30
-				costFrag5.Text = 40
-				costFrag6.Text = 45
+                costFrag1.Text = 30
+                costFrag2.Text = 75
+                costFrag3.Text = 150
+                costFrag4.Text = 30
+                costFrag5.Text = 40
+                costFrag6.Text = 45
 
-				costLooting.Text = 15
+                costLooting.Text = 15
 
-			Case 1011 To 1013
+            Case 1011 To 1013
 
-				lblFrag1.Visible = True
-				lblFrag2.Visible = True
-				lblFrag3.Visible = True
-				lblFrag4.Visible = True
-				lblFrag5.Visible = True
-				lblFrag6.Visible = True
-				lblSpellVersa.Visible = True
-				lblSpellVersa1.Visible = True
-				lblSpellVersa2.Visible = True
-				lblSpellVersa3.Visible = True
-				lblSpellVersa4.Visible = True
-				lblSpellVersa5.Visible = True
-				lblSpellVersa6.Visible = True
-				lblSpellVersa7.Visible = True
-				lblSpellVersa8.Visible = True
-				lblSpellVersa9.Visible = True
+                lblFrag1.Visible = True
+                lblFrag2.Visible = True
+                lblFrag3.Visible = True
+                lblFrag4.Visible = True
+                lblFrag5.Visible = True
+                lblFrag6.Visible = True
+                lblSpellVersa.Visible = True
+                lblSpellVersa1.Visible = True
+                lblSpellVersa2.Visible = True
+                lblSpellVersa3.Visible = True
+                lblSpellVersa4.Visible = True
+                lblSpellVersa5.Visible = True
+                lblSpellVersa6.Visible = True
+                lblSpellVersa7.Visible = True
+                lblSpellVersa8.Visible = True
+                lblSpellVersa9.Visible = True
 
-				costFrag1.Visible = True
-				costFrag2.Visible = True
-				costFrag3.Visible = True
-				costFrag4.Visible = True
-				costFrag5.Visible = True
-				costFrag6.Visible = True
-				costSpellVersa1.Visible = True
-				costSpellVersa2.Visible = True
-				costSpellVersa3.Visible = True
-				costSpellVersa4.Visible = True
-				costSpellVersa5.Visible = True
-				costSpellVersa6.Visible = True
-				costSpellVersa7.Visible = True
-				costSpellVersa8.Visible = True
-				costSpellVersa9.Visible = True
+                costFrag1.Visible = True
+                costFrag2.Visible = True
+                costFrag3.Visible = True
+                costFrag4.Visible = True
+                costFrag5.Visible = True
+                costFrag6.Visible = True
+                costSpellVersa1.Visible = True
+                costSpellVersa2.Visible = True
+                costSpellVersa3.Visible = True
+                costSpellVersa4.Visible = True
+                costSpellVersa5.Visible = True
+                costSpellVersa6.Visible = True
+                costSpellVersa7.Visible = True
+                costSpellVersa8.Visible = True
+                costSpellVersa9.Visible = True
 
-				skillFrag1.Visible = True
-				skillFrag2.Visible = True
-				skillFrag3.Visible = True
-				skillFrag4.Visible = True
-				skillFrag5.Visible = True
-				skillFrag6.Visible = True
-				skillSpellVersa1.Visible = True
-				skillSpellVersa2.Visible = True
-				skillSpellVersa3.Visible = True
-				skillSpellVersa4.Visible = True
-				skillSpellVersa5.Visible = True
-				skillSpellVersa6.Visible = True
-				skillSpellVersa7.Visible = True
-				skillSpellVersa8.Visible = True
-				skillSpellVersa9.Visible = True
+                skillFrag1.Visible = True
+                skillFrag2.Visible = True
+                skillFrag3.Visible = True
+                skillFrag4.Visible = True
+                skillFrag5.Visible = True
+                skillFrag6.Visible = True
+                skillSpellVersa1.Visible = True
+                skillSpellVersa2.Visible = True
+                skillSpellVersa3.Visible = True
+                skillSpellVersa4.Visible = True
+                skillSpellVersa5.Visible = True
+                skillSpellVersa6.Visible = True
+                skillSpellVersa7.Visible = True
+                skillSpellVersa8.Visible = True
+                skillSpellVersa9.Visible = True
 
-				skillFrag1.Enabled = True
-				If skillSelfMut.Value > 0 Then
-					skillFrag2.Enabled = True
-				Else
-					skillFrag2.Enabled = False
-					skillFrag2.Value = 0
-				End If
+                skillFrag1.Enabled = True
+                If skillSelfMut.Value > 0 Then
+                    skillFrag2.Enabled = True
+                Else
+                    skillFrag2.Enabled = False
+                    skillFrag2.Value = 0
+                End If
 
-				skillFrag3.Enabled = True
-				skillFrag4.Enabled = True
-				skillFrag5.Enabled = True
-				skillFrag6.Enabled = True
+                skillFrag3.Enabled = True
+                skillFrag4.Enabled = True
+                skillFrag5.Enabled = True
+                skillFrag6.Enabled = True
 
-				lblFrag1.Text = "Rite of Retaliation"
-				lblFrag2.Text = "Combat Wizardry"
-				lblFrag3.Text = "Spell Switch"
-				lblFrag4.Text = "Refocus"
-				lblFrag5.Text = "Harvest"
-				lblFrag6.Text = "Spell Parry"
+                lblFrag1.Text = "Rite of Retaliation"
+                lblFrag2.Text = "Combat Wizardry"
+                lblFrag3.Text = "Spell Switch"
+                lblFrag4.Text = "Refocus"
+                lblFrag5.Text = "Harvest"
+                lblFrag6.Text = "Spell Parry"
 
-				costFrag1.Text = 20
-				costFrag2.Text = 50
-				costFrag3.Text = 50
-				costFrag4.Text = 30
-				costFrag5.Text = 50
-				costFrag6.Text = 35
+                costFrag1.Text = 20
+                costFrag2.Text = 50
+                costFrag3.Text = 50
+                costFrag4.Text = 30
+                costFrag5.Text = 50
+                costFrag6.Text = 35
 
-				costLooting.Text = 15
+                costLooting.Text = 15
 
-		End Select
+        End Select
 
-        If Job = 1009 AndAlso FavouredCheck.Checked = True AndAlso ddlSphere1.Items.Contains("Dark") = False Then ddlSphere1.Items.Add("Dark")
-		If Job = 1009 AndAlso FavouredCheck.Checked = True AndAlso ddlSphere1.Items.Contains("Light") = True Then ddlSphere1.Items.Remove("Light")
-		If Job = 1009 AndAlso FavouredCheck.Checked = True AndAlso ddlSphere1.Items.Contains("Draconic") = True Then ddlSphere1.Items.Remove("Draconic")
+        If FavouredCheck.Checked = False Then
+            If ddlSphere1.Items.Contains("Dark") = True Then ddlSphere1.Items.Remove("Dark")
+            If ddlSphere1.Items.Contains("Light") = True Then ddlSphere1.Items.Remove("Light")
+            If ddlSphere1.Items.Contains("Draconic") = True Then ddlSphere1.Items.Remove("Draconic")
 
-		If Job = 1010 AndAlso FavouredCheck.Checked = True AndAlso ddlSphere1.Items.Contains("Light") = False Then ddlSphere1.Items.Add("Light")
-		If Job = 1010 AndAlso FavouredCheck.Checked = True AndAlso ddlSphere1.Items.Contains("Dark") = True Then ddlSphere1.Items.Remove("Dark")
-		If Job = 1010 AndAlso FavouredCheck.Checked = True AndAlso ddlSphere1.Items.Contains("Draconic") = True Then ddlSphere1.Items.Remove("Draconic")
+            If ddlSphere2.Items.Contains("Dark") = True Then ddlSphere2.Items.Remove("Dark")
+            If ddlSphere2.Items.Contains("Light") = True Then ddlSphere2.Items.Remove("Light")
+            If ddlSphere2.Items.Contains("Draconic") = True Then ddlSphere2.Items.Remove("Draconic")
 
-		If Job = 1011 AndAlso ddlSphere1.Items.Contains("Dark") = False Then ddlSphere1.Items.Add("Dark")
-		If Job = 1011 AndAlso ddlSphere1.Items.Contains("Light") = True Then ddlSphere1.Items.Remove("Light")
-		If Job = 1011 AndAlso ddlSphere1.Items.Contains("Draconic") = True Then ddlSphere1.Items.Remove("Draconic")
+            If ddlSphere3.Items.Contains("Dark") = True Then ddlSphere3.Items.Remove("Dark")
+            If ddlSphere3.Items.Contains("Light") = True Then ddlSphere3.Items.Remove("Light")
+            If ddlSphere3.Items.Contains("Draconic") = True Then ddlSphere3.Items.Remove("Draconic")
+        ElseIf (Job = 1009 Or Job = 1011) AndAlso FavouredCheck.Checked = True Then
+            If ddlSphere1.Items.Contains("Dark") = False Then ddlSphere1.Items.Add("Dark")
+            If ddlSphere1.Items.Contains("Light") = True Then ddlSphere1.Items.Remove("Light")
+            If ddlSphere1.Items.Contains("Draconic") = True Then ddlSphere1.Items.Remove("Draconic")
 
-		If Job = 1012 AndAlso ddlSphere1.Items.Contains("Light") = False Then ddlSphere1.Items.Add("Light")
-		If Job = 1012 AndAlso ddlSphere1.Items.Contains("Dark") = True Then ddlSphere1.Items.Remove("Dark")
-		If Job = 1012 AndAlso ddlSphere1.Items.Contains("Draconic") = True Then ddlSphere1.Items.Remove("Draconic")
+            If ddlSphere2.Items.Contains("Dark") = False Then ddlSphere2.Items.Add("Dark")
+            If ddlSphere2.Items.Contains("Light") = True Then ddlSphere2.Items.Remove("Light")
+            If ddlSphere2.Items.Contains("Draconic") = True Then ddlSphere2.Items.Remove("Draconic")
 
-		If Job = 1013 AndAlso ddlSphere1.Items.Contains("Draconic") = False Then ddlSphere1.Items.Add("Draconic")
-		If Job = 1013 AndAlso ddlSphere1.Items.Contains("Dark") = True Then ddlSphere1.Items.Remove("Dark")
-		If Job = 1013 AndAlso ddlSphere1.Items.Contains("Draconic") = True Then ddlSphere1.Items.Remove("Light")
+            If ddlSphere3.Items.Contains("Dark") = False Then ddlSphere3.Items.Add("Dark")
+            If ddlSphere3.Items.Contains("Light") = True Then ddlSphere3.Items.Remove("Light")
+            If ddlSphere3.Items.Contains("Draconic") = True Then ddlSphere3.Items.Remove("Draconic")
+        ElseIf (Job = 1010 Or Job = 1012) AndAlso FavouredCheck.Checked = True Then
+            If ddlSphere1.Items.Contains("Light") = False Then ddlSphere1.Items.Add("Light")
+            If ddlSphere1.Items.Contains("Dark") = True Then ddlSphere1.Items.Remove("Dark")
+            If ddlSphere1.Items.Contains("Draconic") = True Then ddlSphere1.Items.Remove("Draconic")
 
-	End Sub
+            If ddlSphere2.Items.Contains("Light") = False Then ddlSphere2.Items.Add("Light")
+            If ddlSphere2.Items.Contains("Dark") = True Then ddlSphere2.Items.Remove("Dark")
+            If ddlSphere2.Items.Contains("Draconic") = True Then ddlSphere2.Items.Remove("Draconic")
+
+            If ddlSphere3.Items.Contains("Light") = False Then ddlSphere3.Items.Add("Light")
+            If ddlSphere3.Items.Contains("Dark") = True Then ddlSphere3.Items.Remove("Dark")
+            If ddlSphere3.Items.Contains("Draconic") = True Then ddlSphere3.Items.Remove("Draconic")
+        ElseIf Job = 1013 Then
+            If ddlSphere1.Items.Contains("Draconic") = False Then ddlSphere1.Items.Add("Draconic")
+            If ddlSphere1.Items.Contains("Dark") = True Then ddlSphere1.Items.Remove("Dark")
+            If ddlSphere1.Items.Contains("Draconic") = True Then ddlSphere1.Items.Remove("Light")
+
+            If ddlSphere2.Items.Contains("Draconic") = False Then ddlSphere2.Items.Add("Draconic")
+            If ddlSphere2.Items.Contains("Dark") = True Then ddlSphere2.Items.Remove("Dark")
+            If ddlSphere2.Items.Contains("Draconic") = True Then ddlSphere2.Items.Remove("Light")
+
+            If ddlSphere3.Items.Contains("Draconic") = False Then ddlSphere3.Items.Add("Draconic")
+            If ddlSphere3.Items.Contains("Dark") = True Then ddlSphere3.Items.Remove("Dark")
+            If ddlSphere3.Items.Contains("Draconic") = True Then ddlSphere3.Items.Remove("Light")
+        End If
+
+        If ddlSphere1.SelectedItem = "Dark" Or ddlSphere1.SelectedItem = "Light" Or ddlSphere1.SelectedItem = "Draconic" Then
+            ddlSphere2.Items.Remove(ddlSphere1.SelectedItem)
+            ddlSphere3.Items.Remove(ddlSphere1.SelectedItem)
+        ElseIf ddlSphere2.SelectedItem = "Dark" Or ddlSphere2.SelectedItem = "Light" Or ddlSphere2.SelectedItem = "Draconic" Then
+            ddlSphere3.Items.Remove(ddlSphere2.SelectedItem)
+        End If
+
+    End Sub
 
 	Public Sub DependCheck()
 
