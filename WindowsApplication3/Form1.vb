@@ -2591,9 +2591,9 @@ Public Class Form1
 				listRacial.Visible = False
 
 			Case 821
-				lblRacial2.Text = "Pain Resilience"
-				lblRacial1.Text = "Cold Immunity"
-				skillRacial2.Maximum = 100
+                lblRacial2.Text = "Memories in Flesh"
+                lblRacial1.Text = "Scion of Suffering"
+                skillRacial2.Maximum = 100
 				skillBPB.Maximum = 1
 				skillStr.Maximum = 0
 				lblRacial2.Visible = True
