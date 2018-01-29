@@ -1,0 +1,59 @@
+Alchemy,40
+Blacksmith,70
+Create Scroll,75
+Tradesman <Type>,40
+Trapper,40
+Anatomy,40
+Mysticism,50
+Demonic/Angelic Arts,75
+Elemental Attunement,25
+First Aid,60
+Necromantic Arts,75
+Physician,45
+Read & Write,70
+Read Magic,40
+Read Magic: Advanced,50
+Read Magic: Ritual,90
+Spell Slot: 1st Circle,40
+Spell Slot: 2nd Circle,60
+Spell Slot: 3rd Circle,80
+Spell Slot: 4th Circle,100
+Spell Slot: 5th Circle,100
+Spell Slot: 6th Circle,120
+Spell Slot: 7th Circle,120
+Spell Slot: 8th Circle,150
+Spell Slot: 9th Circle,150
+Spell Slot: Ritual Base,40
+Advanced Ritual Casting,300
+Sphere of Magic: 1st,100
+Sphere of Magic: 2nd,200
+Sphere of Magic: 3rd,300
+Ambidexterity,30
+Florentine,65
+Flurry of Blows,65
+Heavy Armour,45
+Self Mutilate,15
+Shield,120
+Slay/Parry,150
+Slay/Parry: Master,170
+Slay/Parry: Subsequent,150
+Slay/Parry: Master Subsequent,170
+Specialization +1: Weapon Group,150
+Specialization +1: Weapon Specific,130
+Weapon Group Proficiency: Med,50
+Weapon Group Proficiency: Large,100
+Weapons Specific Proficiency: Exotic,130
+Weapon Refocus,40
+Critical +2: Specific,100
+Critical +2: Group,120
+Dodge,120
+Dodge: Additional,120
+Execute,100
+Execute: Master,120
+Execute: Subsequent,100
+Execute: Master Subsequent,120
+Garrotte,60
+Locksmith,40
+Sap,35
+Vital Blow,55
+Racial,50
