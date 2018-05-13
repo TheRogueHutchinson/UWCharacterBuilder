@@ -2646,7 +2646,7 @@ Partial Class Form1
         'lblFuckYou
         '
         Me.lblFuckYou.AutoSize = True
-        Me.lblFuckYou.Location = New System.Drawing.Point(339, 281)
+        Me.lblFuckYou.Location = New System.Drawing.Point(350, 281)
         Me.lblFuckYou.Name = "lblFuckYou"
         Me.lblFuckYou.Size = New System.Drawing.Size(47, 13)
         Me.lblFuckYou.TabIndex = 393
@@ -2743,7 +2743,7 @@ Partial Class Form1
         'lblPossum
         '
         Me.lblPossum.AutoSize = True
-        Me.lblPossum.Location = New System.Drawing.Point(339, 313)
+        Me.lblPossum.Location = New System.Drawing.Point(350, 313)
         Me.lblPossum.Name = "lblPossum"
         Me.lblPossum.Size = New System.Drawing.Size(44, 13)
         Me.lblPossum.TabIndex = 381
@@ -3151,7 +3151,7 @@ Partial Class Form1
         '
         'skillFrag6
         '
-        Me.skillFrag6.Location = New System.Drawing.Point(298, 340)
+        Me.skillFrag6.Location = New System.Drawing.Point(309, 340)
         Me.skillFrag6.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag6.Name = "skillFrag6"
         Me.skillFrag6.ReadOnly = True
@@ -3162,7 +3162,7 @@ Partial Class Form1
         '
         'skillFrag5
         '
-        Me.skillFrag5.Location = New System.Drawing.Point(300, 311)
+        Me.skillFrag5.Location = New System.Drawing.Point(311, 311)
         Me.skillFrag5.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag5.Name = "skillFrag5"
         Me.skillFrag5.ReadOnly = True
@@ -3173,7 +3173,7 @@ Partial Class Form1
         '
         'skillFrag4
         '
-        Me.skillFrag4.Location = New System.Drawing.Point(144, 311)
+        Me.skillFrag4.Location = New System.Drawing.Point(147, 311)
         Me.skillFrag4.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag4.Name = "skillFrag4"
         Me.skillFrag4.ReadOnly = True
@@ -3274,7 +3274,7 @@ Partial Class Form1
         '
         'skillFrag1
         '
-        Me.skillFrag1.Location = New System.Drawing.Point(144, 281)
+        Me.skillFrag1.Location = New System.Drawing.Point(147, 281)
         Me.skillFrag1.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag1.Name = "skillFrag1"
         Me.skillFrag1.ReadOnly = True
@@ -3286,7 +3286,7 @@ Partial Class Form1
         'lblFrag1
         '
         Me.lblFrag1.AutoSize = True
-        Me.lblFrag1.Location = New System.Drawing.Point(31, 282)
+        Me.lblFrag1.Location = New System.Drawing.Point(24, 282)
         Me.lblFrag1.Name = "lblFrag1"
         Me.lblFrag1.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag1.TabIndex = 299
@@ -3296,7 +3296,7 @@ Partial Class Form1
         'costFrag1
         '
         Me.costFrag1.AutoSize = True
-        Me.costFrag1.Location = New System.Drawing.Point(122, 283)
+        Me.costFrag1.Location = New System.Drawing.Point(125, 283)
         Me.costFrag1.Name = "costFrag1"
         Me.costFrag1.Size = New System.Drawing.Size(13, 13)
         Me.costFrag1.TabIndex = 300
@@ -3305,7 +3305,7 @@ Partial Class Form1
         '
         'skillFrag2
         '
-        Me.skillFrag2.Location = New System.Drawing.Point(300, 280)
+        Me.skillFrag2.Location = New System.Drawing.Point(311, 280)
         Me.skillFrag2.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag2.Name = "skillFrag2"
         Me.skillFrag2.ReadOnly = True
@@ -3317,7 +3317,7 @@ Partial Class Form1
         'lblFrag2
         '
         Me.lblFrag2.AutoSize = True
-        Me.lblFrag2.Location = New System.Drawing.Point(186, 283)
+        Me.lblFrag2.Location = New System.Drawing.Point(189, 283)
         Me.lblFrag2.Name = "lblFrag2"
         Me.lblFrag2.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag2.TabIndex = 302
@@ -3327,7 +3327,7 @@ Partial Class Form1
         'costFrag2
         '
         Me.costFrag2.AutoSize = True
-        Me.costFrag2.Location = New System.Drawing.Point(274, 283)
+        Me.costFrag2.Location = New System.Drawing.Point(285, 283)
         Me.costFrag2.Name = "costFrag2"
         Me.costFrag2.Size = New System.Drawing.Size(13, 13)
         Me.costFrag2.TabIndex = 303
@@ -3337,7 +3337,7 @@ Partial Class Form1
         'costFrag6
         '
         Me.costFrag6.AutoSize = True
-        Me.costFrag6.Location = New System.Drawing.Point(274, 342)
+        Me.costFrag6.Location = New System.Drawing.Point(285, 342)
         Me.costFrag6.Name = "costFrag6"
         Me.costFrag6.Size = New System.Drawing.Size(13, 13)
         Me.costFrag6.TabIndex = 316
@@ -3346,7 +3346,7 @@ Partial Class Form1
         '
         'skillFrag3
         '
-        Me.skillFrag3.Location = New System.Drawing.Point(144, 338)
+        Me.skillFrag3.Location = New System.Drawing.Point(147, 338)
         Me.skillFrag3.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag3.Name = "skillFrag3"
         Me.skillFrag3.ReadOnly = True
@@ -3358,7 +3358,7 @@ Partial Class Form1
         'costFrag5
         '
         Me.costFrag5.AutoSize = True
-        Me.costFrag5.Location = New System.Drawing.Point(274, 313)
+        Me.costFrag5.Location = New System.Drawing.Point(285, 313)
         Me.costFrag5.Name = "costFrag5"
         Me.costFrag5.Size = New System.Drawing.Size(13, 13)
         Me.costFrag5.TabIndex = 315
@@ -3368,7 +3368,7 @@ Partial Class Form1
         'lblFrag3
         '
         Me.lblFrag3.AutoSize = True
-        Me.lblFrag3.Location = New System.Drawing.Point(31, 340)
+        Me.lblFrag3.Location = New System.Drawing.Point(24, 340)
         Me.lblFrag3.Name = "lblFrag3"
         Me.lblFrag3.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag3.TabIndex = 305
@@ -3378,7 +3378,7 @@ Partial Class Form1
         'costFrag4
         '
         Me.costFrag4.AutoSize = True
-        Me.costFrag4.Location = New System.Drawing.Point(122, 313)
+        Me.costFrag4.Location = New System.Drawing.Point(125, 313)
         Me.costFrag4.Name = "costFrag4"
         Me.costFrag4.Size = New System.Drawing.Size(13, 13)
         Me.costFrag4.TabIndex = 314
@@ -3388,7 +3388,7 @@ Partial Class Form1
         'costFrag3
         '
         Me.costFrag3.AutoSize = True
-        Me.costFrag3.Location = New System.Drawing.Point(122, 340)
+        Me.costFrag3.Location = New System.Drawing.Point(125, 340)
         Me.costFrag3.Name = "costFrag3"
         Me.costFrag3.Size = New System.Drawing.Size(13, 13)
         Me.costFrag3.TabIndex = 306
@@ -3409,7 +3409,7 @@ Partial Class Form1
         'lblLooting
         '
         Me.lblLooting.AutoSize = True
-        Me.lblLooting.Location = New System.Drawing.Point(339, 342)
+        Me.lblLooting.Location = New System.Drawing.Point(350, 342)
         Me.lblLooting.Name = "lblLooting"
         Me.lblLooting.Size = New System.Drawing.Size(42, 13)
         Me.lblLooting.TabIndex = 308
@@ -3427,7 +3427,7 @@ Partial Class Form1
         'lblFrag6
         '
         Me.lblFrag6.AutoSize = True
-        Me.lblFrag6.Location = New System.Drawing.Point(186, 342)
+        Me.lblFrag6.Location = New System.Drawing.Point(189, 342)
         Me.lblFrag6.Name = "lblFrag6"
         Me.lblFrag6.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag6.TabIndex = 312
@@ -3437,7 +3437,7 @@ Partial Class Form1
         'lblFrag5
         '
         Me.lblFrag5.AutoSize = True
-        Me.lblFrag5.Location = New System.Drawing.Point(186, 313)
+        Me.lblFrag5.Location = New System.Drawing.Point(189, 313)
         Me.lblFrag5.Name = "lblFrag5"
         Me.lblFrag5.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag5.TabIndex = 311
@@ -3447,7 +3447,7 @@ Partial Class Form1
         'lblFrag4
         '
         Me.lblFrag4.AutoSize = True
-        Me.lblFrag4.Location = New System.Drawing.Point(31, 313)
+        Me.lblFrag4.Location = New System.Drawing.Point(24, 313)
         Me.lblFrag4.Name = "lblFrag4"
         Me.lblFrag4.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag4.TabIndex = 310

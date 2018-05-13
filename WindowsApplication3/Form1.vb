@@ -1620,14 +1620,14 @@ Public Class Form1
                 skillFrag5.Enabled = True
                 skillFrag6.Enabled = True
 
-                lblFrag1.Text = "Rite of Retaliation"
+                lblFrag1.Text = "Mortician"
                 lblFrag2.Text = "Combat Wizardry"
                 lblFrag3.Text = "Spell Switch"
                 lblFrag4.Text = "Refocus"
                 lblFrag5.Text = "Harvest"
                 lblFrag6.Text = "Spell Parry"
 
-                costFrag1.Text = 20
+                costFrag1.Text = 25
                 costFrag2.Text = 50
                 costFrag3.Text = 50
                 costFrag4.Text = 30
@@ -1708,6 +1708,20 @@ Public Class Form1
         Else
             skillCreateScroll.Value = 0
             skillCreateScroll.Enabled = False
+        End If
+
+        If skillAlchemy.Value = 10 Then
+            skillChemistry.Enabled = True
+        Else
+            skillChemistry.Value = 0
+            skillChemistry.Enabled = False
+        End If
+
+        If skillBlacksmith.Value = 10 Then
+            skillArtifice.Enabled = True
+        Else
+            skillArtifice.Value = 0
+            skillArtifice.Enabled = False
         End If
 
         If skillAnatomy.Value > 0 Then
@@ -2749,20 +2763,6 @@ Public Class Form1
                 listRacial.Visible = False
 
             Case 825
-                lblRacial2.Text = "Disperse Magic"
-                lblRacialAuto.Text = "Immunity to Magic"
-                lblRacial2.Visible = True
-                costRacial2.Visible = True
-                skillRacial2.Visible = True
-                skillRacial2.Maximum = 10
-                skillBPB.Maximum = 0
-                skillStr.Maximum = 0
-                lblRacialAuto.Visible = False
-                costRacialAuto.Visible = False
-                skillRacialAuto.Visible = False
-                listRacial.Visible = False
-
-            Case 826
                 lblRacial2.Text = "Spirit Skinning"
                 lblRacialAuto.Text = "Dual Race"
                 skillRacial2.Maximum = 10
@@ -2776,7 +2776,7 @@ Public Class Form1
                 skillRacialAuto.Visible = False
                 listRacial.Visible = False
 
-            Case 827
+            Case 826
                 lblRacial2.Text = "Magic Echo"
                 lblRacialAuto.Text = "Formless Casting"
                 lblRacial2.Visible = True
@@ -2790,7 +2790,7 @@ Public Class Form1
                 skillRacialAuto.Visible = False
                 listRacial.Visible = False
 
-            Case 828
+            Case 827
                 lblRacial2.Text = "Tongue Pierce"
                 lblRacialAuto.Text = "Seal Pores"
                 lblRacial2.Visible = True
@@ -2804,22 +2804,7 @@ Public Class Form1
                 skillRacialAuto.Visible = False
                 listRacial.Visible = False
 
-            Case 829
-                lblRacial2.Text = "Resist Psionics"
-                lblRacialAuto.Text = "Empathic Touch"
-                lblRacial2.Visible = True
-                costRacial2.Visible = True
-                skillRacial2.Visible = True
-                lblRacialAuto.Visible = True
-                costRacialAuto.Visible = True
-                skillRacialAuto.Visible = True
-                listRacial.Visible = False
-                skillRacialAuto.Maximum = 3
-                skillRacial2.Maximum = 100
-                skillBPB.Maximum = 0
-                skillStr.Maximum = 0
-
-            Case 830
+            Case 828
                 lblRacial2.Text = "Endure Fire"
                 lblRacialAuto.Text = "Volcanic Skin"
                 lblRacial2.Visible = True
@@ -2833,7 +2818,7 @@ Public Class Form1
                 skillRacialAuto.Visible = False
                 listRacial.Visible = False
 
-            Case 831
+            Case 829
                 lblRacial2.Text = "Natural Hide"
                 lblRacialAuto.Text = "Sense Undead"
                 lblRacial2.Visible = True
@@ -3932,10 +3917,10 @@ Public Class Form1
     End Sub
 
     Private Sub BtnSaveToFile_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSaveToFile.Click
-        Dim B64a As Object = Nothing
-        Dim B64b As Object = Nothing
-        B64a.Text = Nothing
-        B64b.Text = Nothing
+        Dim B64a As String
+        Dim B64b As String
+        B64a = ""
+        B64b = ""
         If Race = 0 Then
             MsgBox("Please Select a Race before saving")
         Else
@@ -3950,8 +3935,28 @@ Public Class Form1
 
             ' If the file name is not an empty string open it for saving.
             If saveFileDialog1.FileName <> "" Then
-                B64b.Text = PlayerName & "," & CharacterName & "," & Race & "," & Job & "," & numericBlanketAmt.Value & "," & skillAlchemy.Value & "," & skillBlacksmith.Value & "," & skillCraft1.Value & "," & skillCreateScroll.Value & "," & skillTrapsmith.Value & "," & skillAnatomy.Value & "," & skillMysticism.Value & "," & skillDemonAngelArts.Value & "," & skillEleAttunement.Value & "," & skillFirstAid.Value & "," & skillNecroArts.Value & "," & skillPhysician.Value & "," & skillReadAndWrite.Value & "," & skillReadMagic.Value & "," & skillReadMagicAvd.Value & "," & skillReadMagicRitual.Value & "," & skillSpell1.Value & "," & skillSpell2.Value & "," & skillSpell3.Value & "," & skillSpell4.Value & "," & skillSpell5.Value & "," & skillSpell6.Value & "," & skillSpell7.Value & "," & skillSpell8.Value & "," & skillSpell9.Value & "," & skillSpellRitual.Value & "," & skillSphere1.Value & "," & skillSphere2.Value & "," & skillSphere3.Value & "," & skillAmbidexterity.Value & "," & skillFlorentine.Value & "," & skillFlurryOfBlows.Value & "," & skillHeavyArmour.Value & "," & skillSelfMut.Value & "," & skillShield.Value & "," & skillSlayParry.Value & "," & skillSlayParryMaster.Value & "," & skillSpecGroup.Value & "," & skillSpecSpecific.Value & "," & skillSimpleProf.Value & "," & skillMedProf.Value & "," & skillLargeProf.Value & "," & skillExoticProf.Value & "," & skillWeaponRefocus.Value & "," & skillCritSpecific.Value & "," & skillCritGroup.Value & "," & skillDodge.Value & "," & skillExecute.Value & "," & skillExecuteMaster.Value & "," & skillGarrote.Value & "," & skillSap.Value & "," & skillVitalBlow.Value & "," & skillJob1.Value & "," & skillJob2.Value & "," & skillJob3.Value & "," & skillJob4.Value & "," & skillRacial2.Value & "," & skillBPB.Value & "," & skillStr.Value & "," & ddlSphere1.SelectedItem & "," & ddlSphere2.SelectedItem & "," & ddlSphere3.SelectedItem & "," & ddlSpecGroup.SelectedIndex & "," & ddlSpecSpecific.SelectedIndex & "," & ddlExoticWeapon.SelectedIndex & "," & ddlSlayParryWeapon.SelectedIndex & "," & ddlSlayParryMasterWeapon.SelectedIndex & "," & ddlCritSpecificWeapon.SelectedIndex & "," & ddlCritGroup.SelectedIndex & "," & ddlExecute.SelectedIndex & "," & skillRacialAuto.Value & "," & listRacial.SelectedIndex & "," & skillFrag1.Value & "," & skillFrag2.Value & "," & skillFrag3.Value & "," & skillHeavyDrinker.Value & "," & skillLooting.Value & "," & skillTeacher.Value & "," & skillCreateAlcohol.Value & "," & skillPossum.Value & "," & skillParagon.Value & "," & skillSpellVersa1.Value & "," & skillSpellVersa2.Value & "," & skillSpellVersa3.Value & "," & skillSpellVersa4.Value & "," & skillSpellVersa5.Value & "," & skillSpellVersa6.Value & "," & skillSpellVersa7.Value & "," & skillSpellVersa8.Value & "," & skillSpellVersa9.Value & "," & ddlEleAttunement1.SelectedIndex & "," & ddlEleAttunement2.SelectedIndex & "," & ddlEleAttunement3.SelectedIndex & "," & ddlEleAttunement4.SelectedIndex & "," & "" & "," & boxCraft1.Text & "," & boxCraft2.Text & "," & boxCraft3.Text & "," & boxCraft4.Text & "," & skillAdvRitual.Value
-                My.Computer.FileSystem.WriteAllText(saveFileDialog1.FileName, B64b.Text, False)
+                B64b = PlayerName & "," & CharacterName & "," & Race & "," & Job & "," & numericBlanketAmt.Value & "," & skillAlchemy.Value & "," _
+                & skillBlacksmith.Value & "," & skillCraft1.Value & "," & skillCreateScroll.Value & "," & skillTrapsmith.Value & "," & skillAnatomy.Value & "," _
+                & skillMysticism.Value & "," & skillDemonAngelArts.Value & "," & skillEleAttunement.Value & "," & skillFirstAid.Value & "," & skillNecroArts.Value & "," _
+                & skillPhysician.Value & "," & skillReadAndWrite.Value & "," & skillReadMagic.Value & "," & skillReadMagicAvd.Value & "," & skillReadMagicRitual.Value & "," _
+                & skillSpell1.Value & "," & skillSpell2.Value & "," & skillSpell3.Value & "," & skillSpell4.Value & "," & skillSpell5.Value & "," & skillSpell6.Value & "," _
+                & skillSpell7.Value & "," & skillSpell8.Value & "," & skillSpell9.Value & "," & skillSpellRitual.Value & "," & skillSphere1.Value & ","
+                B64b = B64b & skillSphere2.Value & "," & skillSphere3.Value & "," & skillAmbidexterity.Value & "," & skillFlorentine.Value & "," & skillFlurryOfBlows.Value & "," _
+                & skillHeavyArmour.Value & "," & skillSelfMut.Value & "," & skillShield.Value & "," & skillSlayParry.Value & "," & skillSlayParryMaster.Value & "," _
+                & skillSpecGroup.Value & "," & skillSpecSpecific.Value & "," & skillSimpleProf.Value & "," & skillMedProf.Value & "," & skillLargeProf.Value & "," _
+                & skillExoticProf.Value & "," & skillWeaponRefocus.Value & "," & skillCritSpecific.Value & "," & skillCritGroup.Value & "," & skillDodge.Value & "," _
+                & skillExecute.Value & "," & skillExecuteMaster.Value & "," & skillGarrote.Value & "," & skillSap.Value & "," & skillVitalBlow.Value & "," _
+                & skillJob1.Value & "," & skillJob2.Value & "," & skillJob3.Value & "," & skillJob4.Value & "," & skillRacial2.Value & "," & skillBPB.Value & "," _
+                & skillStr.Value & "," & ddlSphere1.SelectedItem & "," & ddlSphere2.SelectedItem & "," & ddlSphere3.SelectedItem & "," & ddlSpecGroup.SelectedIndex & "," _
+                & ddlSpecSpecific.SelectedIndex & "," & ddlExoticWeapon.SelectedIndex & "," & ddlSlayParryWeapon.SelectedIndex & "," _
+                & ddlSlayParryMasterWeapon.SelectedIndex & "," & ddlCritSpecificWeapon.SelectedIndex & "," & ddlCritGroup.SelectedIndex & "," & ddlExecute.SelectedIndex & "," _
+                & skillRacialAuto.Value & "," & listRacial.SelectedIndex & "," & skillFrag1.Value & "," & skillFrag2.Value & "," & skillFrag3.Value & "," _
+                & skillHeavyDrinker.Value & "," & skillLooting.Value & "," & skillTeacher.Value & "," & skillCreateAlcohol.Value & "," & skillPossum.Value & "," _
+                & skillParagon.Value & "," & skillSpellVersa1.Value & "," & skillSpellVersa2.Value & "," & skillSpellVersa3.Value & "," & skillSpellVersa4.Value & "," _
+                & skillSpellVersa5.Value & "," & skillSpellVersa6.Value & "," & skillSpellVersa7.Value & "," & skillSpellVersa8.Value & "," & skillSpellVersa9.Value & "," _
+                & ddlEleAttunement1.SelectedIndex & "," & ddlEleAttunement2.SelectedIndex & "," & ddlEleAttunement3.SelectedIndex & "," & ddlEleAttunement4.SelectedIndex & "," _
+                & boxCraft1.Text & "," & boxCraft2.Text & "," & boxCraft3.Text & "," & boxCraft4.Text & "," & skillAdvRitual.Value & "," & skillChemistry.Value & "," & skillArtifice.Value
+                My.Computer.FileSystem.WriteAllText(saveFileDialog1.FileName, B64b, False)
             End If
         End If
 
@@ -4091,9 +4096,9 @@ Public Class Form1
         OpenFileDialog1.ShowDialog()
         If OpenFileDialog1.FileName <> "" Then
             OpenSave = True
-            B64a.Text = My.Computer.FileSystem.ReadAllText(OpenFileDialog1.FileName)
+            B64a = My.Computer.FileSystem.ReadAllText(OpenFileDialog1.FileName)
             InBox.Items.Clear()
-            Dim StoreArray() As String = Split(B64a.Text, ",")
+            Dim StoreArray() As String = Split(B64a, ",")
             For i = 0 To StoreArray.Length - 1
                 InBox.Items.Add(StoreArray(i))
             Next i
@@ -4167,55 +4172,57 @@ Public Class Form1
             skillExecute.Value = InBox.Items(52)
             skillExecuteMaster.Value = InBox.Items(53)
             skillGarrote.Value = InBox.Items(54)
-            skillSap.Value = InBox.Items(56)
-            skillVitalBlow.Value = InBox.Items(57)
-            skillJob1.Value = InBox.Items(58)
-            skillJob2.Value = InBox.Items(59)
-            skillJob3.Value = InBox.Items(60)
-            skillJob4.Value = InBox.Items(61)
-            skillRacial2.Value = InBox.Items(62)
-            skillBPB.Value = InBox.Items(63)
-            skillStr.Value = InBox.Items(64)
-            ddlSphere1.SelectedItem = InBox.Items(65)
-            ddlSphere2.SelectedItem = InBox.Items(66)
-            ddlSphere3.SelectedItem = InBox.Items(67)
-            ddlSpecGroup.SelectedIndex = InBox.Items(68)
-            ddlSpecSpecific.SelectedIndex = InBox.Items(69)
-            ddlExoticWeapon.SelectedIndex = InBox.Items(70)
-            ddlSlayParryWeapon.SelectedIndex = InBox.Items(71)
-            ddlSlayParryMasterWeapon.SelectedIndex = InBox.Items(72)
-            ddlCritSpecificWeapon.SelectedIndex = InBox.Items(73)
-            ddlCritGroup.SelectedIndex = InBox.Items(74)
-            ddlExecute.SelectedIndex = InBox.Items(75)
-            skillRacialAuto.Value = InBox.Items(76)
-            listRacial.SelectedIndex = InBox.Items(77)
-            skillFrag1.Value = InBox.Items(78)
-            skillFrag2.Value = InBox.Items(79)
-            skillFrag3.Value = InBox.Items(80)
-            skillHeavyDrinker.Value = InBox.Items(81)
-            skillLooting.Value = InBox.Items(82)
-            skillTeacher.Value = InBox.Items(83)
-            skillCreateAlcohol.Value = InBox.Items(84)
-            skillPossum.Value = InBox.Items(85)
-            skillParagon.Value = InBox.Items(86)
-            skillSpellVersa1.Value = InBox.Items(87)
-            skillSpellVersa2.Value = InBox.Items(88)
-            skillSpellVersa3.Value = InBox.Items(89)
-            skillSpellVersa4.Value = InBox.Items(90)
-            skillSpellVersa5.Value = InBox.Items(91)
-            skillSpellVersa6.Value = InBox.Items(92)
-            skillSpellVersa7.Value = InBox.Items(93)
-            skillSpellVersa8.Value = InBox.Items(94)
-            skillSpellVersa9.Value = InBox.Items(95)
-            ddlEleAttunement1.SelectedIndex = InBox.Items(96)
-            ddlEleAttunement2.SelectedIndex = InBox.Items(97)
-            ddlEleAttunement3.SelectedIndex = InBox.Items(98)
-            ddlEleAttunement4.SelectedIndex = InBox.Items(99)
-            boxCraft1.Text = InBox.Items(104)
-            boxCraft2.Text = InBox.Items(105)
-            boxCraft3.Text = InBox.Items(106)
-            boxCraft4.Text = InBox.Items(107)
-            If InBox.Items.Count > 108 Then skillAdvRitual.Value = InBox.Items(104)
+            skillSap.Value = InBox.Items(55)
+            skillVitalBlow.Value = InBox.Items(56)
+            skillJob1.Value = InBox.Items(57)
+            skillJob2.Value = InBox.Items(58)
+            skillJob3.Value = InBox.Items(59)
+            skillJob4.Value = InBox.Items(60)
+            skillRacial2.Value = InBox.Items(61)
+            skillBPB.Value = InBox.Items(62)
+            skillStr.Value = InBox.Items(63)
+            ddlSphere1.SelectedItem = InBox.Items(64)
+            ddlSphere2.SelectedItem = InBox.Items(65)
+            ddlSphere3.SelectedItem = InBox.Items(66)
+            ddlSpecGroup.SelectedIndex = InBox.Items(67)
+            ddlSpecSpecific.SelectedIndex = InBox.Items(68)
+            ddlExoticWeapon.SelectedIndex = InBox.Items(69)
+            ddlSlayParryWeapon.SelectedIndex = InBox.Items(70)
+            ddlSlayParryMasterWeapon.SelectedIndex = InBox.Items(71)
+            ddlCritSpecificWeapon.SelectedIndex = InBox.Items(72)
+            ddlCritGroup.SelectedIndex = InBox.Items(73)
+            ddlExecute.SelectedIndex = InBox.Items(74)
+            skillRacialAuto.Value = InBox.Items(75)
+            listRacial.SelectedIndex = InBox.Items(76)
+            skillFrag1.Value = InBox.Items(77)
+            skillFrag2.Value = InBox.Items(78)
+            skillFrag3.Value = InBox.Items(79)
+            skillHeavyDrinker.Value = InBox.Items(80)
+            skillLooting.Value = InBox.Items(81)
+            skillTeacher.Value = InBox.Items(82)
+            skillCreateAlcohol.Value = InBox.Items(83)
+            skillPossum.Value = InBox.Items(84)
+            skillParagon.Value = InBox.Items(85)
+            skillSpellVersa1.Value = InBox.Items(86)
+            skillSpellVersa2.Value = InBox.Items(87)
+            skillSpellVersa3.Value = InBox.Items(88)
+            skillSpellVersa4.Value = InBox.Items(89)
+            skillSpellVersa5.Value = InBox.Items(90)
+            skillSpellVersa6.Value = InBox.Items(91)
+            skillSpellVersa7.Value = InBox.Items(92)
+            skillSpellVersa8.Value = InBox.Items(93)
+            skillSpellVersa9.Value = InBox.Items(94)
+            ddlEleAttunement1.SelectedIndex = InBox.Items(95)
+            ddlEleAttunement2.SelectedIndex = InBox.Items(96)
+            ddlEleAttunement3.SelectedIndex = InBox.Items(97)
+            ddlEleAttunement4.SelectedIndex = InBox.Items(98)
+            boxCraft1.Text = InBox.Items(99)
+            boxCraft2.Text = InBox.Items(100)
+            boxCraft3.Text = InBox.Items(101)
+            boxCraft4.Text = InBox.Items(102)
+            skillAdvRitual.Value = InBox.Items(103)
+            skillChemistry.Value = InBox.Items(104)
+            skillArtifice.Value = InBox.Items(105)
 
             OpenSave = False
         End If
