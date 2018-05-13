@@ -1,0 +1,14 @@
+Mercenary
+Ranger
+Templar
+Nightblade
+Assassin
+Witchhunter
+Mage
+Druid
+Bard
+Lightweaver
+Darkweaver
+Paladin
+Dreadknight
+Dragon Knight
