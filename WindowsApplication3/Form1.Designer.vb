@@ -55,9 +55,6 @@ Partial Class Form1
         Me.skillGarrote = New System.Windows.Forms.NumericUpDown()
         Me.lblGarrote = New System.Windows.Forms.Label()
         Me.costGarrote = New System.Windows.Forms.Label()
-        Me.skillLocksmith = New System.Windows.Forms.NumericUpDown()
-        Me.lblLocksmith = New System.Windows.Forms.Label()
-        Me.costLocksmith = New System.Windows.Forms.Label()
         Me.skillSap = New System.Windows.Forms.NumericUpDown()
         Me.lblSap = New System.Windows.Forms.Label()
         Me.costSap = New System.Windows.Forms.Label()
@@ -223,6 +220,25 @@ Partial Class Form1
         Me.costSpell8 = New System.Windows.Forms.Label()
         Me.costSpell9 = New System.Windows.Forms.Label()
         Me.JobRaceProd = New System.Windows.Forms.TabPage()
+        Me.lblFavoured = New System.Windows.Forms.Label()
+        Me.lblFuckYou = New System.Windows.Forms.Label()
+        Me.skillCreateAlcohol = New System.Windows.Forms.NumericUpDown()
+        Me.costCreateAlcohol = New System.Windows.Forms.Label()
+        Me.lblCreateAlcohol = New System.Windows.Forms.Label()
+        Me.skillParagon = New System.Windows.Forms.NumericUpDown()
+        Me.lblParagon = New System.Windows.Forms.Label()
+        Me.costParagon = New System.Windows.Forms.Label()
+        Me.skillTeacher = New System.Windows.Forms.NumericUpDown()
+        Me.costTeacher = New System.Windows.Forms.Label()
+        Me.skillPossum = New System.Windows.Forms.NumericUpDown()
+        Me.lblPossum = New System.Windows.Forms.Label()
+        Me.costPossum = New System.Windows.Forms.Label()
+        Me.skillArtifice = New System.Windows.Forms.NumericUpDown()
+        Me.lblArtifice = New System.Windows.Forms.Label()
+        Me.costArtifice = New System.Windows.Forms.Label()
+        Me.skillChemistry = New System.Windows.Forms.NumericUpDown()
+        Me.lblChemistry = New System.Windows.Forms.Label()
+        Me.costChemistry = New System.Windows.Forms.Label()
         Me.lblSpellVersa9 = New System.Windows.Forms.Label()
         Me.lblSpellVersa8 = New System.Windows.Forms.Label()
         Me.lblSpellVersa7 = New System.Windows.Forms.Label()
@@ -257,24 +273,12 @@ Partial Class Form1
         Me.skillFrag6 = New System.Windows.Forms.NumericUpDown()
         Me.skillFrag5 = New System.Windows.Forms.NumericUpDown()
         Me.skillFrag4 = New System.Windows.Forms.NumericUpDown()
-        Me.B64a = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.B64b = New System.Windows.Forms.TextBox()
         Me.boxCraft4 = New System.Windows.Forms.TextBox()
         Me.boxCraft3 = New System.Windows.Forms.TextBox()
         Me.boxCraft2 = New System.Windows.Forms.TextBox()
         Me.boxCraft1 = New System.Windows.Forms.TextBox()
-        Me.skillCraft4 = New System.Windows.Forms.NumericUpDown()
-        Me.lblCraft4 = New System.Windows.Forms.Label()
-        Me.costCraft4 = New System.Windows.Forms.Label()
-        Me.skillcraft3 = New System.Windows.Forms.NumericUpDown()
-        Me.lblCraft3 = New System.Windows.Forms.Label()
-        Me.costCraft3 = New System.Windows.Forms.Label()
-        Me.skillCraft2 = New System.Windows.Forms.NumericUpDown()
-        Me.lblCraft2 = New System.Windows.Forms.Label()
-        Me.costCraft2 = New System.Windows.Forms.Label()
         Me.costFavoured = New System.Windows.Forms.Label()
-        Me.FavouredCheck = New System.Windows.Forms.CheckBox()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.lblRaceSkills = New System.Windows.Forms.Label()
         Me.lblJob = New System.Windows.Forms.Label()
@@ -292,10 +296,10 @@ Partial Class Form1
         Me.costFrag4 = New System.Windows.Forms.Label()
         Me.costFrag3 = New System.Windows.Forms.Label()
         Me.skillLooting = New System.Windows.Forms.NumericUpDown()
-        Me.lblFrag6 = New System.Windows.Forms.Label()
         Me.lblLooting = New System.Windows.Forms.Label()
-        Me.lblFrag5 = New System.Windows.Forms.Label()
         Me.costLooting = New System.Windows.Forms.Label()
+        Me.lblFrag6 = New System.Windows.Forms.Label()
+        Me.lblFrag5 = New System.Windows.Forms.Label()
         Me.lblFrag4 = New System.Windows.Forms.Label()
         Me.lblJob1 = New System.Windows.Forms.Label()
         Me.skillJob1 = New System.Windows.Forms.NumericUpDown()
@@ -318,14 +322,14 @@ Partial Class Form1
         Me.skillStr = New System.Windows.Forms.NumericUpDown()
         Me.lblStr = New System.Windows.Forms.Label()
         Me.costStr = New System.Windows.Forms.Label()
-        Me.skillRacial1 = New System.Windows.Forms.NumericUpDown()
-        Me.lblRacial1 = New System.Windows.Forms.Label()
-        Me.costRacial1 = New System.Windows.Forms.Label()
+        Me.skillRacialAuto = New System.Windows.Forms.NumericUpDown()
+        Me.lblRacialAuto = New System.Windows.Forms.Label()
+        Me.costRacialAuto = New System.Windows.Forms.Label()
         Me.listRacial = New System.Windows.Forms.ComboBox()
-        Me.lblBlacksmith = New System.Windows.Forms.Label()
         Me.skillAlchemy = New System.Windows.Forms.NumericUpDown()
         Me.lblAlchemy = New System.Windows.Forms.Label()
         Me.costAlchemy = New System.Windows.Forms.Label()
+        Me.lblBlacksmith = New System.Windows.Forms.Label()
         Me.skillBlacksmith = New System.Windows.Forms.NumericUpDown()
         Me.costBlacksmith = New System.Windows.Forms.Label()
         Me.skillCraft1 = New System.Windows.Forms.NumericUpDown()
@@ -337,6 +341,8 @@ Partial Class Form1
         Me.skillTrapsmith = New System.Windows.Forms.NumericUpDown()
         Me.lblTrapsmith = New System.Windows.Forms.Label()
         Me.costTrapsmith = New System.Windows.Forms.Label()
+        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.boxFragsTotal = New System.Windows.Forms.TextBox()
         Me.lblFrags = New System.Windows.Forms.Label()
         Me.TabControl = New System.Windows.Forms.TabControl()
@@ -348,7 +354,6 @@ Partial Class Form1
         CType(Me.numericBlanketAmt, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Rogue.SuspendLayout()
         CType(Me.skillGarrote, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.skillLocksmith, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillSap, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillDodge, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillCritSpecific, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -399,6 +404,12 @@ Partial Class Form1
         CType(Me.skillSpell7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillSpell6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.JobRaceProd.SuspendLayout()
+        CType(Me.skillCreateAlcohol, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.skillParagon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.skillTeacher, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.skillPossum, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.skillArtifice, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.skillChemistry, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillSpellVersa1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillSpellVersa2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillSpellVersa3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -413,9 +424,6 @@ Partial Class Form1
         CType(Me.skillFrag5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillFrag4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.skillCraft4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.skillcraft3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.skillCraft2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillFrag1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillFrag2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillFrag3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -427,12 +435,13 @@ Partial Class Form1
         CType(Me.skillRacial2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillBPB, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillStr, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.skillRacial1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.skillRacialAuto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillAlchemy, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillBlacksmith, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillCraft1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillCreateScroll, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillTrapsmith, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -460,7 +469,7 @@ Partial Class Form1
         '
         Me.ddlFragCharRace.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ddlFragCharRace.FormattingEnabled = True
-        Me.ddlFragCharRace.Items.AddRange(New Object() {"Avian", "Carnal Fae", "Draconian", "Faceless", "Faun", "Firbolg", "Fire Elf", "Gnome", "Goblin", "Ice Elf", "Kobold", "Minotaur", "Ogre", "Pax Mordibish", "Risen", "Sidhe", "Squamata", "Stone Elf", "Vulcan Dwarf", "Wolven"})
+        Me.ddlFragCharRace.Items.AddRange(New Object() {"Am'Rath", "Avian", "Carnal Fae", "Draconian", "Faceless", "Faun", "Fire Elf", "Gnome", "Goblin", "Ice Elf", "Kobold", "Minotaur", "Ogre", "Risen", "Sidhe", "Squamata", "Vulcan Dwarf", "Wolven"})
         Me.ddlFragCharRace.Location = New System.Drawing.Point(119, 134)
         Me.ddlFragCharRace.Name = "ddlFragCharRace"
         Me.ddlFragCharRace.Size = New System.Drawing.Size(100, 21)
@@ -706,9 +715,6 @@ Partial Class Form1
         Me.Rogue.Controls.Add(Me.skillGarrote)
         Me.Rogue.Controls.Add(Me.lblGarrote)
         Me.Rogue.Controls.Add(Me.costGarrote)
-        Me.Rogue.Controls.Add(Me.skillLocksmith)
-        Me.Rogue.Controls.Add(Me.lblLocksmith)
-        Me.Rogue.Controls.Add(Me.costLocksmith)
         Me.Rogue.Controls.Add(Me.skillSap)
         Me.Rogue.Controls.Add(Me.lblSap)
         Me.Rogue.Controls.Add(Me.costSap)
@@ -743,7 +749,7 @@ Partial Class Form1
         'lblExecute
         '
         Me.lblExecute.AutoSize = True
-        Me.lblExecute.Location = New System.Drawing.Point(29, 208)
+        Me.lblExecute.Location = New System.Drawing.Point(337, 102)
         Me.lblExecute.Name = "lblExecute"
         Me.lblExecute.Size = New System.Drawing.Size(46, 13)
         Me.lblExecute.TabIndex = 198
@@ -751,7 +757,7 @@ Partial Class Form1
         '
         'skillGarrote
         '
-        Me.skillGarrote.Location = New System.Drawing.Point(144, 26)
+        Me.skillGarrote.Location = New System.Drawing.Point(144, 29)
         Me.skillGarrote.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.skillGarrote.Name = "skillGarrote"
         Me.skillGarrote.ReadOnly = True
@@ -762,7 +768,7 @@ Partial Class Form1
         'lblGarrote
         '
         Me.lblGarrote.AutoSize = True
-        Me.lblGarrote.Location = New System.Drawing.Point(29, 28)
+        Me.lblGarrote.Location = New System.Drawing.Point(29, 32)
         Me.lblGarrote.Name = "lblGarrote"
         Me.lblGarrote.Size = New System.Drawing.Size(42, 13)
         Me.lblGarrote.TabIndex = 163
@@ -771,42 +777,16 @@ Partial Class Form1
         'costGarrote
         '
         Me.costGarrote.AutoSize = True
-        Me.costGarrote.Location = New System.Drawing.Point(119, 28)
+        Me.costGarrote.Location = New System.Drawing.Point(119, 32)
         Me.costGarrote.Name = "costGarrote"
         Me.costGarrote.Size = New System.Drawing.Size(13, 13)
         Me.costGarrote.TabIndex = 164
         Me.costGarrote.Text = "0"
         '
-        'skillLocksmith
-        '
-        Me.skillLocksmith.Location = New System.Drawing.Point(298, 26)
-        Me.skillLocksmith.Name = "skillLocksmith"
-        Me.skillLocksmith.ReadOnly = True
-        Me.skillLocksmith.Size = New System.Drawing.Size(33, 20)
-        Me.skillLocksmith.TabIndex = 165
-        Me.skillLocksmith.TabStop = False
-        '
-        'lblLocksmith
-        '
-        Me.lblLocksmith.AutoSize = True
-        Me.lblLocksmith.Location = New System.Drawing.Point(183, 29)
-        Me.lblLocksmith.Name = "lblLocksmith"
-        Me.lblLocksmith.Size = New System.Drawing.Size(55, 13)
-        Me.lblLocksmith.TabIndex = 166
-        Me.lblLocksmith.Text = "Locksmith"
-        '
-        'costLocksmith
-        '
-        Me.costLocksmith.AutoSize = True
-        Me.costLocksmith.Location = New System.Drawing.Point(273, 29)
-        Me.costLocksmith.Name = "costLocksmith"
-        Me.costLocksmith.Size = New System.Drawing.Size(13, 13)
-        Me.costLocksmith.TabIndex = 167
-        Me.costLocksmith.Text = "0"
-        '
         'skillSap
         '
-        Me.skillSap.Location = New System.Drawing.Point(452, 26)
+        Me.skillSap.Location = New System.Drawing.Point(298, 29)
+        Me.skillSap.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSap.Name = "skillSap"
         Me.skillSap.ReadOnly = True
         Me.skillSap.Size = New System.Drawing.Size(33, 20)
@@ -816,7 +796,7 @@ Partial Class Form1
         'lblSap
         '
         Me.lblSap.AutoSize = True
-        Me.lblSap.Location = New System.Drawing.Point(337, 29)
+        Me.lblSap.Location = New System.Drawing.Point(184, 32)
         Me.lblSap.Name = "lblSap"
         Me.lblSap.Size = New System.Drawing.Size(26, 13)
         Me.lblSap.TabIndex = 169
@@ -825,7 +805,7 @@ Partial Class Form1
         'costSap
         '
         Me.costSap.AutoSize = True
-        Me.costSap.Location = New System.Drawing.Point(427, 29)
+        Me.costSap.Location = New System.Drawing.Point(273, 32)
         Me.costSap.Name = "costSap"
         Me.costSap.Size = New System.Drawing.Size(13, 13)
         Me.costSap.TabIndex = 170
@@ -833,7 +813,8 @@ Partial Class Form1
         '
         'skillDodge
         '
-        Me.skillDodge.Location = New System.Drawing.Point(452, 101)
+        Me.skillDodge.Location = New System.Drawing.Point(613, 29)
+        Me.skillDodge.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillDodge.Name = "skillDodge"
         Me.skillDodge.ReadOnly = True
         Me.skillDodge.Size = New System.Drawing.Size(33, 20)
@@ -843,7 +824,7 @@ Partial Class Form1
         'lblDodge
         '
         Me.lblDodge.AutoSize = True
-        Me.lblDodge.Location = New System.Drawing.Point(337, 103)
+        Me.lblDodge.Location = New System.Drawing.Point(498, 31)
         Me.lblDodge.Name = "lblDodge"
         Me.lblDodge.Size = New System.Drawing.Size(39, 13)
         Me.lblDodge.TabIndex = 172
@@ -852,7 +833,7 @@ Partial Class Form1
         'costDodge
         '
         Me.costDodge.AutoSize = True
-        Me.costDodge.Location = New System.Drawing.Point(427, 103)
+        Me.costDodge.Location = New System.Drawing.Point(588, 31)
         Me.costDodge.Name = "costDodge"
         Me.costDodge.Size = New System.Drawing.Size(13, 13)
         Me.costDodge.TabIndex = 173
@@ -861,6 +842,7 @@ Partial Class Form1
         'skillCritSpecific
         '
         Me.skillCritSpecific.Location = New System.Drawing.Point(144, 99)
+        Me.skillCritSpecific.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillCritSpecific.Name = "skillCritSpecific"
         Me.skillCritSpecific.ReadOnly = True
         Me.skillCritSpecific.Size = New System.Drawing.Size(33, 20)
@@ -898,6 +880,7 @@ Partial Class Form1
         'skillCritGroup
         '
         Me.skillCritGroup.Location = New System.Drawing.Point(299, 100)
+        Me.skillCritGroup.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillCritGroup.Name = "skillCritGroup"
         Me.skillCritGroup.ReadOnly = True
         Me.skillCritGroup.Size = New System.Drawing.Size(33, 20)
@@ -934,7 +917,8 @@ Partial Class Form1
         '
         'skillVitalBlow
         '
-        Me.skillVitalBlow.Location = New System.Drawing.Point(606, 27)
+        Me.skillVitalBlow.Location = New System.Drawing.Point(452, 30)
+        Me.skillVitalBlow.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillVitalBlow.Name = "skillVitalBlow"
         Me.skillVitalBlow.ReadOnly = True
         Me.skillVitalBlow.Size = New System.Drawing.Size(33, 20)
@@ -944,7 +928,7 @@ Partial Class Form1
         'lblVitalBlow
         '
         Me.lblVitalBlow.AutoSize = True
-        Me.lblVitalBlow.Location = New System.Drawing.Point(491, 30)
+        Me.lblVitalBlow.Location = New System.Drawing.Point(337, 32)
         Me.lblVitalBlow.Name = "lblVitalBlow"
         Me.lblVitalBlow.Size = New System.Drawing.Size(53, 13)
         Me.lblVitalBlow.TabIndex = 192
@@ -953,7 +937,7 @@ Partial Class Form1
         'costVitalBlow
         '
         Me.costVitalBlow.AutoSize = True
-        Me.costVitalBlow.Location = New System.Drawing.Point(581, 30)
+        Me.costVitalBlow.Location = New System.Drawing.Point(427, 33)
         Me.costVitalBlow.Name = "costVitalBlow"
         Me.costVitalBlow.Size = New System.Drawing.Size(13, 13)
         Me.costVitalBlow.TabIndex = 193
@@ -961,7 +945,8 @@ Partial Class Form1
         '
         'skillExecute
         '
-        Me.skillExecute.Location = New System.Drawing.Point(144, 205)
+        Me.skillExecute.Location = New System.Drawing.Point(452, 99)
+        Me.skillExecute.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillExecute.Name = "skillExecute"
         Me.skillExecute.ReadOnly = True
         Me.skillExecute.Size = New System.Drawing.Size(33, 20)
@@ -971,7 +956,7 @@ Partial Class Form1
         'costExecute
         '
         Me.costExecute.AutoSize = True
-        Me.costExecute.Location = New System.Drawing.Point(119, 208)
+        Me.costExecute.Location = New System.Drawing.Point(427, 102)
         Me.costExecute.Name = "costExecute"
         Me.costExecute.Size = New System.Drawing.Size(13, 13)
         Me.costExecute.TabIndex = 199
@@ -981,7 +966,7 @@ Partial Class Form1
         '
         Me.ddlExecute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ddlExecute.FormattingEnabled = True
-        Me.ddlExecute.Location = New System.Drawing.Point(32, 231)
+        Me.ddlExecute.Location = New System.Drawing.Point(340, 125)
         Me.ddlExecute.Name = "ddlExecute"
         Me.ddlExecute.Size = New System.Drawing.Size(145, 21)
         Me.ddlExecute.TabIndex = 200
@@ -989,7 +974,8 @@ Partial Class Form1
         '
         'skillExecuteMaster
         '
-        Me.skillExecuteMaster.Location = New System.Drawing.Point(298, 206)
+        Me.skillExecuteMaster.Location = New System.Drawing.Point(613, 97)
+        Me.skillExecuteMaster.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillExecuteMaster.Name = "skillExecuteMaster"
         Me.skillExecuteMaster.ReadOnly = True
         Me.skillExecuteMaster.Size = New System.Drawing.Size(33, 20)
@@ -999,7 +985,7 @@ Partial Class Form1
         'lblExecuteMaster
         '
         Me.lblExecuteMaster.AutoSize = True
-        Me.lblExecuteMaster.Location = New System.Drawing.Point(183, 209)
+        Me.lblExecuteMaster.Location = New System.Drawing.Point(498, 100)
         Me.lblExecuteMaster.Name = "lblExecuteMaster"
         Me.lblExecuteMaster.Size = New System.Drawing.Size(84, 13)
         Me.lblExecuteMaster.TabIndex = 202
@@ -1008,7 +994,7 @@ Partial Class Form1
         'costExecuteMaster
         '
         Me.costExecuteMaster.AutoSize = True
-        Me.costExecuteMaster.Location = New System.Drawing.Point(273, 209)
+        Me.costExecuteMaster.Location = New System.Drawing.Point(588, 100)
         Me.costExecuteMaster.Name = "costExecuteMaster"
         Me.costExecuteMaster.Size = New System.Drawing.Size(13, 13)
         Me.costExecuteMaster.TabIndex = 203
@@ -1018,7 +1004,7 @@ Partial Class Form1
         '
         Me.ddlExecuteMaster.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ddlExecuteMaster.FormattingEnabled = True
-        Me.ddlExecuteMaster.Location = New System.Drawing.Point(186, 232)
+        Me.ddlExecuteMaster.Location = New System.Drawing.Point(501, 125)
         Me.ddlExecuteMaster.Name = "ddlExecuteMaster"
         Me.ddlExecuteMaster.Size = New System.Drawing.Size(145, 21)
         Me.ddlExecuteMaster.TabIndex = 204
@@ -1165,6 +1151,7 @@ Partial Class Form1
         'skillFlurryOfBlows
         '
         Me.skillFlurryOfBlows.Location = New System.Drawing.Point(452, 27)
+        Me.skillFlurryOfBlows.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFlurryOfBlows.Name = "skillFlurryOfBlows"
         Me.skillFlurryOfBlows.ReadOnly = True
         Me.skillFlurryOfBlows.Size = New System.Drawing.Size(33, 20)
@@ -1332,6 +1319,7 @@ Partial Class Form1
         'skillSpecGroup
         '
         Me.skillSpecGroup.Location = New System.Drawing.Point(144, 250)
+        Me.skillSpecGroup.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpecGroup.Name = "skillSpecGroup"
         Me.skillSpecGroup.ReadOnly = True
         Me.skillSpecGroup.Size = New System.Drawing.Size(33, 20)
@@ -1359,6 +1347,7 @@ Partial Class Form1
         'skillSpecSpecific
         '
         Me.skillSpecSpecific.Location = New System.Drawing.Point(298, 250)
+        Me.skillSpecSpecific.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpecSpecific.Name = "skillSpecSpecific"
         Me.skillSpecSpecific.ReadOnly = True
         Me.skillSpecSpecific.Size = New System.Drawing.Size(33, 20)
@@ -1386,6 +1375,7 @@ Partial Class Form1
         'skillExoticProf
         '
         Me.skillExoticProf.Location = New System.Drawing.Point(452, 168)
+        Me.skillExoticProf.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillExoticProf.Name = "skillExoticProf"
         Me.skillExoticProf.ReadOnly = True
         Me.skillExoticProf.Size = New System.Drawing.Size(33, 20)
@@ -1444,6 +1434,7 @@ Partial Class Form1
         'skillSlayParry
         '
         Me.skillSlayParry.Location = New System.Drawing.Point(453, 249)
+        Me.skillSlayParry.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSlayParry.Name = "skillSlayParry"
         Me.skillSlayParry.ReadOnly = True
         Me.skillSlayParry.Size = New System.Drawing.Size(33, 20)
@@ -1472,6 +1463,7 @@ Partial Class Form1
         'skillSlayParryMaster
         '
         Me.skillSlayParryMaster.Location = New System.Drawing.Point(607, 250)
+        Me.skillSlayParryMaster.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSlayParryMaster.Name = "skillSlayParryMaster"
         Me.skillSlayParryMaster.ReadOnly = True
         Me.skillSlayParryMaster.Size = New System.Drawing.Size(33, 20)
@@ -1528,6 +1520,7 @@ Partial Class Form1
         'skillWeaponRefocus
         '
         Me.skillWeaponRefocus.Location = New System.Drawing.Point(453, 93)
+        Me.skillWeaponRefocus.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillWeaponRefocus.Name = "skillWeaponRefocus"
         Me.skillWeaponRefocus.ReadOnly = True
         Me.skillWeaponRefocus.Size = New System.Drawing.Size(33, 20)
@@ -1709,7 +1702,6 @@ Partial Class Form1
         Me.skillAdvRitual.TabIndex = 276
         Me.skillAdvRitual.TabStop = False
         Me.skillAdvRitual.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.skillAdvRitual.Value = 0
         '
         'Label31
         '
@@ -2313,7 +2305,7 @@ Partial Class Form1
         'skillSpellRitual
         '
         Me.skillSpellRitual.Location = New System.Drawing.Point(488, 369)
-        Me.skillSpellRitual.Maximum = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.skillSpellRitual.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpellRitual.Name = "skillSpellRitual"
         Me.skillSpellRitual.ReadOnly = True
         Me.skillSpellRitual.Size = New System.Drawing.Size(30, 20)
@@ -2513,6 +2505,25 @@ Partial Class Form1
         '
         'JobRaceProd
         '
+        Me.JobRaceProd.Controls.Add(Me.lblFavoured)
+        Me.JobRaceProd.Controls.Add(Me.lblFuckYou)
+        Me.JobRaceProd.Controls.Add(Me.skillCreateAlcohol)
+        Me.JobRaceProd.Controls.Add(Me.costCreateAlcohol)
+        Me.JobRaceProd.Controls.Add(Me.lblCreateAlcohol)
+        Me.JobRaceProd.Controls.Add(Me.skillParagon)
+        Me.JobRaceProd.Controls.Add(Me.lblParagon)
+        Me.JobRaceProd.Controls.Add(Me.costParagon)
+        Me.JobRaceProd.Controls.Add(Me.skillTeacher)
+        Me.JobRaceProd.Controls.Add(Me.costTeacher)
+        Me.JobRaceProd.Controls.Add(Me.skillPossum)
+        Me.JobRaceProd.Controls.Add(Me.lblPossum)
+        Me.JobRaceProd.Controls.Add(Me.costPossum)
+        Me.JobRaceProd.Controls.Add(Me.skillArtifice)
+        Me.JobRaceProd.Controls.Add(Me.lblArtifice)
+        Me.JobRaceProd.Controls.Add(Me.costArtifice)
+        Me.JobRaceProd.Controls.Add(Me.skillChemistry)
+        Me.JobRaceProd.Controls.Add(Me.lblChemistry)
+        Me.JobRaceProd.Controls.Add(Me.costChemistry)
         Me.JobRaceProd.Controls.Add(Me.lblSpellVersa9)
         Me.JobRaceProd.Controls.Add(Me.lblSpellVersa8)
         Me.JobRaceProd.Controls.Add(Me.lblSpellVersa7)
@@ -2547,24 +2558,12 @@ Partial Class Form1
         Me.JobRaceProd.Controls.Add(Me.skillFrag6)
         Me.JobRaceProd.Controls.Add(Me.skillFrag5)
         Me.JobRaceProd.Controls.Add(Me.skillFrag4)
-        Me.JobRaceProd.Controls.Add(Me.B64a)
         Me.JobRaceProd.Controls.Add(Me.PictureBox1)
-        Me.JobRaceProd.Controls.Add(Me.B64b)
         Me.JobRaceProd.Controls.Add(Me.boxCraft4)
         Me.JobRaceProd.Controls.Add(Me.boxCraft3)
         Me.JobRaceProd.Controls.Add(Me.boxCraft2)
         Me.JobRaceProd.Controls.Add(Me.boxCraft1)
-        Me.JobRaceProd.Controls.Add(Me.skillCraft4)
-        Me.JobRaceProd.Controls.Add(Me.lblCraft4)
-        Me.JobRaceProd.Controls.Add(Me.costCraft4)
-        Me.JobRaceProd.Controls.Add(Me.skillcraft3)
-        Me.JobRaceProd.Controls.Add(Me.lblCraft3)
-        Me.JobRaceProd.Controls.Add(Me.costCraft3)
-        Me.JobRaceProd.Controls.Add(Me.skillCraft2)
-        Me.JobRaceProd.Controls.Add(Me.lblCraft2)
-        Me.JobRaceProd.Controls.Add(Me.costCraft2)
         Me.JobRaceProd.Controls.Add(Me.costFavoured)
-        Me.JobRaceProd.Controls.Add(Me.FavouredCheck)
         Me.JobRaceProd.Controls.Add(Me.Label29)
         Me.JobRaceProd.Controls.Add(Me.lblRaceSkills)
         Me.JobRaceProd.Controls.Add(Me.lblJob)
@@ -2582,10 +2581,10 @@ Partial Class Form1
         Me.JobRaceProd.Controls.Add(Me.costFrag4)
         Me.JobRaceProd.Controls.Add(Me.costFrag3)
         Me.JobRaceProd.Controls.Add(Me.skillLooting)
-        Me.JobRaceProd.Controls.Add(Me.lblFrag6)
         Me.JobRaceProd.Controls.Add(Me.lblLooting)
-        Me.JobRaceProd.Controls.Add(Me.lblFrag5)
         Me.JobRaceProd.Controls.Add(Me.costLooting)
+        Me.JobRaceProd.Controls.Add(Me.lblFrag6)
+        Me.JobRaceProd.Controls.Add(Me.lblFrag5)
         Me.JobRaceProd.Controls.Add(Me.lblFrag4)
         Me.JobRaceProd.Controls.Add(Me.lblJob1)
         Me.JobRaceProd.Controls.Add(Me.skillJob1)
@@ -2608,14 +2607,14 @@ Partial Class Form1
         Me.JobRaceProd.Controls.Add(Me.skillStr)
         Me.JobRaceProd.Controls.Add(Me.lblStr)
         Me.JobRaceProd.Controls.Add(Me.costStr)
-        Me.JobRaceProd.Controls.Add(Me.skillRacial1)
-        Me.JobRaceProd.Controls.Add(Me.lblRacial1)
-        Me.JobRaceProd.Controls.Add(Me.costRacial1)
+        Me.JobRaceProd.Controls.Add(Me.skillRacialAuto)
+        Me.JobRaceProd.Controls.Add(Me.lblRacialAuto)
+        Me.JobRaceProd.Controls.Add(Me.costRacialAuto)
         Me.JobRaceProd.Controls.Add(Me.listRacial)
-        Me.JobRaceProd.Controls.Add(Me.lblBlacksmith)
         Me.JobRaceProd.Controls.Add(Me.skillAlchemy)
         Me.JobRaceProd.Controls.Add(Me.lblAlchemy)
         Me.JobRaceProd.Controls.Add(Me.costAlchemy)
+        Me.JobRaceProd.Controls.Add(Me.lblBlacksmith)
         Me.JobRaceProd.Controls.Add(Me.skillBlacksmith)
         Me.JobRaceProd.Controls.Add(Me.costBlacksmith)
         Me.JobRaceProd.Controls.Add(Me.skillCraft1)
@@ -2635,11 +2634,191 @@ Partial Class Form1
         Me.JobRaceProd.Text = "                   General                   "
         Me.JobRaceProd.UseVisualStyleBackColor = True
         '
+        'lblFavoured
+        '
+        Me.lblFavoured.AutoSize = True
+        Me.lblFavoured.Location = New System.Drawing.Point(493, 395)
+        Me.lblFavoured.Name = "lblFavoured"
+        Me.lblFavoured.Size = New System.Drawing.Size(52, 13)
+        Me.lblFavoured.TabIndex = 394
+        Me.lblFavoured.Text = "Favoured"
+        '
+        'lblFuckYou
+        '
+        Me.lblFuckYou.AutoSize = True
+        Me.lblFuckYou.Location = New System.Drawing.Point(339, 281)
+        Me.lblFuckYou.Name = "lblFuckYou"
+        Me.lblFuckYou.Size = New System.Drawing.Size(47, 13)
+        Me.lblFuckYou.TabIndex = 393
+        Me.lblFuckYou.Text = "Teacher"
+        '
+        'skillCreateAlcohol
+        '
+        Me.skillCreateAlcohol.Location = New System.Drawing.Point(608, 340)
+        Me.skillCreateAlcohol.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.skillCreateAlcohol.Name = "skillCreateAlcohol"
+        Me.skillCreateAlcohol.ReadOnly = True
+        Me.skillCreateAlcohol.Size = New System.Drawing.Size(33, 20)
+        Me.skillCreateAlcohol.TabIndex = 392
+        Me.skillCreateAlcohol.TabStop = False
+        '
+        'costCreateAlcohol
+        '
+        Me.costCreateAlcohol.AutoSize = True
+        Me.costCreateAlcohol.Location = New System.Drawing.Point(583, 342)
+        Me.costCreateAlcohol.Name = "costCreateAlcohol"
+        Me.costCreateAlcohol.Size = New System.Drawing.Size(19, 13)
+        Me.costCreateAlcohol.TabIndex = 391
+        Me.costCreateAlcohol.Text = "20"
+        '
+        'lblCreateAlcohol
+        '
+        Me.lblCreateAlcohol.AutoSize = True
+        Me.lblCreateAlcohol.Location = New System.Drawing.Point(493, 342)
+        Me.lblCreateAlcohol.Name = "lblCreateAlcohol"
+        Me.lblCreateAlcohol.Size = New System.Drawing.Size(76, 13)
+        Me.lblCreateAlcohol.TabIndex = 390
+        Me.lblCreateAlcohol.Text = "Create Alcohol"
+        '
+        'skillParagon
+        '
+        Me.skillParagon.Location = New System.Drawing.Point(608, 281)
+        Me.skillParagon.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.skillParagon.Name = "skillParagon"
+        Me.skillParagon.ReadOnly = True
+        Me.skillParagon.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.skillParagon.Size = New System.Drawing.Size(33, 20)
+        Me.skillParagon.TabIndex = 386
+        Me.skillParagon.TabStop = False
+        '
+        'lblParagon
+        '
+        Me.lblParagon.AutoSize = True
+        Me.lblParagon.Location = New System.Drawing.Point(493, 283)
+        Me.lblParagon.Name = "lblParagon"
+        Me.lblParagon.Size = New System.Drawing.Size(47, 13)
+        Me.lblParagon.TabIndex = 387
+        Me.lblParagon.Text = "Paragon"
+        '
+        'costParagon
+        '
+        Me.costParagon.AutoSize = True
+        Me.costParagon.Location = New System.Drawing.Point(583, 283)
+        Me.costParagon.Name = "costParagon"
+        Me.costParagon.Size = New System.Drawing.Size(13, 13)
+        Me.costParagon.TabIndex = 388
+        Me.costParagon.Text = "?"
+        '
+        'skillTeacher
+        '
+        Me.skillTeacher.Location = New System.Drawing.Point(454, 281)
+        Me.skillTeacher.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.skillTeacher.Name = "skillTeacher"
+        Me.skillTeacher.ReadOnly = True
+        Me.skillTeacher.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.skillTeacher.Size = New System.Drawing.Size(33, 20)
+        Me.skillTeacher.TabIndex = 383
+        Me.skillTeacher.TabStop = False
+        '
+        'costTeacher
+        '
+        Me.costTeacher.AutoSize = True
+        Me.costTeacher.Location = New System.Drawing.Point(429, 283)
+        Me.costTeacher.Name = "costTeacher"
+        Me.costTeacher.Size = New System.Drawing.Size(19, 13)
+        Me.costTeacher.TabIndex = 385
+        Me.costTeacher.Text = "15"
+        '
+        'skillPossum
+        '
+        Me.skillPossum.Location = New System.Drawing.Point(454, 311)
+        Me.skillPossum.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.skillPossum.Name = "skillPossum"
+        Me.skillPossum.ReadOnly = True
+        Me.skillPossum.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.skillPossum.Size = New System.Drawing.Size(33, 20)
+        Me.skillPossum.TabIndex = 380
+        Me.skillPossum.TabStop = False
+        '
+        'lblPossum
+        '
+        Me.lblPossum.AutoSize = True
+        Me.lblPossum.Location = New System.Drawing.Point(339, 313)
+        Me.lblPossum.Name = "lblPossum"
+        Me.lblPossum.Size = New System.Drawing.Size(44, 13)
+        Me.lblPossum.TabIndex = 381
+        Me.lblPossum.Text = "Possum"
+        '
+        'costPossum
+        '
+        Me.costPossum.AutoSize = True
+        Me.costPossum.Location = New System.Drawing.Point(429, 313)
+        Me.costPossum.Name = "costPossum"
+        Me.costPossum.Size = New System.Drawing.Size(19, 13)
+        Me.costPossum.TabIndex = 382
+        Me.costPossum.Text = "30"
+        '
+        'skillArtifice
+        '
+        Me.skillArtifice.Location = New System.Drawing.Point(298, 95)
+        Me.skillArtifice.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.skillArtifice.Name = "skillArtifice"
+        Me.skillArtifice.ReadOnly = True
+        Me.skillArtifice.Size = New System.Drawing.Size(33, 20)
+        Me.skillArtifice.TabIndex = 377
+        Me.skillArtifice.TabStop = False
+        '
+        'lblArtifice
+        '
+        Me.lblArtifice.AutoSize = True
+        Me.lblArtifice.Location = New System.Drawing.Point(183, 97)
+        Me.lblArtifice.Name = "lblArtifice"
+        Me.lblArtifice.Size = New System.Drawing.Size(39, 13)
+        Me.lblArtifice.TabIndex = 378
+        Me.lblArtifice.Text = "Artifice"
+        '
+        'costArtifice
+        '
+        Me.costArtifice.AutoSize = True
+        Me.costArtifice.Location = New System.Drawing.Point(273, 97)
+        Me.costArtifice.Name = "costArtifice"
+        Me.costArtifice.Size = New System.Drawing.Size(13, 13)
+        Me.costArtifice.TabIndex = 379
+        Me.costArtifice.Text = "0"
+        '
+        'skillChemistry
+        '
+        Me.skillChemistry.Location = New System.Drawing.Point(144, 95)
+        Me.skillChemistry.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.skillChemistry.Name = "skillChemistry"
+        Me.skillChemistry.ReadOnly = True
+        Me.skillChemistry.Size = New System.Drawing.Size(33, 20)
+        Me.skillChemistry.TabIndex = 374
+        Me.skillChemistry.TabStop = False
+        '
+        'lblChemistry
+        '
+        Me.lblChemistry.AutoSize = True
+        Me.lblChemistry.Location = New System.Drawing.Point(29, 97)
+        Me.lblChemistry.Name = "lblChemistry"
+        Me.lblChemistry.Size = New System.Drawing.Size(52, 13)
+        Me.lblChemistry.TabIndex = 375
+        Me.lblChemistry.Text = "Chemistry"
+        '
+        'costChemistry
+        '
+        Me.costChemistry.AutoSize = True
+        Me.costChemistry.Location = New System.Drawing.Point(119, 97)
+        Me.costChemistry.Name = "costChemistry"
+        Me.costChemistry.Size = New System.Drawing.Size(13, 13)
+        Me.costChemistry.TabIndex = 376
+        Me.costChemistry.Text = "0"
+        '
         'lblSpellVersa9
         '
         Me.lblSpellVersa9.AutoSize = True
         Me.lblSpellVersa9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSpellVersa9.Location = New System.Drawing.Point(417, 384)
+        Me.lblSpellVersa9.Location = New System.Drawing.Point(417, 376)
         Me.lblSpellVersa9.Name = "lblSpellVersa9"
         Me.lblSpellVersa9.Size = New System.Drawing.Size(14, 13)
         Me.lblSpellVersa9.TabIndex = 373
@@ -2650,7 +2829,7 @@ Partial Class Form1
         '
         Me.lblSpellVersa8.AutoSize = True
         Me.lblSpellVersa8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSpellVersa8.Location = New System.Drawing.Point(382, 384)
+        Me.lblSpellVersa8.Location = New System.Drawing.Point(382, 376)
         Me.lblSpellVersa8.Name = "lblSpellVersa8"
         Me.lblSpellVersa8.Size = New System.Drawing.Size(14, 13)
         Me.lblSpellVersa8.TabIndex = 372
@@ -2661,7 +2840,7 @@ Partial Class Form1
         '
         Me.lblSpellVersa7.AutoSize = True
         Me.lblSpellVersa7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSpellVersa7.Location = New System.Drawing.Point(345, 384)
+        Me.lblSpellVersa7.Location = New System.Drawing.Point(345, 376)
         Me.lblSpellVersa7.Name = "lblSpellVersa7"
         Me.lblSpellVersa7.Size = New System.Drawing.Size(14, 13)
         Me.lblSpellVersa7.TabIndex = 371
@@ -2672,7 +2851,7 @@ Partial Class Form1
         '
         Me.lblSpellVersa6.AutoSize = True
         Me.lblSpellVersa6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSpellVersa6.Location = New System.Drawing.Point(310, 384)
+        Me.lblSpellVersa6.Location = New System.Drawing.Point(310, 376)
         Me.lblSpellVersa6.Name = "lblSpellVersa6"
         Me.lblSpellVersa6.Size = New System.Drawing.Size(14, 13)
         Me.lblSpellVersa6.TabIndex = 370
@@ -2683,7 +2862,7 @@ Partial Class Form1
         '
         Me.lblSpellVersa5.AutoSize = True
         Me.lblSpellVersa5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSpellVersa5.Location = New System.Drawing.Point(274, 384)
+        Me.lblSpellVersa5.Location = New System.Drawing.Point(274, 376)
         Me.lblSpellVersa5.Name = "lblSpellVersa5"
         Me.lblSpellVersa5.Size = New System.Drawing.Size(14, 13)
         Me.lblSpellVersa5.TabIndex = 369
@@ -2694,7 +2873,7 @@ Partial Class Form1
         '
         Me.lblSpellVersa4.AutoSize = True
         Me.lblSpellVersa4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSpellVersa4.Location = New System.Drawing.Point(238, 384)
+        Me.lblSpellVersa4.Location = New System.Drawing.Point(238, 376)
         Me.lblSpellVersa4.Name = "lblSpellVersa4"
         Me.lblSpellVersa4.Size = New System.Drawing.Size(14, 13)
         Me.lblSpellVersa4.TabIndex = 368
@@ -2705,7 +2884,7 @@ Partial Class Form1
         '
         Me.lblSpellVersa3.AutoSize = True
         Me.lblSpellVersa3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSpellVersa3.Location = New System.Drawing.Point(204, 384)
+        Me.lblSpellVersa3.Location = New System.Drawing.Point(204, 376)
         Me.lblSpellVersa3.Name = "lblSpellVersa3"
         Me.lblSpellVersa3.Size = New System.Drawing.Size(14, 13)
         Me.lblSpellVersa3.TabIndex = 367
@@ -2716,7 +2895,7 @@ Partial Class Form1
         '
         Me.lblSpellVersa2.AutoSize = True
         Me.lblSpellVersa2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSpellVersa2.Location = New System.Drawing.Point(166, 384)
+        Me.lblSpellVersa2.Location = New System.Drawing.Point(166, 376)
         Me.lblSpellVersa2.Name = "lblSpellVersa2"
         Me.lblSpellVersa2.Size = New System.Drawing.Size(14, 13)
         Me.lblSpellVersa2.TabIndex = 366
@@ -2727,7 +2906,7 @@ Partial Class Form1
         '
         Me.lblSpellVersa1.AutoSize = True
         Me.lblSpellVersa1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSpellVersa1.Location = New System.Drawing.Point(129, 384)
+        Me.lblSpellVersa1.Location = New System.Drawing.Point(129, 376)
         Me.lblSpellVersa1.Name = "lblSpellVersa1"
         Me.lblSpellVersa1.Size = New System.Drawing.Size(14, 13)
         Me.lblSpellVersa1.TabIndex = 365
@@ -2736,7 +2915,8 @@ Partial Class Form1
         '
         'skillSpellVersa1
         '
-        Me.skillSpellVersa1.Location = New System.Drawing.Point(120, 400)
+        Me.skillSpellVersa1.Location = New System.Drawing.Point(120, 392)
+        Me.skillSpellVersa1.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpellVersa1.Name = "skillSpellVersa1"
         Me.skillSpellVersa1.ReadOnly = True
         Me.skillSpellVersa1.Size = New System.Drawing.Size(30, 20)
@@ -2747,7 +2927,8 @@ Partial Class Form1
         '
         'skillSpellVersa2
         '
-        Me.skillSpellVersa2.Location = New System.Drawing.Point(156, 400)
+        Me.skillSpellVersa2.Location = New System.Drawing.Point(156, 392)
+        Me.skillSpellVersa2.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpellVersa2.Name = "skillSpellVersa2"
         Me.skillSpellVersa2.ReadOnly = True
         Me.skillSpellVersa2.Size = New System.Drawing.Size(30, 20)
@@ -2758,7 +2939,8 @@ Partial Class Form1
         '
         'skillSpellVersa3
         '
-        Me.skillSpellVersa3.Location = New System.Drawing.Point(192, 400)
+        Me.skillSpellVersa3.Location = New System.Drawing.Point(192, 392)
+        Me.skillSpellVersa3.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpellVersa3.Name = "skillSpellVersa3"
         Me.skillSpellVersa3.ReadOnly = True
         Me.skillSpellVersa3.Size = New System.Drawing.Size(30, 20)
@@ -2769,7 +2951,8 @@ Partial Class Form1
         '
         'skillSpellVersa4
         '
-        Me.skillSpellVersa4.Location = New System.Drawing.Point(228, 400)
+        Me.skillSpellVersa4.Location = New System.Drawing.Point(228, 392)
+        Me.skillSpellVersa4.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpellVersa4.Name = "skillSpellVersa4"
         Me.skillSpellVersa4.ReadOnly = True
         Me.skillSpellVersa4.Size = New System.Drawing.Size(30, 20)
@@ -2780,7 +2963,8 @@ Partial Class Form1
         '
         'skillSpellVersa5
         '
-        Me.skillSpellVersa5.Location = New System.Drawing.Point(264, 400)
+        Me.skillSpellVersa5.Location = New System.Drawing.Point(264, 392)
+        Me.skillSpellVersa5.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpellVersa5.Name = "skillSpellVersa5"
         Me.skillSpellVersa5.ReadOnly = True
         Me.skillSpellVersa5.Size = New System.Drawing.Size(30, 20)
@@ -2791,7 +2975,8 @@ Partial Class Form1
         '
         'skillSpellVersa9
         '
-        Me.skillSpellVersa9.Location = New System.Drawing.Point(408, 400)
+        Me.skillSpellVersa9.Location = New System.Drawing.Point(408, 392)
+        Me.skillSpellVersa9.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpellVersa9.Name = "skillSpellVersa9"
         Me.skillSpellVersa9.ReadOnly = True
         Me.skillSpellVersa9.Size = New System.Drawing.Size(30, 20)
@@ -2802,7 +2987,8 @@ Partial Class Form1
         '
         'skillSpellVersa8
         '
-        Me.skillSpellVersa8.Location = New System.Drawing.Point(372, 400)
+        Me.skillSpellVersa8.Location = New System.Drawing.Point(372, 392)
+        Me.skillSpellVersa8.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpellVersa8.Name = "skillSpellVersa8"
         Me.skillSpellVersa8.ReadOnly = True
         Me.skillSpellVersa8.Size = New System.Drawing.Size(30, 20)
@@ -2813,7 +2999,8 @@ Partial Class Form1
         '
         'skillSpellVersa7
         '
-        Me.skillSpellVersa7.Location = New System.Drawing.Point(336, 400)
+        Me.skillSpellVersa7.Location = New System.Drawing.Point(336, 392)
+        Me.skillSpellVersa7.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpellVersa7.Name = "skillSpellVersa7"
         Me.skillSpellVersa7.ReadOnly = True
         Me.skillSpellVersa7.Size = New System.Drawing.Size(30, 20)
@@ -2824,7 +3011,8 @@ Partial Class Form1
         '
         'skillSpellVersa6
         '
-        Me.skillSpellVersa6.Location = New System.Drawing.Point(300, 400)
+        Me.skillSpellVersa6.Location = New System.Drawing.Point(300, 392)
+        Me.skillSpellVersa6.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillSpellVersa6.Name = "skillSpellVersa6"
         Me.skillSpellVersa6.ReadOnly = True
         Me.skillSpellVersa6.Size = New System.Drawing.Size(30, 20)
@@ -2836,7 +3024,7 @@ Partial Class Form1
         'costSpellVersa1
         '
         Me.costSpellVersa1.AutoSize = True
-        Me.costSpellVersa1.Location = New System.Drawing.Point(128, 423)
+        Me.costSpellVersa1.Location = New System.Drawing.Point(128, 415)
         Me.costSpellVersa1.Name = "costSpellVersa1"
         Me.costSpellVersa1.Size = New System.Drawing.Size(13, 13)
         Me.costSpellVersa1.TabIndex = 356
@@ -2846,7 +3034,7 @@ Partial Class Form1
         'costSpellVersa2
         '
         Me.costSpellVersa2.AutoSize = True
-        Me.costSpellVersa2.Location = New System.Drawing.Point(165, 423)
+        Me.costSpellVersa2.Location = New System.Drawing.Point(165, 415)
         Me.costSpellVersa2.Name = "costSpellVersa2"
         Me.costSpellVersa2.Size = New System.Drawing.Size(13, 13)
         Me.costSpellVersa2.TabIndex = 357
@@ -2856,7 +3044,7 @@ Partial Class Form1
         'costSpellVersa3
         '
         Me.costSpellVersa3.AutoSize = True
-        Me.costSpellVersa3.Location = New System.Drawing.Point(201, 423)
+        Me.costSpellVersa3.Location = New System.Drawing.Point(201, 415)
         Me.costSpellVersa3.Name = "costSpellVersa3"
         Me.costSpellVersa3.Size = New System.Drawing.Size(13, 13)
         Me.costSpellVersa3.TabIndex = 358
@@ -2866,7 +3054,7 @@ Partial Class Form1
         'costSpellVersa4
         '
         Me.costSpellVersa4.AutoSize = True
-        Me.costSpellVersa4.Location = New System.Drawing.Point(238, 423)
+        Me.costSpellVersa4.Location = New System.Drawing.Point(238, 415)
         Me.costSpellVersa4.Name = "costSpellVersa4"
         Me.costSpellVersa4.Size = New System.Drawing.Size(13, 13)
         Me.costSpellVersa4.TabIndex = 359
@@ -2876,7 +3064,7 @@ Partial Class Form1
         'costSpellVersa5
         '
         Me.costSpellVersa5.AutoSize = True
-        Me.costSpellVersa5.Location = New System.Drawing.Point(274, 423)
+        Me.costSpellVersa5.Location = New System.Drawing.Point(274, 415)
         Me.costSpellVersa5.Name = "costSpellVersa5"
         Me.costSpellVersa5.Size = New System.Drawing.Size(13, 13)
         Me.costSpellVersa5.TabIndex = 360
@@ -2886,7 +3074,7 @@ Partial Class Form1
         'costSpellVersa6
         '
         Me.costSpellVersa6.AutoSize = True
-        Me.costSpellVersa6.Location = New System.Drawing.Point(311, 423)
+        Me.costSpellVersa6.Location = New System.Drawing.Point(311, 415)
         Me.costSpellVersa6.Name = "costSpellVersa6"
         Me.costSpellVersa6.Size = New System.Drawing.Size(13, 13)
         Me.costSpellVersa6.TabIndex = 361
@@ -2896,7 +3084,7 @@ Partial Class Form1
         'costSpellVersa7
         '
         Me.costSpellVersa7.AutoSize = True
-        Me.costSpellVersa7.Location = New System.Drawing.Point(345, 423)
+        Me.costSpellVersa7.Location = New System.Drawing.Point(345, 415)
         Me.costSpellVersa7.Name = "costSpellVersa7"
         Me.costSpellVersa7.Size = New System.Drawing.Size(13, 13)
         Me.costSpellVersa7.TabIndex = 362
@@ -2906,7 +3094,7 @@ Partial Class Form1
         'costSpellVersa8
         '
         Me.costSpellVersa8.AutoSize = True
-        Me.costSpellVersa8.Location = New System.Drawing.Point(382, 423)
+        Me.costSpellVersa8.Location = New System.Drawing.Point(382, 415)
         Me.costSpellVersa8.Name = "costSpellVersa8"
         Me.costSpellVersa8.Size = New System.Drawing.Size(13, 13)
         Me.costSpellVersa8.TabIndex = 363
@@ -2916,7 +3104,7 @@ Partial Class Form1
         'costSpellVersa9
         '
         Me.costSpellVersa9.AutoSize = True
-        Me.costSpellVersa9.Location = New System.Drawing.Point(417, 423)
+        Me.costSpellVersa9.Location = New System.Drawing.Point(417, 415)
         Me.costSpellVersa9.Name = "costSpellVersa9"
         Me.costSpellVersa9.Size = New System.Drawing.Size(13, 13)
         Me.costSpellVersa9.TabIndex = 364
@@ -2926,7 +3114,7 @@ Partial Class Form1
         'lblSpellVersa
         '
         Me.lblSpellVersa.AutoSize = True
-        Me.lblSpellVersa.Location = New System.Drawing.Point(29, 403)
+        Me.lblSpellVersa.Location = New System.Drawing.Point(29, 395)
         Me.lblSpellVersa.Name = "lblSpellVersa"
         Me.lblSpellVersa.Size = New System.Drawing.Size(77, 13)
         Me.lblSpellVersa.TabIndex = 346
@@ -2935,7 +3123,7 @@ Partial Class Form1
         '
         'skillHeavyDrinker
         '
-        Me.skillHeavyDrinker.Location = New System.Drawing.Point(608, 354)
+        Me.skillHeavyDrinker.Location = New System.Drawing.Point(608, 311)
         Me.skillHeavyDrinker.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.skillHeavyDrinker.Name = "skillHeavyDrinker"
         Me.skillHeavyDrinker.ReadOnly = True
@@ -2946,7 +3134,7 @@ Partial Class Form1
         'costHeavyDrinker
         '
         Me.costHeavyDrinker.AutoSize = True
-        Me.costHeavyDrinker.Location = New System.Drawing.Point(583, 356)
+        Me.costHeavyDrinker.Location = New System.Drawing.Point(583, 313)
         Me.costHeavyDrinker.Name = "costHeavyDrinker"
         Me.costHeavyDrinker.Size = New System.Drawing.Size(19, 13)
         Me.costHeavyDrinker.TabIndex = 344
@@ -2955,7 +3143,7 @@ Partial Class Form1
         'lblHeavyDrinker
         '
         Me.lblHeavyDrinker.AutoSize = True
-        Me.lblHeavyDrinker.Location = New System.Drawing.Point(493, 356)
+        Me.lblHeavyDrinker.Location = New System.Drawing.Point(493, 313)
         Me.lblHeavyDrinker.Name = "lblHeavyDrinker"
         Me.lblHeavyDrinker.Size = New System.Drawing.Size(75, 13)
         Me.lblHeavyDrinker.TabIndex = 343
@@ -2963,7 +3151,8 @@ Partial Class Form1
         '
         'skillFrag6
         '
-        Me.skillFrag6.Location = New System.Drawing.Point(454, 354)
+        Me.skillFrag6.Location = New System.Drawing.Point(298, 340)
+        Me.skillFrag6.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag6.Name = "skillFrag6"
         Me.skillFrag6.ReadOnly = True
         Me.skillFrag6.Size = New System.Drawing.Size(33, 20)
@@ -2973,7 +3162,8 @@ Partial Class Form1
         '
         'skillFrag5
         '
-        Me.skillFrag5.Location = New System.Drawing.Point(300, 354)
+        Me.skillFrag5.Location = New System.Drawing.Point(300, 311)
+        Me.skillFrag5.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag5.Name = "skillFrag5"
         Me.skillFrag5.ReadOnly = True
         Me.skillFrag5.Size = New System.Drawing.Size(33, 20)
@@ -2983,7 +3173,8 @@ Partial Class Form1
         '
         'skillFrag4
         '
-        Me.skillFrag4.Location = New System.Drawing.Point(144, 354)
+        Me.skillFrag4.Location = New System.Drawing.Point(144, 311)
+        Me.skillFrag4.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag4.Name = "skillFrag4"
         Me.skillFrag4.ReadOnly = True
         Me.skillFrag4.Size = New System.Drawing.Size(33, 20)
@@ -2991,35 +3182,19 @@ Partial Class Form1
         Me.skillFrag4.TabStop = False
         Me.skillFrag4.Visible = False
         '
-        'B64a
-        '
-        Me.B64a.Location = New System.Drawing.Point(468, 178)
-        Me.B64a.Name = "B64a"
-        Me.B64a.Size = New System.Drawing.Size(162, 20)
-        Me.B64a.TabIndex = 322
-        Me.B64a.Visible = False
-        '
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Location = New System.Drawing.Point(20, 309)
+        Me.PictureBox1.Location = New System.Drawing.Point(20, 263)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(631, 10)
         Me.PictureBox1.TabIndex = 339
         Me.PictureBox1.TabStop = False
         '
-        'B64b
-        '
-        Me.B64b.Location = New System.Drawing.Point(286, 178)
-        Me.B64b.Name = "B64b"
-        Me.B64b.Size = New System.Drawing.Size(162, 20)
-        Me.B64b.TabIndex = 321
-        Me.B64b.Visible = False
-        '
         'boxCraft4
         '
         Me.boxCraft4.Enabled = False
-        Me.boxCraft4.Location = New System.Drawing.Point(494, 90)
+        Me.boxCraft4.Location = New System.Drawing.Point(496, 82)
         Me.boxCraft4.Name = "boxCraft4"
         Me.boxCraft4.Size = New System.Drawing.Size(145, 20)
         Me.boxCraft4.TabIndex = 338
@@ -3027,7 +3202,7 @@ Partial Class Form1
         'boxCraft3
         '
         Me.boxCraft3.Enabled = False
-        Me.boxCraft3.Location = New System.Drawing.Point(340, 90)
+        Me.boxCraft3.Location = New System.Drawing.Point(342, 82)
         Me.boxCraft3.Name = "boxCraft3"
         Me.boxCraft3.Size = New System.Drawing.Size(145, 20)
         Me.boxCraft3.TabIndex = 337
@@ -3035,7 +3210,7 @@ Partial Class Form1
         'boxCraft2
         '
         Me.boxCraft2.Enabled = False
-        Me.boxCraft2.Location = New System.Drawing.Point(186, 90)
+        Me.boxCraft2.Location = New System.Drawing.Point(496, 54)
         Me.boxCraft2.Name = "boxCraft2"
         Me.boxCraft2.Size = New System.Drawing.Size(145, 20)
         Me.boxCraft2.TabIndex = 336
@@ -3043,116 +3218,25 @@ Partial Class Form1
         'boxCraft1
         '
         Me.boxCraft1.Enabled = False
-        Me.boxCraft1.Location = New System.Drawing.Point(32, 90)
+        Me.boxCraft1.Location = New System.Drawing.Point(342, 54)
         Me.boxCraft1.Name = "boxCraft1"
         Me.boxCraft1.Size = New System.Drawing.Size(145, 20)
         Me.boxCraft1.TabIndex = 324
         '
-        'skillCraft4
-        '
-        Me.skillCraft4.Location = New System.Drawing.Point(606, 64)
-        Me.skillCraft4.Name = "skillCraft4"
-        Me.skillCraft4.ReadOnly = True
-        Me.skillCraft4.Size = New System.Drawing.Size(33, 20)
-        Me.skillCraft4.TabIndex = 333
-        Me.skillCraft4.TabStop = False
-        '
-        'lblCraft4
-        '
-        Me.lblCraft4.AutoSize = True
-        Me.lblCraft4.Location = New System.Drawing.Point(491, 67)
-        Me.lblCraft4.Name = "lblCraft4"
-        Me.lblCraft4.Size = New System.Drawing.Size(54, 13)
-        Me.lblCraft4.TabIndex = 334
-        Me.lblCraft4.Text = "Tradesman"
-        '
-        'costCraft4
-        '
-        Me.costCraft4.AutoSize = True
-        Me.costCraft4.Location = New System.Drawing.Point(581, 67)
-        Me.costCraft4.Name = "costCraft4"
-        Me.costCraft4.Size = New System.Drawing.Size(13, 13)
-        Me.costCraft4.TabIndex = 335
-        Me.costCraft4.Text = "0"
-        '
-        'skillcraft3
-        '
-        Me.skillcraft3.Location = New System.Drawing.Point(452, 64)
-        Me.skillcraft3.Name = "skillcraft3"
-        Me.skillcraft3.ReadOnly = True
-        Me.skillcraft3.Size = New System.Drawing.Size(33, 20)
-        Me.skillcraft3.TabIndex = 330
-        Me.skillcraft3.TabStop = False
-        '
-        'lblCraft3
-        '
-        Me.lblCraft3.AutoSize = True
-        Me.lblCraft3.Location = New System.Drawing.Point(337, 67)
-        Me.lblCraft3.Name = "lblCraft3"
-        Me.lblCraft3.Size = New System.Drawing.Size(54, 13)
-        Me.lblCraft3.TabIndex = 331
-        Me.lblCraft3.Text = "Tradesman"
-        '
-        'costCraft3
-        '
-        Me.costCraft3.AutoSize = True
-        Me.costCraft3.Location = New System.Drawing.Point(427, 67)
-        Me.costCraft3.Name = "costCraft3"
-        Me.costCraft3.Size = New System.Drawing.Size(13, 13)
-        Me.costCraft3.TabIndex = 332
-        Me.costCraft3.Text = "0"
-        '
-        'skillCraft2
-        '
-        Me.skillCraft2.Location = New System.Drawing.Point(298, 64)
-        Me.skillCraft2.Name = "skillCraft2"
-        Me.skillCraft2.ReadOnly = True
-        Me.skillCraft2.Size = New System.Drawing.Size(33, 20)
-        Me.skillCraft2.TabIndex = 327
-        Me.skillCraft2.TabStop = False
-        '
-        'lblCraft2
-        '
-        Me.lblCraft2.AutoSize = True
-        Me.lblCraft2.Location = New System.Drawing.Point(183, 67)
-        Me.lblCraft2.Name = "lblCraft2"
-        Me.lblCraft2.Size = New System.Drawing.Size(54, 13)
-        Me.lblCraft2.TabIndex = 328
-        Me.lblCraft2.Text = "Tradesman"
-        '
-        'costCraft2
-        '
-        Me.costCraft2.AutoSize = True
-        Me.costCraft2.Location = New System.Drawing.Point(273, 67)
-        Me.costCraft2.Name = "costCraft2"
-        Me.costCraft2.Size = New System.Drawing.Size(13, 13)
-        Me.costCraft2.TabIndex = 329
-        Me.costCraft2.Text = "0"
-        '
         'costFavoured
         '
         Me.costFavoured.AutoSize = True
-        Me.costFavoured.Location = New System.Drawing.Point(552, 402)
+        Me.costFavoured.Location = New System.Drawing.Point(552, 395)
         Me.costFavoured.Name = "costFavoured"
         Me.costFavoured.Size = New System.Drawing.Size(19, 13)
         Me.costFavoured.TabIndex = 324
         Me.costFavoured.Text = "50"
         '
-        'FavouredCheck
-        '
-        Me.FavouredCheck.AutoSize = True
-        Me.FavouredCheck.Location = New System.Drawing.Point(477, 401)
-        Me.FavouredCheck.Name = "FavouredCheck"
-        Me.FavouredCheck.Size = New System.Drawing.Size(71, 17)
-        Me.FavouredCheck.TabIndex = 323
-        Me.FavouredCheck.Text = "Favoured"
-        Me.FavouredCheck.UseVisualStyleBackColor = True
-        '
         'Label29
         '
         Me.Label29.AutoSize = True
         Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(295, 291)
+        Me.Label29.Location = New System.Drawing.Point(295, 245)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(66, 13)
         Me.Label29.TabIndex = 322
@@ -3162,7 +3246,7 @@ Partial Class Form1
         '
         Me.lblRaceSkills.AutoSize = True
         Me.lblRaceSkills.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRaceSkills.Location = New System.Drawing.Point(29, 224)
+        Me.lblRaceSkills.Location = New System.Drawing.Point(339, 136)
         Me.lblRaceSkills.Name = "lblRaceSkills"
         Me.lblRaceSkills.Size = New System.Drawing.Size(37, 13)
         Me.lblRaceSkills.TabIndex = 321
@@ -3172,7 +3256,7 @@ Partial Class Form1
         '
         Me.lblJob.AutoSize = True
         Me.lblJob.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblJob.Location = New System.Drawing.Point(29, 138)
+        Me.lblJob.Location = New System.Drawing.Point(31, 136)
         Me.lblJob.Name = "lblJob"
         Me.lblJob.Size = New System.Drawing.Size(27, 13)
         Me.lblJob.TabIndex = 320
@@ -3190,7 +3274,8 @@ Partial Class Form1
         '
         'skillFrag1
         '
-        Me.skillFrag1.Location = New System.Drawing.Point(144, 324)
+        Me.skillFrag1.Location = New System.Drawing.Point(144, 281)
+        Me.skillFrag1.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag1.Name = "skillFrag1"
         Me.skillFrag1.ReadOnly = True
         Me.skillFrag1.Size = New System.Drawing.Size(33, 20)
@@ -3201,7 +3286,7 @@ Partial Class Form1
         'lblFrag1
         '
         Me.lblFrag1.AutoSize = True
-        Me.lblFrag1.Location = New System.Drawing.Point(31, 325)
+        Me.lblFrag1.Location = New System.Drawing.Point(31, 282)
         Me.lblFrag1.Name = "lblFrag1"
         Me.lblFrag1.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag1.TabIndex = 299
@@ -3211,7 +3296,7 @@ Partial Class Form1
         'costFrag1
         '
         Me.costFrag1.AutoSize = True
-        Me.costFrag1.Location = New System.Drawing.Point(121, 325)
+        Me.costFrag1.Location = New System.Drawing.Point(122, 283)
         Me.costFrag1.Name = "costFrag1"
         Me.costFrag1.Size = New System.Drawing.Size(13, 13)
         Me.costFrag1.TabIndex = 300
@@ -3220,7 +3305,8 @@ Partial Class Form1
         '
         'skillFrag2
         '
-        Me.skillFrag2.Location = New System.Drawing.Point(300, 323)
+        Me.skillFrag2.Location = New System.Drawing.Point(300, 280)
+        Me.skillFrag2.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag2.Name = "skillFrag2"
         Me.skillFrag2.ReadOnly = True
         Me.skillFrag2.Size = New System.Drawing.Size(33, 20)
@@ -3231,7 +3317,7 @@ Partial Class Form1
         'lblFrag2
         '
         Me.lblFrag2.AutoSize = True
-        Me.lblFrag2.Location = New System.Drawing.Point(185, 326)
+        Me.lblFrag2.Location = New System.Drawing.Point(186, 283)
         Me.lblFrag2.Name = "lblFrag2"
         Me.lblFrag2.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag2.TabIndex = 302
@@ -3241,7 +3327,7 @@ Partial Class Form1
         'costFrag2
         '
         Me.costFrag2.AutoSize = True
-        Me.costFrag2.Location = New System.Drawing.Point(276, 326)
+        Me.costFrag2.Location = New System.Drawing.Point(274, 283)
         Me.costFrag2.Name = "costFrag2"
         Me.costFrag2.Size = New System.Drawing.Size(13, 13)
         Me.costFrag2.TabIndex = 303
@@ -3251,7 +3337,7 @@ Partial Class Form1
         'costFrag6
         '
         Me.costFrag6.AutoSize = True
-        Me.costFrag6.Location = New System.Drawing.Point(430, 356)
+        Me.costFrag6.Location = New System.Drawing.Point(274, 342)
         Me.costFrag6.Name = "costFrag6"
         Me.costFrag6.Size = New System.Drawing.Size(13, 13)
         Me.costFrag6.TabIndex = 316
@@ -3260,7 +3346,8 @@ Partial Class Form1
         '
         'skillFrag3
         '
-        Me.skillFrag3.Location = New System.Drawing.Point(454, 323)
+        Me.skillFrag3.Location = New System.Drawing.Point(144, 338)
+        Me.skillFrag3.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillFrag3.Name = "skillFrag3"
         Me.skillFrag3.ReadOnly = True
         Me.skillFrag3.Size = New System.Drawing.Size(33, 20)
@@ -3271,7 +3358,7 @@ Partial Class Form1
         'costFrag5
         '
         Me.costFrag5.AutoSize = True
-        Me.costFrag5.Location = New System.Drawing.Point(277, 356)
+        Me.costFrag5.Location = New System.Drawing.Point(274, 313)
         Me.costFrag5.Name = "costFrag5"
         Me.costFrag5.Size = New System.Drawing.Size(13, 13)
         Me.costFrag5.TabIndex = 315
@@ -3281,7 +3368,7 @@ Partial Class Form1
         'lblFrag3
         '
         Me.lblFrag3.AutoSize = True
-        Me.lblFrag3.Location = New System.Drawing.Point(339, 326)
+        Me.lblFrag3.Location = New System.Drawing.Point(31, 340)
         Me.lblFrag3.Name = "lblFrag3"
         Me.lblFrag3.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag3.TabIndex = 305
@@ -3291,7 +3378,7 @@ Partial Class Form1
         'costFrag4
         '
         Me.costFrag4.AutoSize = True
-        Me.costFrag4.Location = New System.Drawing.Point(122, 356)
+        Me.costFrag4.Location = New System.Drawing.Point(122, 313)
         Me.costFrag4.Name = "costFrag4"
         Me.costFrag4.Size = New System.Drawing.Size(13, 13)
         Me.costFrag4.TabIndex = 314
@@ -3301,7 +3388,7 @@ Partial Class Form1
         'costFrag3
         '
         Me.costFrag3.AutoSize = True
-        Me.costFrag3.Location = New System.Drawing.Point(429, 326)
+        Me.costFrag3.Location = New System.Drawing.Point(122, 340)
         Me.costFrag3.Name = "costFrag3"
         Me.costFrag3.Size = New System.Drawing.Size(13, 13)
         Me.costFrag3.TabIndex = 306
@@ -3310,7 +3397,7 @@ Partial Class Form1
         '
         'skillLooting
         '
-        Me.skillLooting.Location = New System.Drawing.Point(608, 324)
+        Me.skillLooting.Location = New System.Drawing.Point(454, 340)
         Me.skillLooting.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
         Me.skillLooting.Name = "skillLooting"
         Me.skillLooting.ReadOnly = True
@@ -3319,48 +3406,48 @@ Partial Class Form1
         Me.skillLooting.TabIndex = 307
         Me.skillLooting.TabStop = False
         '
+        'lblLooting
+        '
+        Me.lblLooting.AutoSize = True
+        Me.lblLooting.Location = New System.Drawing.Point(339, 342)
+        Me.lblLooting.Name = "lblLooting"
+        Me.lblLooting.Size = New System.Drawing.Size(42, 13)
+        Me.lblLooting.TabIndex = 308
+        Me.lblLooting.Text = "Looting"
+        '
+        'costLooting
+        '
+        Me.costLooting.AutoSize = True
+        Me.costLooting.Location = New System.Drawing.Point(429, 342)
+        Me.costLooting.Name = "costLooting"
+        Me.costLooting.Size = New System.Drawing.Size(19, 13)
+        Me.costLooting.TabIndex = 309
+        Me.costLooting.Text = "15"
+        '
         'lblFrag6
         '
         Me.lblFrag6.AutoSize = True
-        Me.lblFrag6.Location = New System.Drawing.Point(340, 356)
+        Me.lblFrag6.Location = New System.Drawing.Point(186, 342)
         Me.lblFrag6.Name = "lblFrag6"
         Me.lblFrag6.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag6.TabIndex = 312
         Me.lblFrag6.Text = "Frag Skill 6"
         Me.lblFrag6.Visible = False
         '
-        'lblLooting
-        '
-        Me.lblLooting.AutoSize = True
-        Me.lblLooting.Location = New System.Drawing.Point(493, 326)
-        Me.lblLooting.Name = "lblLooting"
-        Me.lblLooting.Size = New System.Drawing.Size(42, 13)
-        Me.lblLooting.TabIndex = 308
-        Me.lblLooting.Text = "Looting"
-        '
         'lblFrag5
         '
         Me.lblFrag5.AutoSize = True
-        Me.lblFrag5.Location = New System.Drawing.Point(186, 356)
+        Me.lblFrag5.Location = New System.Drawing.Point(186, 313)
         Me.lblFrag5.Name = "lblFrag5"
         Me.lblFrag5.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag5.TabIndex = 311
         Me.lblFrag5.Text = "Frag Skill 5"
         Me.lblFrag5.Visible = False
         '
-        'costLooting
-        '
-        Me.costLooting.AutoSize = True
-        Me.costLooting.Location = New System.Drawing.Point(583, 326)
-        Me.costLooting.Name = "costLooting"
-        Me.costLooting.Size = New System.Drawing.Size(19, 13)
-        Me.costLooting.TabIndex = 309
-        Me.costLooting.Text = "15"
-        '
         'lblFrag4
         '
         Me.lblFrag4.AutoSize = True
-        Me.lblFrag4.Location = New System.Drawing.Point(32, 356)
+        Me.lblFrag4.Location = New System.Drawing.Point(31, 313)
         Me.lblFrag4.Name = "lblFrag4"
         Me.lblFrag4.Size = New System.Drawing.Size(59, 13)
         Me.lblFrag4.TabIndex = 310
@@ -3370,7 +3457,7 @@ Partial Class Form1
         'lblJob1
         '
         Me.lblJob1.AutoSize = True
-        Me.lblJob1.Location = New System.Drawing.Point(29, 151)
+        Me.lblJob1.Location = New System.Drawing.Point(31, 153)
         Me.lblJob1.Name = "lblJob1"
         Me.lblJob1.Size = New System.Drawing.Size(55, 13)
         Me.lblJob1.TabIndex = 218
@@ -3378,7 +3465,8 @@ Partial Class Form1
         '
         'skillJob1
         '
-        Me.skillJob1.Location = New System.Drawing.Point(144, 149)
+        Me.skillJob1.Location = New System.Drawing.Point(146, 151)
+        Me.skillJob1.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillJob1.Name = "skillJob1"
         Me.skillJob1.ReadOnly = True
         Me.skillJob1.Size = New System.Drawing.Size(33, 20)
@@ -3388,7 +3476,7 @@ Partial Class Form1
         'costJob1
         '
         Me.costJob1.AutoSize = True
-        Me.costJob1.Location = New System.Drawing.Point(119, 151)
+        Me.costJob1.Location = New System.Drawing.Point(121, 153)
         Me.costJob1.Name = "costJob1"
         Me.costJob1.Size = New System.Drawing.Size(19, 13)
         Me.costJob1.TabIndex = 219
@@ -3396,7 +3484,8 @@ Partial Class Form1
         '
         'skillJob2
         '
-        Me.skillJob2.Location = New System.Drawing.Point(298, 149)
+        Me.skillJob2.Location = New System.Drawing.Point(300, 151)
+        Me.skillJob2.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillJob2.Name = "skillJob2"
         Me.skillJob2.ReadOnly = True
         Me.skillJob2.Size = New System.Drawing.Size(33, 20)
@@ -3406,7 +3495,7 @@ Partial Class Form1
         'lblJob2
         '
         Me.lblJob2.AutoSize = True
-        Me.lblJob2.Location = New System.Drawing.Point(183, 152)
+        Me.lblJob2.Location = New System.Drawing.Point(185, 154)
         Me.lblJob2.Name = "lblJob2"
         Me.lblJob2.Size = New System.Drawing.Size(55, 13)
         Me.lblJob2.TabIndex = 221
@@ -3415,7 +3504,7 @@ Partial Class Form1
         'costJob2
         '
         Me.costJob2.AutoSize = True
-        Me.costJob2.Location = New System.Drawing.Point(273, 152)
+        Me.costJob2.Location = New System.Drawing.Point(275, 154)
         Me.costJob2.Name = "costJob2"
         Me.costJob2.Size = New System.Drawing.Size(19, 13)
         Me.costJob2.TabIndex = 222
@@ -3423,7 +3512,8 @@ Partial Class Form1
         '
         'skillJob3
         '
-        Me.skillJob3.Location = New System.Drawing.Point(452, 149)
+        Me.skillJob3.Location = New System.Drawing.Point(147, 179)
+        Me.skillJob3.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillJob3.Name = "skillJob3"
         Me.skillJob3.ReadOnly = True
         Me.skillJob3.Size = New System.Drawing.Size(33, 20)
@@ -3433,7 +3523,7 @@ Partial Class Form1
         'lblJob3
         '
         Me.lblJob3.AutoSize = True
-        Me.lblJob3.Location = New System.Drawing.Point(337, 152)
+        Me.lblJob3.Location = New System.Drawing.Point(32, 182)
         Me.lblJob3.Name = "lblJob3"
         Me.lblJob3.Size = New System.Drawing.Size(55, 13)
         Me.lblJob3.TabIndex = 224
@@ -3442,7 +3532,7 @@ Partial Class Form1
         'costJob3
         '
         Me.costJob3.AutoSize = True
-        Me.costJob3.Location = New System.Drawing.Point(427, 152)
+        Me.costJob3.Location = New System.Drawing.Point(122, 182)
         Me.costJob3.Name = "costJob3"
         Me.costJob3.Size = New System.Drawing.Size(19, 13)
         Me.costJob3.TabIndex = 225
@@ -3450,7 +3540,8 @@ Partial Class Form1
         '
         'skillJob4
         '
-        Me.skillJob4.Location = New System.Drawing.Point(606, 150)
+        Me.skillJob4.Location = New System.Drawing.Point(301, 180)
+        Me.skillJob4.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillJob4.Name = "skillJob4"
         Me.skillJob4.ReadOnly = True
         Me.skillJob4.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -3461,7 +3552,7 @@ Partial Class Form1
         'lblJob4
         '
         Me.lblJob4.AutoSize = True
-        Me.lblJob4.Location = New System.Drawing.Point(491, 152)
+        Me.lblJob4.Location = New System.Drawing.Point(186, 182)
         Me.lblJob4.Name = "lblJob4"
         Me.lblJob4.Size = New System.Drawing.Size(55, 13)
         Me.lblJob4.TabIndex = 227
@@ -3470,7 +3561,7 @@ Partial Class Form1
         'costJob4
         '
         Me.costJob4.AutoSize = True
-        Me.costJob4.Location = New System.Drawing.Point(581, 152)
+        Me.costJob4.Location = New System.Drawing.Point(276, 182)
         Me.costJob4.Name = "costJob4"
         Me.costJob4.Size = New System.Drawing.Size(25, 13)
         Me.costJob4.TabIndex = 228
@@ -3478,7 +3569,7 @@ Partial Class Form1
         '
         'skillRacial2
         '
-        Me.skillRacial2.Location = New System.Drawing.Point(302, 239)
+        Me.skillRacial2.Location = New System.Drawing.Point(454, 154)
         Me.skillRacial2.Name = "skillRacial2"
         Me.skillRacial2.ReadOnly = True
         Me.skillRacial2.Size = New System.Drawing.Size(33, 20)
@@ -3488,7 +3579,7 @@ Partial Class Form1
         'lblRacial2
         '
         Me.lblRacial2.AutoSize = True
-        Me.lblRacial2.Location = New System.Drawing.Point(187, 241)
+        Me.lblRacial2.Location = New System.Drawing.Point(339, 154)
         Me.lblRacial2.Name = "lblRacial2"
         Me.lblRacial2.Size = New System.Drawing.Size(59, 13)
         Me.lblRacial2.TabIndex = 258
@@ -3497,7 +3588,7 @@ Partial Class Form1
         'costRacial2
         '
         Me.costRacial2.AutoSize = True
-        Me.costRacial2.Location = New System.Drawing.Point(277, 241)
+        Me.costRacial2.Location = New System.Drawing.Point(429, 156)
         Me.costRacial2.Name = "costRacial2"
         Me.costRacial2.Size = New System.Drawing.Size(19, 13)
         Me.costRacial2.TabIndex = 259
@@ -3505,7 +3596,7 @@ Partial Class Form1
         '
         'skillBPB
         '
-        Me.skillBPB.Location = New System.Drawing.Point(454, 239)
+        Me.skillBPB.Location = New System.Drawing.Point(608, 153)
         Me.skillBPB.Name = "skillBPB"
         Me.skillBPB.ReadOnly = True
         Me.skillBPB.Size = New System.Drawing.Size(33, 20)
@@ -3515,7 +3606,7 @@ Partial Class Form1
         'lblBPB
         '
         Me.lblBPB.AutoSize = True
-        Me.lblBPB.Location = New System.Drawing.Point(339, 242)
+        Me.lblBPB.Location = New System.Drawing.Point(493, 156)
         Me.lblBPB.Name = "lblBPB"
         Me.lblBPB.Size = New System.Drawing.Size(91, 13)
         Me.lblBPB.TabIndex = 264
@@ -3524,7 +3615,7 @@ Partial Class Form1
         'costBPB
         '
         Me.costBPB.AutoSize = True
-        Me.costBPB.Location = New System.Drawing.Point(429, 242)
+        Me.costBPB.Location = New System.Drawing.Point(583, 156)
         Me.costBPB.Name = "costBPB"
         Me.costBPB.Size = New System.Drawing.Size(19, 13)
         Me.costBPB.TabIndex = 265
@@ -3532,7 +3623,7 @@ Partial Class Form1
         '
         'skillStr
         '
-        Me.skillStr.Location = New System.Drawing.Point(608, 240)
+        Me.skillStr.Location = New System.Drawing.Point(608, 182)
         Me.skillStr.Name = "skillStr"
         Me.skillStr.ReadOnly = True
         Me.skillStr.Size = New System.Drawing.Size(33, 20)
@@ -3542,7 +3633,7 @@ Partial Class Form1
         'lblStr
         '
         Me.lblStr.AutoSize = True
-        Me.lblStr.Location = New System.Drawing.Point(493, 242)
+        Me.lblStr.Location = New System.Drawing.Point(493, 184)
         Me.lblStr.Name = "lblStr"
         Me.lblStr.Size = New System.Drawing.Size(80, 13)
         Me.lblStr.TabIndex = 267
@@ -3551,67 +3642,59 @@ Partial Class Form1
         'costStr
         '
         Me.costStr.AutoSize = True
-        Me.costStr.Location = New System.Drawing.Point(583, 242)
+        Me.costStr.Location = New System.Drawing.Point(583, 184)
         Me.costStr.Name = "costStr"
         Me.costStr.Size = New System.Drawing.Size(19, 13)
         Me.costStr.TabIndex = 268
         Me.costStr.Text = "50"
         '
-        'skillRacial1
+        'skillRacialAuto
         '
-        Me.skillRacial1.Location = New System.Drawing.Point(146, 239)
-        Me.skillRacial1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.skillRacial1.Name = "skillRacial1"
-        Me.skillRacial1.ReadOnly = True
-        Me.skillRacial1.Size = New System.Drawing.Size(33, 20)
-        Me.skillRacial1.TabIndex = 272
-        Me.skillRacial1.TabStop = False
-        Me.skillRacial1.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.skillRacial1.Visible = False
+        Me.skillRacialAuto.Location = New System.Drawing.Point(454, 182)
+        Me.skillRacialAuto.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.skillRacialAuto.Name = "skillRacialAuto"
+        Me.skillRacialAuto.ReadOnly = True
+        Me.skillRacialAuto.Size = New System.Drawing.Size(33, 20)
+        Me.skillRacialAuto.TabIndex = 272
+        Me.skillRacialAuto.TabStop = False
+        Me.skillRacialAuto.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.skillRacialAuto.Visible = False
         '
-        'lblRacial1
+        'lblRacialAuto
         '
-        Me.lblRacial1.AutoSize = True
-        Me.lblRacial1.Location = New System.Drawing.Point(31, 241)
-        Me.lblRacial1.Name = "lblRacial1"
-        Me.lblRacial1.Size = New System.Drawing.Size(59, 13)
-        Me.lblRacial1.TabIndex = 273
-        Me.lblRacial1.Text = "Racial Skill"
-        Me.lblRacial1.Visible = False
+        Me.lblRacialAuto.AutoSize = True
+        Me.lblRacialAuto.Location = New System.Drawing.Point(339, 184)
+        Me.lblRacialAuto.Name = "lblRacialAuto"
+        Me.lblRacialAuto.Size = New System.Drawing.Size(59, 13)
+        Me.lblRacialAuto.TabIndex = 273
+        Me.lblRacialAuto.Text = "Racial Skill"
+        Me.lblRacialAuto.Visible = False
         '
-        'costRacial1
+        'costRacialAuto
         '
-        Me.costRacial1.AutoSize = True
-        Me.costRacial1.Location = New System.Drawing.Point(121, 241)
-        Me.costRacial1.Name = "costRacial1"
-        Me.costRacial1.Size = New System.Drawing.Size(19, 13)
-        Me.costRacial1.TabIndex = 274
-        Me.costRacial1.Text = "50"
-        Me.costRacial1.Visible = False
+        Me.costRacialAuto.AutoSize = True
+        Me.costRacialAuto.Location = New System.Drawing.Point(429, 184)
+        Me.costRacialAuto.Name = "costRacialAuto"
+        Me.costRacialAuto.Size = New System.Drawing.Size(19, 13)
+        Me.costRacialAuto.TabIndex = 274
+        Me.costRacialAuto.Text = "50"
+        Me.costRacialAuto.Visible = False
         '
         'listRacial
         '
         Me.listRacial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.listRacial.FormattingEnabled = True
         Me.listRacial.Items.AddRange(New Object() {"Angels/Demons", "Animals", "Bestial", "Brood", "Constructs", "Draconic", "Dwarves", "Elementals", "Elves", "Fae", "Goblinoids", "Humanoids", "Plants", "Spirits", "Undead", "Vermin"})
-        Me.listRacial.Location = New System.Drawing.Point(34, 265)
+        Me.listRacial.Location = New System.Drawing.Point(342, 209)
         Me.listRacial.Name = "listRacial"
         Me.listRacial.Size = New System.Drawing.Size(145, 21)
         Me.listRacial.TabIndex = 275
         Me.listRacial.Visible = False
         '
-        'lblBlacksmith
-        '
-        Me.lblBlacksmith.AutoSize = True
-        Me.lblBlacksmith.Location = New System.Drawing.Point(183, 29)
-        Me.lblBlacksmith.Name = "lblBlacksmith"
-        Me.lblBlacksmith.Size = New System.Drawing.Size(58, 13)
-        Me.lblBlacksmith.TabIndex = 26
-        Me.lblBlacksmith.Text = "Blacksmith"
-        '
         'skillAlchemy
         '
-        Me.skillAlchemy.Location = New System.Drawing.Point(144, 26)
+        Me.skillAlchemy.Location = New System.Drawing.Point(144, 63)
+        Me.skillAlchemy.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillAlchemy.Name = "skillAlchemy"
         Me.skillAlchemy.ReadOnly = True
         Me.skillAlchemy.Size = New System.Drawing.Size(33, 20)
@@ -3621,7 +3704,7 @@ Partial Class Form1
         'lblAlchemy
         '
         Me.lblAlchemy.AutoSize = True
-        Me.lblAlchemy.Location = New System.Drawing.Point(29, 28)
+        Me.lblAlchemy.Location = New System.Drawing.Point(29, 65)
         Me.lblAlchemy.Name = "lblAlchemy"
         Me.lblAlchemy.Size = New System.Drawing.Size(47, 13)
         Me.lblAlchemy.TabIndex = 23
@@ -3630,15 +3713,25 @@ Partial Class Form1
         'costAlchemy
         '
         Me.costAlchemy.AutoSize = True
-        Me.costAlchemy.Location = New System.Drawing.Point(119, 28)
+        Me.costAlchemy.Location = New System.Drawing.Point(119, 65)
         Me.costAlchemy.Name = "costAlchemy"
         Me.costAlchemy.Size = New System.Drawing.Size(13, 13)
         Me.costAlchemy.TabIndex = 24
         Me.costAlchemy.Text = "0"
         '
+        'lblBlacksmith
+        '
+        Me.lblBlacksmith.AutoSize = True
+        Me.lblBlacksmith.Location = New System.Drawing.Point(183, 66)
+        Me.lblBlacksmith.Name = "lblBlacksmith"
+        Me.lblBlacksmith.Size = New System.Drawing.Size(58, 13)
+        Me.lblBlacksmith.TabIndex = 26
+        Me.lblBlacksmith.Text = "Blacksmith"
+        '
         'skillBlacksmith
         '
-        Me.skillBlacksmith.Location = New System.Drawing.Point(298, 26)
+        Me.skillBlacksmith.Location = New System.Drawing.Point(298, 63)
+        Me.skillBlacksmith.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillBlacksmith.Name = "skillBlacksmith"
         Me.skillBlacksmith.ReadOnly = True
         Me.skillBlacksmith.Size = New System.Drawing.Size(33, 20)
@@ -3648,7 +3741,7 @@ Partial Class Form1
         'costBlacksmith
         '
         Me.costBlacksmith.AutoSize = True
-        Me.costBlacksmith.Location = New System.Drawing.Point(273, 29)
+        Me.costBlacksmith.Location = New System.Drawing.Point(273, 66)
         Me.costBlacksmith.Name = "costBlacksmith"
         Me.costBlacksmith.Size = New System.Drawing.Size(13, 13)
         Me.costBlacksmith.TabIndex = 27
@@ -3656,7 +3749,8 @@ Partial Class Form1
         '
         'skillCraft1
         '
-        Me.skillCraft1.Location = New System.Drawing.Point(144, 64)
+        Me.skillCraft1.Location = New System.Drawing.Point(454, 28)
+        Me.skillCraft1.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillCraft1.Name = "skillCraft1"
         Me.skillCraft1.ReadOnly = True
         Me.skillCraft1.Size = New System.Drawing.Size(33, 20)
@@ -3666,16 +3760,16 @@ Partial Class Form1
         'lblCraft1
         '
         Me.lblCraft1.AutoSize = True
-        Me.lblCraft1.Location = New System.Drawing.Point(29, 67)
+        Me.lblCraft1.Location = New System.Drawing.Point(339, 31)
         Me.lblCraft1.Name = "lblCraft1"
-        Me.lblCraft1.Size = New System.Drawing.Size(54, 13)
+        Me.lblCraft1.Size = New System.Drawing.Size(60, 13)
         Me.lblCraft1.TabIndex = 29
         Me.lblCraft1.Text = "Tradesman"
         '
         'costCraft1
         '
         Me.costCraft1.AutoSize = True
-        Me.costCraft1.Location = New System.Drawing.Point(119, 67)
+        Me.costCraft1.Location = New System.Drawing.Point(429, 31)
         Me.costCraft1.Name = "costCraft1"
         Me.costCraft1.Size = New System.Drawing.Size(13, 13)
         Me.costCraft1.TabIndex = 30
@@ -3683,7 +3777,8 @@ Partial Class Form1
         '
         'skillCreateScroll
         '
-        Me.skillCreateScroll.Location = New System.Drawing.Point(606, 27)
+        Me.skillCreateScroll.Location = New System.Drawing.Point(298, 35)
+        Me.skillCreateScroll.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillCreateScroll.Name = "skillCreateScroll"
         Me.skillCreateScroll.ReadOnly = True
         Me.skillCreateScroll.Size = New System.Drawing.Size(33, 20)
@@ -3693,7 +3788,7 @@ Partial Class Form1
         'lblCreateScroll
         '
         Me.lblCreateScroll.AutoSize = True
-        Me.lblCreateScroll.Location = New System.Drawing.Point(491, 29)
+        Me.lblCreateScroll.Location = New System.Drawing.Point(183, 37)
         Me.lblCreateScroll.Name = "lblCreateScroll"
         Me.lblCreateScroll.Size = New System.Drawing.Size(67, 13)
         Me.lblCreateScroll.TabIndex = 32
@@ -3702,7 +3797,7 @@ Partial Class Form1
         'costCreateScroll
         '
         Me.costCreateScroll.AutoSize = True
-        Me.costCreateScroll.Location = New System.Drawing.Point(581, 29)
+        Me.costCreateScroll.Location = New System.Drawing.Point(273, 37)
         Me.costCreateScroll.Name = "costCreateScroll"
         Me.costCreateScroll.Size = New System.Drawing.Size(13, 13)
         Me.costCreateScroll.TabIndex = 33
@@ -3710,7 +3805,8 @@ Partial Class Form1
         '
         'skillTrapsmith
         '
-        Me.skillTrapsmith.Location = New System.Drawing.Point(452, 27)
+        Me.skillTrapsmith.Location = New System.Drawing.Point(144, 35)
+        Me.skillTrapsmith.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.skillTrapsmith.Name = "skillTrapsmith"
         Me.skillTrapsmith.ReadOnly = True
         Me.skillTrapsmith.Size = New System.Drawing.Size(33, 20)
@@ -3720,7 +3816,7 @@ Partial Class Form1
         'lblTrapsmith
         '
         Me.lblTrapsmith.AutoSize = True
-        Me.lblTrapsmith.Location = New System.Drawing.Point(339, 29)
+        Me.lblTrapsmith.Location = New System.Drawing.Point(29, 37)
         Me.lblTrapsmith.Name = "lblTrapsmith"
         Me.lblTrapsmith.Size = New System.Drawing.Size(53, 13)
         Me.lblTrapsmith.TabIndex = 35
@@ -3729,11 +3825,31 @@ Partial Class Form1
         'costTrapsmith
         '
         Me.costTrapsmith.AutoSize = True
-        Me.costTrapsmith.Location = New System.Drawing.Point(427, 29)
+        Me.costTrapsmith.Location = New System.Drawing.Point(119, 37)
         Me.costTrapsmith.Name = "costTrapsmith"
         Me.costTrapsmith.Size = New System.Drawing.Size(13, 13)
         Me.costTrapsmith.TabIndex = 36
         Me.costTrapsmith.Text = "0"
+        '
+        'NumericUpDown6
+        '
+        Me.NumericUpDown6.Location = New System.Drawing.Point(608, 360)
+        Me.NumericUpDown6.Maximum = New Decimal(New Integer() {5, 0, 0, 0})
+        Me.NumericUpDown6.Name = "NumericUpDown6"
+        Me.NumericUpDown6.ReadOnly = True
+        Me.NumericUpDown6.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.NumericUpDown6.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown6.TabIndex = 389
+        Me.NumericUpDown6.TabStop = False
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(583, 362)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(19, 13)
+        Me.Label12.TabIndex = 391
+        Me.Label12.Text = "25"
         '
         'boxFragsTotal
         '
@@ -3868,7 +3984,6 @@ Partial Class Form1
         Me.Rogue.ResumeLayout(False)
         Me.Rogue.PerformLayout()
         CType(Me.skillGarrote, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.skillLocksmith, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillSap, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillDodge, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillCritSpecific, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3922,6 +4037,12 @@ Partial Class Form1
         CType(Me.skillSpell6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.JobRaceProd.ResumeLayout(False)
         Me.JobRaceProd.PerformLayout()
+        CType(Me.skillCreateAlcohol, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.skillParagon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.skillTeacher, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.skillPossum, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.skillArtifice, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.skillChemistry, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillSpellVersa1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillSpellVersa2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillSpellVersa3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3936,9 +4057,6 @@ Partial Class Form1
         CType(Me.skillFrag5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillFrag4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.skillCraft4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.skillcraft3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.skillCraft2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillFrag1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillFrag2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillFrag3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3950,332 +4068,318 @@ Partial Class Form1
         CType(Me.skillRacial2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillBPB, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillStr, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.skillRacial1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.skillRacialAuto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillAlchemy, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillBlacksmith, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillCraft1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillCreateScroll, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillTrapsmith, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents ddlCharRace As System.Windows.Forms.ComboBox
-	Friend WithEvents ddlCharJob As System.Windows.Forms.ComboBox
-	Friend WithEvents ddlFragCharRace As System.Windows.Forms.ComboBox
-	Friend WithEvents boxSkillBreakdown As System.Windows.Forms.TextBox
-	Friend WithEvents numericBlanketAmt As System.Windows.Forms.NumericUpDown
-	Friend WithEvents boxTotalCP As System.Windows.Forms.TextBox
-	Friend WithEvents boxSpentCP As System.Windows.Forms.TextBox
-	Friend WithEvents boxFreeCP As System.Windows.Forms.TextBox
-	Friend WithEvents boxPlayerName As System.Windows.Forms.TextBox
-	Friend WithEvents boxCharName As System.Windows.Forms.TextBox
-	Friend WithEvents boxLevel As System.Windows.Forms.TextBox
-	Friend WithEvents boxHP As System.Windows.Forms.TextBox
-	Friend WithEvents lblPlayerName As System.Windows.Forms.Label
-	Friend WithEvents lblCharName As System.Windows.Forms.Label
-	Friend WithEvents lblCharRace As System.Windows.Forms.Label
-	Friend WithEvents lblBlankets As System.Windows.Forms.Label
-	Friend WithEvents lblCP As System.Windows.Forms.Label
-	Friend WithEvents lblSpentCP As System.Windows.Forms.Label
-	Friend WithEvents lblFreeCP As System.Windows.Forms.Label
-	Friend WithEvents lblLevel As System.Windows.Forms.Label
-	Friend WithEvents lblHP As System.Windows.Forms.Label
-	Friend WithEvents lblSkillBreakdown As System.Windows.Forms.Label
-	Friend WithEvents btnReset As System.Windows.Forms.Button
-	Friend WithEvents btnSaveAsText As System.Windows.Forms.Button
-	Friend WithEvents InBox As System.Windows.Forms.ListBox
-	Friend WithEvents btnSaveToFile As System.Windows.Forms.Button
-	Friend WithEvents ddlFragGuild As System.Windows.Forms.ComboBox
-	Friend WithEvents Rogue As System.Windows.Forms.TabPage
-	Friend WithEvents lblExecute As System.Windows.Forms.Label
-	Friend WithEvents skillGarrote As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblGarrote As System.Windows.Forms.Label
-	Friend WithEvents costGarrote As System.Windows.Forms.Label
-	Friend WithEvents skillLocksmith As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblLocksmith As System.Windows.Forms.Label
-	Friend WithEvents costLocksmith As System.Windows.Forms.Label
-	Friend WithEvents skillSap As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblSap As System.Windows.Forms.Label
-	Friend WithEvents costSap As System.Windows.Forms.Label
-	Friend WithEvents skillDodge As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblDodge As System.Windows.Forms.Label
-	Friend WithEvents costDodge As System.Windows.Forms.Label
-	Friend WithEvents skillCritSpecific As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblCritSpecific As System.Windows.Forms.Label
-	Friend WithEvents costCritSpecific As System.Windows.Forms.Label
-	Friend WithEvents ddlCritSpecificWeapon As System.Windows.Forms.ComboBox
-	Friend WithEvents skillCritGroup As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblCritGroup As System.Windows.Forms.Label
-	Friend WithEvents costCritGroup As System.Windows.Forms.Label
-	Friend WithEvents ddlCritGroup As System.Windows.Forms.ComboBox
-	Friend WithEvents skillVitalBlow As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblVitalBlow As System.Windows.Forms.Label
-	Friend WithEvents costVitalBlow As System.Windows.Forms.Label
-	Friend WithEvents skillExecute As System.Windows.Forms.NumericUpDown
-	Friend WithEvents costExecute As System.Windows.Forms.Label
-	Friend WithEvents ddlExecute As System.Windows.Forms.ComboBox
-	Friend WithEvents skillExecuteMaster As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblExecuteMaster As System.Windows.Forms.Label
-	Friend WithEvents costExecuteMaster As System.Windows.Forms.Label
-	Friend WithEvents ddlExecuteMaster As System.Windows.Forms.ComboBox
-	Friend WithEvents Warrior As System.Windows.Forms.TabPage
-	Friend WithEvents lblSlayParry As System.Windows.Forms.Label
-	Friend WithEvents lblAmbidexterity As System.Windows.Forms.Label
-	Friend WithEvents skillFlorentine As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblFlorentine As System.Windows.Forms.Label
-	Friend WithEvents costFlorentine As System.Windows.Forms.Label
-	Friend WithEvents skillFlurryOfBlows As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblFlurryofBlows As System.Windows.Forms.Label
-	Friend WithEvents costFlurryOfBlows As System.Windows.Forms.Label
-	Friend WithEvents skillHeavyArmour As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblHeavyArmour As System.Windows.Forms.Label
-	Friend WithEvents costHeavyArmour As System.Windows.Forms.Label
-	Friend WithEvents skillSelfMut As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblSelfMut As System.Windows.Forms.Label
-	Friend WithEvents costSelfMut As System.Windows.Forms.Label
-	Friend WithEvents skillShield As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblShield As System.Windows.Forms.Label
-	Friend WithEvents costShield As System.Windows.Forms.Label
-	Friend WithEvents skillMedProf As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblMedProf As System.Windows.Forms.Label
-	Friend WithEvents costMedProf As System.Windows.Forms.Label
-	Friend WithEvents skillLargeProf As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblLargeProf As System.Windows.Forms.Label
-	Friend WithEvents costLargeProf As System.Windows.Forms.Label
-	Friend WithEvents skillSpecGroup As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblSpecGroup As System.Windows.Forms.Label
-	Friend WithEvents costSpecGroup As System.Windows.Forms.Label
-	Friend WithEvents skillSpecSpecific As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblSpecSpecific As System.Windows.Forms.Label
-	Friend WithEvents costSpecSpecific As System.Windows.Forms.Label
-	Friend WithEvents skillExoticProf As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblExoticProf As System.Windows.Forms.Label
-	Friend WithEvents costExoticProf As System.Windows.Forms.Label
-	Friend WithEvents ddlExoticWeapon As System.Windows.Forms.ComboBox
-	Friend WithEvents ddlSpecGroup As System.Windows.Forms.ComboBox
-	Friend WithEvents ddlSpecSpecific As System.Windows.Forms.ComboBox
-	Friend WithEvents skillSlayParry As System.Windows.Forms.NumericUpDown
-	Friend WithEvents costSlayParry As System.Windows.Forms.Label
-	Friend WithEvents ddlSlayParryWeapon As System.Windows.Forms.ComboBox
-	Friend WithEvents skillSlayParryMaster As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblSlayParryMaster As System.Windows.Forms.Label
-	Friend WithEvents costSlayParryMaster As System.Windows.Forms.Label
-	Friend WithEvents ddlSlayParryMasterWeapon As System.Windows.Forms.ComboBox
-	Friend WithEvents costAmbidexterity As System.Windows.Forms.Label
-	Friend WithEvents skillAmbidexterity As System.Windows.Forms.NumericUpDown
-	Friend WithEvents skillWeaponRefocus As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblWeaponRefocus As System.Windows.Forms.Label
-	Friend WithEvents costWeaponRefocus As System.Windows.Forms.Label
-	Friend WithEvents Scholar As System.Windows.Forms.TabPage
-	Friend WithEvents skillPhysician As System.Windows.Forms.NumericUpDown
-	Friend WithEvents skillAnatomy As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblAnatomy As System.Windows.Forms.Label
-	Friend WithEvents costAnatomy As System.Windows.Forms.Label
-	Friend WithEvents skillMysticism As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblMysticism As System.Windows.Forms.Label
-	Friend WithEvents costMysticism As System.Windows.Forms.Label
-	Friend WithEvents skillDemonAngelArts As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblDemonAngelArts As System.Windows.Forms.Label
-	Friend WithEvents costDemonAngelArts As System.Windows.Forms.Label
-	Friend WithEvents skillEleAttunement As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblEleAttunement As System.Windows.Forms.Label
-	Friend WithEvents costEleAttunement As System.Windows.Forms.Label
-	Friend WithEvents skillFirstAid As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblFirstAid As System.Windows.Forms.Label
-	Friend WithEvents costFirstAid As System.Windows.Forms.Label
-	Friend WithEvents skillNecroArts As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblNecroArts As System.Windows.Forms.Label
-	Friend WithEvents costNecroArts As System.Windows.Forms.Label
-	Friend WithEvents lblPhysician As System.Windows.Forms.Label
-	Friend WithEvents costPhysician As System.Windows.Forms.Label
-	Friend WithEvents skillReadAndWrite As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblReadAndWrite As System.Windows.Forms.Label
-	Friend WithEvents costReadAndWrite As System.Windows.Forms.Label
-	Friend WithEvents costSpellRitual As System.Windows.Forms.Label
-	Friend WithEvents skillReadMagic As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblReadMagic As System.Windows.Forms.Label
-	Friend WithEvents costReadMagic As System.Windows.Forms.Label
-	Friend WithEvents skillReadMagicAvd As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblReadMagicAvd As System.Windows.Forms.Label
-	Friend WithEvents costReadMagicAvd As System.Windows.Forms.Label
-	Friend WithEvents lblRitual As System.Windows.Forms.Label
-	Friend WithEvents skillReadMagicRitual As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblSpellLevel9 As System.Windows.Forms.Label
-	Friend WithEvents lblReadMagicRitual As System.Windows.Forms.Label
-	Friend WithEvents lblSpellLevel8 As System.Windows.Forms.Label
-	Friend WithEvents costReadMagicRitual As System.Windows.Forms.Label
-	Friend WithEvents lblSpellLevel7 As System.Windows.Forms.Label
-	Friend WithEvents skillSphere1 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblSpellLevel6 As System.Windows.Forms.Label
-	Friend WithEvents lblSphere1 As System.Windows.Forms.Label
-	Friend WithEvents lblSpellLevel5 As System.Windows.Forms.Label
-	Friend WithEvents costSphere1 As System.Windows.Forms.Label
-	Friend WithEvents lblSpellLevel4 As System.Windows.Forms.Label
-	Friend WithEvents skillSphere2 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblSpellLevel3 As System.Windows.Forms.Label
-	Friend WithEvents lblSphere2 As System.Windows.Forms.Label
-	Friend WithEvents lblSpellLevel2 As System.Windows.Forms.Label
-	Friend WithEvents costSphere2 As System.Windows.Forms.Label
-	Friend WithEvents lblSpellLevel1 As System.Windows.Forms.Label
-	Friend WithEvents skillSphere3 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblSphere3 As System.Windows.Forms.Label
-	Friend WithEvents costSphere3 As System.Windows.Forms.Label
-	Friend WithEvents ddlSphere1 As System.Windows.Forms.ComboBox
-	Friend WithEvents ddlSphere2 As System.Windows.Forms.ComboBox
-	Friend WithEvents ddlSphere3 As System.Windows.Forms.ComboBox
-	Friend WithEvents skillSpellRitual As System.Windows.Forms.NumericUpDown
-	Friend WithEvents skillSpell1 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents skillSpell2 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents skillSpell3 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents skillSpell4 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents skillSpell5 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents skillSpell9 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents skillSpell8 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents skillSpell7 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents skillSpell6 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents CostRitualCircle As System.Windows.Forms.Label
-	Friend WithEvents costSpell1 As System.Windows.Forms.Label
-	Friend WithEvents costSpell2 As System.Windows.Forms.Label
-	Friend WithEvents costSpell3 As System.Windows.Forms.Label
-	Friend WithEvents costSpell4 As System.Windows.Forms.Label
-	Friend WithEvents costSpell5 As System.Windows.Forms.Label
-	Friend WithEvents costSpell6 As System.Windows.Forms.Label
-	Friend WithEvents costSpell7 As System.Windows.Forms.Label
-	Friend WithEvents costSpell8 As System.Windows.Forms.Label
-	Friend WithEvents costSpell9 As System.Windows.Forms.Label
-	Friend WithEvents JobRaceProd As System.Windows.Forms.TabPage
-	Friend WithEvents skillFrag1 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblFrag1 As System.Windows.Forms.Label
-	Friend WithEvents costFrag1 As System.Windows.Forms.Label
-	Friend WithEvents lblFrags As System.Windows.Forms.Label
-	Friend WithEvents skillFrag2 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents boxFragsTotal As System.Windows.Forms.TextBox
-	Friend WithEvents lblFrag2 As System.Windows.Forms.Label
-	Friend WithEvents costFrag2 As System.Windows.Forms.Label
-	Friend WithEvents costFrag6 As System.Windows.Forms.Label
-	Friend WithEvents skillFrag3 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents costFrag5 As System.Windows.Forms.Label
-	Friend WithEvents lblFrag3 As System.Windows.Forms.Label
-	Friend WithEvents costFrag4 As System.Windows.Forms.Label
-	Friend WithEvents costFrag3 As System.Windows.Forms.Label
-	Friend WithEvents skillLooting As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblFrag6 As System.Windows.Forms.Label
-	Friend WithEvents lblLooting As System.Windows.Forms.Label
-	Friend WithEvents lblFrag5 As System.Windows.Forms.Label
-	Friend WithEvents costLooting As System.Windows.Forms.Label
-	Friend WithEvents lblFrag4 As System.Windows.Forms.Label
-	Friend WithEvents lblJob1 As System.Windows.Forms.Label
-	Friend WithEvents skillJob1 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents costJob1 As System.Windows.Forms.Label
-	Friend WithEvents skillJob2 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblJob2 As System.Windows.Forms.Label
-	Friend WithEvents costJob2 As System.Windows.Forms.Label
-	Friend WithEvents skillJob3 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblJob3 As System.Windows.Forms.Label
-	Friend WithEvents costJob3 As System.Windows.Forms.Label
-	Friend WithEvents skillJob4 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblJob4 As System.Windows.Forms.Label
-	Friend WithEvents costJob4 As System.Windows.Forms.Label
-	Friend WithEvents skillRacial2 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblRacial2 As System.Windows.Forms.Label
-	Friend WithEvents costRacial2 As System.Windows.Forms.Label
-	Friend WithEvents skillBPB As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblBPB As System.Windows.Forms.Label
-	Friend WithEvents costBPB As System.Windows.Forms.Label
-	Friend WithEvents skillStr As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblStr As System.Windows.Forms.Label
-	Friend WithEvents costStr As System.Windows.Forms.Label
-	Friend WithEvents skillRacial1 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblRacial1 As System.Windows.Forms.Label
-	Friend WithEvents costRacial1 As System.Windows.Forms.Label
-	Friend WithEvents listRacial As System.Windows.Forms.ComboBox
-	Friend WithEvents lblBlacksmith As System.Windows.Forms.Label
-	Friend WithEvents skillAlchemy As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblAlchemy As System.Windows.Forms.Label
-	Friend WithEvents costAlchemy As System.Windows.Forms.Label
-	Friend WithEvents skillBlacksmith As System.Windows.Forms.NumericUpDown
-	Friend WithEvents costBlacksmith As System.Windows.Forms.Label
-	Friend WithEvents skillCraft1 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblCraft1 As System.Windows.Forms.Label
-	Friend WithEvents costCraft1 As System.Windows.Forms.Label
-	Friend WithEvents skillCreateScroll As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblCreateScroll As System.Windows.Forms.Label
-	Friend WithEvents costCreateScroll As System.Windows.Forms.Label
-	Friend WithEvents skillTrapsmith As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblTrapsmith As System.Windows.Forms.Label
-	Friend WithEvents costTrapsmith As System.Windows.Forms.Label
-	Friend WithEvents TabControl As System.Windows.Forms.TabControl
-	Friend WithEvents lblProd As System.Windows.Forms.Label
-	Friend WithEvents Label29 As System.Windows.Forms.Label
-	Friend WithEvents ddlEleAttunement1 As System.Windows.Forms.ComboBox
-	Friend WithEvents ddlEleAttunement4 As System.Windows.Forms.ComboBox
-	Friend WithEvents ddlEleAttunement3 As System.Windows.Forms.ComboBox
-	Friend WithEvents ddlEleAttunement2 As System.Windows.Forms.ComboBox
-	Friend WithEvents lblRaceSkills As System.Windows.Forms.Label
-	Friend WithEvents lblJob As System.Windows.Forms.Label
-	Friend WithEvents Label31 As System.Windows.Forms.Label
-	Friend WithEvents lblSpellSlots As System.Windows.Forms.Label
-	Friend WithEvents costFavoured As System.Windows.Forms.Label
-	Friend WithEvents FavouredCheck As System.Windows.Forms.CheckBox
-	Friend WithEvents B64b As System.Windows.Forms.TextBox
-	Friend WithEvents B64a As System.Windows.Forms.TextBox
-	Friend WithEvents btnOpenFile As System.Windows.Forms.Button
-	Friend WithEvents skillCraft4 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblCraft4 As System.Windows.Forms.Label
-	Friend WithEvents costCraft4 As System.Windows.Forms.Label
-	Friend WithEvents skillcraft3 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblCraft3 As System.Windows.Forms.Label
-	Friend WithEvents costCraft3 As System.Windows.Forms.Label
-	Friend WithEvents skillCraft2 As System.Windows.Forms.NumericUpDown
-	Friend WithEvents lblCraft2 As System.Windows.Forms.Label
-	Friend WithEvents costCraft2 As System.Windows.Forms.Label
-	Friend WithEvents boxCraft4 As System.Windows.Forms.TextBox
-	Friend WithEvents boxCraft3 As System.Windows.Forms.TextBox
-	Friend WithEvents boxCraft2 As System.Windows.Forms.TextBox
-	Friend WithEvents boxCraft1 As System.Windows.Forms.TextBox
-	Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-	Friend WithEvents skillSimpleProf As NumericUpDown
-	Friend WithEvents lblSimpleProf As Label
-	Friend WithEvents costSimpleProf As Label
-	Friend WithEvents lblCharClass As Label
-	Friend WithEvents skillFrag6 As NumericUpDown
-	Friend WithEvents skillFrag5 As NumericUpDown
-	Friend WithEvents skillFrag4 As NumericUpDown
-	Friend WithEvents skillHeavyDrinker As NumericUpDown
-	Friend WithEvents costHeavyDrinker As Label
-	Friend WithEvents lblHeavyDrinker As Label
-	Friend WithEvents lblSpellVersa9 As Label
-	Friend WithEvents lblSpellVersa8 As Label
-	Friend WithEvents lblSpellVersa7 As Label
-	Friend WithEvents lblSpellVersa6 As Label
-	Friend WithEvents lblSpellVersa5 As Label
-	Friend WithEvents lblSpellVersa4 As Label
-	Friend WithEvents lblSpellVersa3 As Label
-	Friend WithEvents lblSpellVersa2 As Label
-	Friend WithEvents lblSpellVersa1 As Label
-	Friend WithEvents skillSpellVersa1 As NumericUpDown
-	Friend WithEvents skillSpellVersa2 As NumericUpDown
-	Friend WithEvents skillSpellVersa3 As NumericUpDown
-	Friend WithEvents skillSpellVersa4 As NumericUpDown
-	Friend WithEvents skillSpellVersa5 As NumericUpDown
-	Friend WithEvents skillSpellVersa9 As NumericUpDown
-	Friend WithEvents skillSpellVersa8 As NumericUpDown
-	Friend WithEvents skillSpellVersa7 As NumericUpDown
-	Friend WithEvents skillSpellVersa6 As NumericUpDown
-	Friend WithEvents costSpellVersa1 As Label
-	Friend WithEvents costSpellVersa2 As Label
-	Friend WithEvents costSpellVersa3 As Label
-	Friend WithEvents costSpellVersa4 As Label
-	Friend WithEvents costSpellVersa5 As Label
-	Friend WithEvents costSpellVersa6 As Label
-	Friend WithEvents costSpellVersa7 As Label
-	Friend WithEvents costSpellVersa8 As Label
-	Friend WithEvents costSpellVersa9 As Label
-	Friend WithEvents lblSpellVersa As Label
-	Friend WithEvents chkVocation As CheckBox
-	Friend WithEvents ddlVocation As ComboBox
+    Friend WithEvents ddlCharJob As System.Windows.Forms.ComboBox
+    Friend WithEvents ddlFragCharRace As System.Windows.Forms.ComboBox
+    Friend WithEvents boxSkillBreakdown As System.Windows.Forms.TextBox
+    Friend WithEvents numericBlanketAmt As System.Windows.Forms.NumericUpDown
+    Friend WithEvents boxTotalCP As System.Windows.Forms.TextBox
+    Friend WithEvents boxSpentCP As System.Windows.Forms.TextBox
+    Friend WithEvents boxFreeCP As System.Windows.Forms.TextBox
+    Friend WithEvents boxPlayerName As System.Windows.Forms.TextBox
+    Friend WithEvents boxCharName As System.Windows.Forms.TextBox
+    Friend WithEvents boxLevel As System.Windows.Forms.TextBox
+    Friend WithEvents boxHP As System.Windows.Forms.TextBox
+    Friend WithEvents lblPlayerName As System.Windows.Forms.Label
+    Friend WithEvents lblCharName As System.Windows.Forms.Label
+    Friend WithEvents lblCharRace As System.Windows.Forms.Label
+    Friend WithEvents lblBlankets As System.Windows.Forms.Label
+    Friend WithEvents lblCP As System.Windows.Forms.Label
+    Friend WithEvents lblSpentCP As System.Windows.Forms.Label
+    Friend WithEvents lblFreeCP As System.Windows.Forms.Label
+    Friend WithEvents lblLevel As System.Windows.Forms.Label
+    Friend WithEvents lblHP As System.Windows.Forms.Label
+    Friend WithEvents lblSkillBreakdown As System.Windows.Forms.Label
+    Friend WithEvents btnReset As System.Windows.Forms.Button
+    Friend WithEvents btnSaveAsText As System.Windows.Forms.Button
+    Friend WithEvents InBox As System.Windows.Forms.ListBox
+    Friend WithEvents btnSaveToFile As System.Windows.Forms.Button
+    Friend WithEvents ddlFragGuild As System.Windows.Forms.ComboBox
+    Friend WithEvents Rogue As System.Windows.Forms.TabPage
+    Friend WithEvents lblExecute As System.Windows.Forms.Label
+    Friend WithEvents skillGarrote As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblGarrote As System.Windows.Forms.Label
+    Friend WithEvents costGarrote As System.Windows.Forms.Label
+    Friend WithEvents skillSap As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblSap As System.Windows.Forms.Label
+    Friend WithEvents costSap As System.Windows.Forms.Label
+    Friend WithEvents skillDodge As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblDodge As System.Windows.Forms.Label
+    Friend WithEvents costDodge As System.Windows.Forms.Label
+    Friend WithEvents skillCritSpecific As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblCritSpecific As System.Windows.Forms.Label
+    Friend WithEvents costCritSpecific As System.Windows.Forms.Label
+    Friend WithEvents ddlCritSpecificWeapon As System.Windows.Forms.ComboBox
+    Friend WithEvents skillCritGroup As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblCritGroup As System.Windows.Forms.Label
+    Friend WithEvents costCritGroup As System.Windows.Forms.Label
+    Friend WithEvents ddlCritGroup As System.Windows.Forms.ComboBox
+    Friend WithEvents skillVitalBlow As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblVitalBlow As System.Windows.Forms.Label
+    Friend WithEvents costVitalBlow As System.Windows.Forms.Label
+    Friend WithEvents skillExecute As System.Windows.Forms.NumericUpDown
+    Friend WithEvents costExecute As System.Windows.Forms.Label
+    Friend WithEvents ddlExecute As System.Windows.Forms.ComboBox
+    Friend WithEvents skillExecuteMaster As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblExecuteMaster As System.Windows.Forms.Label
+    Friend WithEvents costExecuteMaster As System.Windows.Forms.Label
+    Friend WithEvents ddlExecuteMaster As System.Windows.Forms.ComboBox
+    Friend WithEvents Warrior As System.Windows.Forms.TabPage
+    Friend WithEvents lblSlayParry As System.Windows.Forms.Label
+    Friend WithEvents lblAmbidexterity As System.Windows.Forms.Label
+    Friend WithEvents skillFlorentine As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblFlorentine As System.Windows.Forms.Label
+    Friend WithEvents costFlorentine As System.Windows.Forms.Label
+    Friend WithEvents skillFlurryOfBlows As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblFlurryofBlows As System.Windows.Forms.Label
+    Friend WithEvents costFlurryOfBlows As System.Windows.Forms.Label
+    Friend WithEvents skillHeavyArmour As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblHeavyArmour As System.Windows.Forms.Label
+    Friend WithEvents costHeavyArmour As System.Windows.Forms.Label
+    Friend WithEvents skillSelfMut As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblSelfMut As System.Windows.Forms.Label
+    Friend WithEvents costSelfMut As System.Windows.Forms.Label
+    Friend WithEvents skillShield As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblShield As System.Windows.Forms.Label
+    Friend WithEvents costShield As System.Windows.Forms.Label
+    Friend WithEvents skillMedProf As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblMedProf As System.Windows.Forms.Label
+    Friend WithEvents costMedProf As System.Windows.Forms.Label
+    Friend WithEvents skillLargeProf As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblLargeProf As System.Windows.Forms.Label
+    Friend WithEvents costLargeProf As System.Windows.Forms.Label
+    Friend WithEvents skillSpecGroup As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblSpecGroup As System.Windows.Forms.Label
+    Friend WithEvents costSpecGroup As System.Windows.Forms.Label
+    Friend WithEvents skillSpecSpecific As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblSpecSpecific As System.Windows.Forms.Label
+    Friend WithEvents costSpecSpecific As System.Windows.Forms.Label
+    Friend WithEvents skillExoticProf As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblExoticProf As System.Windows.Forms.Label
+    Friend WithEvents costExoticProf As System.Windows.Forms.Label
+    Friend WithEvents ddlExoticWeapon As System.Windows.Forms.ComboBox
+    Friend WithEvents ddlSpecGroup As System.Windows.Forms.ComboBox
+    Friend WithEvents ddlSpecSpecific As System.Windows.Forms.ComboBox
+    Friend WithEvents skillSlayParry As System.Windows.Forms.NumericUpDown
+    Friend WithEvents costSlayParry As System.Windows.Forms.Label
+    Friend WithEvents ddlSlayParryWeapon As System.Windows.Forms.ComboBox
+    Friend WithEvents skillSlayParryMaster As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblSlayParryMaster As System.Windows.Forms.Label
+    Friend WithEvents costSlayParryMaster As System.Windows.Forms.Label
+    Friend WithEvents ddlSlayParryMasterWeapon As System.Windows.Forms.ComboBox
+    Friend WithEvents costAmbidexterity As System.Windows.Forms.Label
+    Friend WithEvents skillAmbidexterity As System.Windows.Forms.NumericUpDown
+    Friend WithEvents skillWeaponRefocus As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblWeaponRefocus As System.Windows.Forms.Label
+    Friend WithEvents costWeaponRefocus As System.Windows.Forms.Label
+    Friend WithEvents Scholar As System.Windows.Forms.TabPage
+    Friend WithEvents skillPhysician As System.Windows.Forms.NumericUpDown
+    Friend WithEvents skillAnatomy As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblAnatomy As System.Windows.Forms.Label
+    Friend WithEvents costAnatomy As System.Windows.Forms.Label
+    Friend WithEvents skillMysticism As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblMysticism As System.Windows.Forms.Label
+    Friend WithEvents costMysticism As System.Windows.Forms.Label
+    Friend WithEvents skillDemonAngelArts As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblDemonAngelArts As System.Windows.Forms.Label
+    Friend WithEvents costDemonAngelArts As System.Windows.Forms.Label
+    Friend WithEvents skillEleAttunement As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblEleAttunement As System.Windows.Forms.Label
+    Friend WithEvents costEleAttunement As System.Windows.Forms.Label
+    Friend WithEvents skillFirstAid As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblFirstAid As System.Windows.Forms.Label
+    Friend WithEvents costFirstAid As System.Windows.Forms.Label
+    Friend WithEvents skillNecroArts As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblNecroArts As System.Windows.Forms.Label
+    Friend WithEvents costNecroArts As System.Windows.Forms.Label
+    Friend WithEvents lblPhysician As System.Windows.Forms.Label
+    Friend WithEvents costPhysician As System.Windows.Forms.Label
+    Friend WithEvents skillReadAndWrite As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblReadAndWrite As System.Windows.Forms.Label
+    Friend WithEvents costReadAndWrite As System.Windows.Forms.Label
+    Friend WithEvents costSpellRitual As System.Windows.Forms.Label
+    Friend WithEvents skillReadMagic As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblReadMagic As System.Windows.Forms.Label
+    Friend WithEvents costReadMagic As System.Windows.Forms.Label
+    Friend WithEvents skillReadMagicAvd As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblReadMagicAvd As System.Windows.Forms.Label
+    Friend WithEvents costReadMagicAvd As System.Windows.Forms.Label
+    Friend WithEvents lblRitual As System.Windows.Forms.Label
+    Friend WithEvents skillReadMagicRitual As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblSpellLevel9 As System.Windows.Forms.Label
+    Friend WithEvents lblReadMagicRitual As System.Windows.Forms.Label
+    Friend WithEvents lblSpellLevel8 As System.Windows.Forms.Label
+    Friend WithEvents costReadMagicRitual As System.Windows.Forms.Label
+    Friend WithEvents lblSpellLevel7 As System.Windows.Forms.Label
+    Friend WithEvents skillSphere1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblSpellLevel6 As System.Windows.Forms.Label
+    Friend WithEvents lblSphere1 As System.Windows.Forms.Label
+    Friend WithEvents lblSpellLevel5 As System.Windows.Forms.Label
+    Friend WithEvents costSphere1 As System.Windows.Forms.Label
+    Friend WithEvents lblSpellLevel4 As System.Windows.Forms.Label
+    Friend WithEvents skillSphere2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblSpellLevel3 As System.Windows.Forms.Label
+    Friend WithEvents lblSphere2 As System.Windows.Forms.Label
+    Friend WithEvents lblSpellLevel2 As System.Windows.Forms.Label
+    Friend WithEvents costSphere2 As System.Windows.Forms.Label
+    Friend WithEvents lblSpellLevel1 As System.Windows.Forms.Label
+    Friend WithEvents skillSphere3 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblSphere3 As System.Windows.Forms.Label
+    Friend WithEvents costSphere3 As System.Windows.Forms.Label
+    Friend WithEvents ddlSphere1 As System.Windows.Forms.ComboBox
+    Friend WithEvents ddlSphere2 As System.Windows.Forms.ComboBox
+    Friend WithEvents ddlSphere3 As System.Windows.Forms.ComboBox
+    Friend WithEvents skillSpellRitual As System.Windows.Forms.NumericUpDown
+    Friend WithEvents skillSpell1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents skillSpell2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents skillSpell3 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents skillSpell4 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents skillSpell5 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents skillSpell9 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents skillSpell8 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents skillSpell7 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents skillSpell6 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents CostRitualCircle As System.Windows.Forms.Label
+    Friend WithEvents costSpell1 As System.Windows.Forms.Label
+    Friend WithEvents costSpell2 As System.Windows.Forms.Label
+    Friend WithEvents costSpell3 As System.Windows.Forms.Label
+    Friend WithEvents costSpell4 As System.Windows.Forms.Label
+    Friend WithEvents costSpell5 As System.Windows.Forms.Label
+    Friend WithEvents costSpell6 As System.Windows.Forms.Label
+    Friend WithEvents costSpell7 As System.Windows.Forms.Label
+    Friend WithEvents costSpell8 As System.Windows.Forms.Label
+    Friend WithEvents costSpell9 As System.Windows.Forms.Label
+    Friend WithEvents JobRaceProd As System.Windows.Forms.TabPage
+    Friend WithEvents skillFrag1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblFrag1 As System.Windows.Forms.Label
+    Friend WithEvents costFrag1 As System.Windows.Forms.Label
+    Friend WithEvents lblFrags As System.Windows.Forms.Label
+    Friend WithEvents skillFrag2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents boxFragsTotal As System.Windows.Forms.TextBox
+    Friend WithEvents lblFrag2 As System.Windows.Forms.Label
+    Friend WithEvents costFrag2 As System.Windows.Forms.Label
+    Friend WithEvents costFrag6 As System.Windows.Forms.Label
+    Friend WithEvents skillFrag3 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents costFrag5 As System.Windows.Forms.Label
+    Friend WithEvents lblFrag3 As System.Windows.Forms.Label
+    Friend WithEvents costFrag4 As System.Windows.Forms.Label
+    Friend WithEvents costFrag3 As System.Windows.Forms.Label
+    Friend WithEvents skillLooting As System.Windows.Forms.NumericUpDown
+    Friend WithEvents costLooting As System.Windows.Forms.Label
+    Friend WithEvents lblLooting As System.Windows.Forms.Label
+    Friend WithEvents lblFrag6 As System.Windows.Forms.Label
+    Friend WithEvents lblFrag5 As System.Windows.Forms.Label
+    Friend WithEvents lblFrag4 As System.Windows.Forms.Label
+    Friend WithEvents lblJob1 As System.Windows.Forms.Label
+    Friend WithEvents skillJob1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents costJob1 As System.Windows.Forms.Label
+    Friend WithEvents skillJob2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblJob2 As System.Windows.Forms.Label
+    Friend WithEvents costJob2 As System.Windows.Forms.Label
+    Friend WithEvents skillJob3 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblJob3 As System.Windows.Forms.Label
+    Friend WithEvents costJob3 As System.Windows.Forms.Label
+    Friend WithEvents skillJob4 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblJob4 As System.Windows.Forms.Label
+    Friend WithEvents costJob4 As System.Windows.Forms.Label
+    Friend WithEvents skillRacial2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblRacial2 As System.Windows.Forms.Label
+    Friend WithEvents costRacial2 As System.Windows.Forms.Label
+    Friend WithEvents skillBPB As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblBPB As System.Windows.Forms.Label
+    Friend WithEvents costBPB As System.Windows.Forms.Label
+    Friend WithEvents skillStr As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblStr As System.Windows.Forms.Label
+    Friend WithEvents costStr As System.Windows.Forms.Label
+    Friend WithEvents skillRacialAuto As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblRacialAuto As System.Windows.Forms.Label
+    Friend WithEvents costRacialAuto As System.Windows.Forms.Label
+    Friend WithEvents listRacial As System.Windows.Forms.ComboBox
+    Friend WithEvents skillAlchemy As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblAlchemy As System.Windows.Forms.Label
+    Friend WithEvents costAlchemy As System.Windows.Forms.Label
+    Friend WithEvents lblBlacksmith As System.Windows.Forms.Label
+    Friend WithEvents skillBlacksmith As System.Windows.Forms.NumericUpDown
+    Friend WithEvents costBlacksmith As System.Windows.Forms.Label
+    Friend WithEvents skillCraft1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblCraft1 As System.Windows.Forms.Label
+    Friend WithEvents costCraft1 As System.Windows.Forms.Label
+    Friend WithEvents skillCreateScroll As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblCreateScroll As System.Windows.Forms.Label
+    Friend WithEvents costCreateScroll As System.Windows.Forms.Label
+    Friend WithEvents skillTrapsmith As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lblTrapsmith As System.Windows.Forms.Label
+    Friend WithEvents costTrapsmith As System.Windows.Forms.Label
+    Friend WithEvents TabControl As System.Windows.Forms.TabControl
+    Friend WithEvents lblProd As System.Windows.Forms.Label
+    Friend WithEvents Label29 As System.Windows.Forms.Label
+    Friend WithEvents ddlEleAttunement1 As System.Windows.Forms.ComboBox
+    Friend WithEvents ddlEleAttunement4 As System.Windows.Forms.ComboBox
+    Friend WithEvents ddlEleAttunement3 As System.Windows.Forms.ComboBox
+    Friend WithEvents ddlEleAttunement2 As System.Windows.Forms.ComboBox
+    Friend WithEvents lblRaceSkills As System.Windows.Forms.Label
+    Friend WithEvents lblJob As System.Windows.Forms.Label
+    Friend WithEvents Label31 As System.Windows.Forms.Label
+    Friend WithEvents lblSpellSlots As System.Windows.Forms.Label
+    Friend WithEvents costFavoured As System.Windows.Forms.Label
+    Friend WithEvents btnOpenFile As System.Windows.Forms.Button
+    Friend WithEvents boxCraft4 As System.Windows.Forms.TextBox
+    Friend WithEvents boxCraft3 As System.Windows.Forms.TextBox
+    Friend WithEvents boxCraft2 As System.Windows.Forms.TextBox
+    Friend WithEvents boxCraft1 As System.Windows.Forms.TextBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents skillSimpleProf As NumericUpDown
+    Friend WithEvents lblSimpleProf As Label
+    Friend WithEvents costSimpleProf As Label
+    Friend WithEvents lblCharClass As Label
+    Friend WithEvents skillFrag6 As NumericUpDown
+    Friend WithEvents skillFrag5 As NumericUpDown
+    Friend WithEvents skillFrag4 As NumericUpDown
+    Friend WithEvents skillHeavyDrinker As NumericUpDown
+    Friend WithEvents costHeavyDrinker As Label
+    Friend WithEvents lblHeavyDrinker As Label
+    Friend WithEvents lblSpellVersa9 As Label
+    Friend WithEvents lblSpellVersa8 As Label
+    Friend WithEvents lblSpellVersa7 As Label
+    Friend WithEvents lblSpellVersa6 As Label
+    Friend WithEvents lblSpellVersa5 As Label
+    Friend WithEvents lblSpellVersa4 As Label
+    Friend WithEvents lblSpellVersa3 As Label
+    Friend WithEvents lblSpellVersa2 As Label
+    Friend WithEvents lblSpellVersa1 As Label
+    Friend WithEvents skillSpellVersa1 As NumericUpDown
+    Friend WithEvents skillSpellVersa2 As NumericUpDown
+    Friend WithEvents skillSpellVersa3 As NumericUpDown
+    Friend WithEvents skillSpellVersa4 As NumericUpDown
+    Friend WithEvents skillSpellVersa5 As NumericUpDown
+    Friend WithEvents skillSpellVersa9 As NumericUpDown
+    Friend WithEvents skillSpellVersa8 As NumericUpDown
+    Friend WithEvents skillSpellVersa7 As NumericUpDown
+    Friend WithEvents skillSpellVersa6 As NumericUpDown
+    Friend WithEvents costSpellVersa1 As Label
+    Friend WithEvents costSpellVersa2 As Label
+    Friend WithEvents costSpellVersa3 As Label
+    Friend WithEvents costSpellVersa4 As Label
+    Friend WithEvents costSpellVersa5 As Label
+    Friend WithEvents costSpellVersa6 As Label
+    Friend WithEvents costSpellVersa7 As Label
+    Friend WithEvents costSpellVersa8 As Label
+    Friend WithEvents costSpellVersa9 As Label
+    Friend WithEvents lblSpellVersa As Label
+    Friend WithEvents chkVocation As CheckBox
+    Friend WithEvents ddlVocation As ComboBox
     Friend WithEvents lblWarning As Label
     Friend WithEvents costAdvRitual As Label
     Friend WithEvents lblAdvRitual As Label
@@ -4283,4 +4387,25 @@ Partial Class Form1
     Friend WithEvents lblPyramid As Label
     Friend WithEvents lblPyramidOrSpinners As Label
     Friend WithEvents ddlPyramid As ComboBox
+    Friend WithEvents skillChemistry As NumericUpDown
+    Friend WithEvents lblChemistry As Label
+    Friend WithEvents costChemistry As Label
+    Friend WithEvents skillArtifice As NumericUpDown
+    Friend WithEvents lblArtifice As Label
+    Friend WithEvents costArtifice As Label
+    Friend WithEvents skillPossum As NumericUpDown
+    Friend WithEvents lblPossum As Label
+    Friend WithEvents costPossum As Label
+    Friend WithEvents NumericUpDown6 As NumericUpDown
+    Friend WithEvents lblCreateAlcohol As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents skillParagon As NumericUpDown
+    Friend WithEvents lblParagon As Label
+    Friend WithEvents costParagon As Label
+    Friend WithEvents skillTeacher As NumericUpDown
+    Friend WithEvents costTeacher As Label
+    Friend WithEvents skillCreateAlcohol As NumericUpDown
+    Friend WithEvents costCreateAlcohol As Label
+    Friend WithEvents lblFuckYou As Label
+    Friend WithEvents lblFavoured As Label
 End Class

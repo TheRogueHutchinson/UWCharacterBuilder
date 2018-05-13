@@ -63,7 +63,6 @@ C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication
 C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication3\bin\Debug\UnderworldBuilder.exe
 C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication3\bin\Debug\UnderworldBuilder.pdb
 C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication3\bin\Debug\UnderworldBuilder.xml
-C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication3\obj\Debug\UnderworldCharacterBuilder.vbprojResolveAssemblyReference.cache
 C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication3\obj\Debug\UnderworldBuilder.Form1.resources
 C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication3\obj\Debug\UnderworldBuilder.Resources.resources
 C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication3\obj\Debug\UnderworldCharacterBuilder.vbproj.GenerateResource.Cache
@@ -74,3 +73,4 @@ C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication
 C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication3\obj\Debug\UnderworldBuilder.exe
 C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication3\obj\Debug\UnderworldBuilder.xml
 C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication3\obj\Debug\UnderworldBuilder.pdb
+C:\Users\User\Google Drive\Underworld\Tools\Character Builder\WindowsApplication3\obj\Debug\UnderworldCharacterBuilder.vbprojAssemblyReference.cache
