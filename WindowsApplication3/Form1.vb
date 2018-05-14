@@ -3559,7 +3559,7 @@ Public Class Form1
             Case 93
                 BlanketCP = 1760
             Case 94 To 9999
-                BlanketCP = 1760 + 10 * (numericBlanketAmt.Value - 122)
+                BlanketCP = 1760 + 10 * (numericBlanketAmt.Value - 93)
         End Select
         Level = Int((BlanketCP - 50) / 100)
         boxLevel.Text = Level
