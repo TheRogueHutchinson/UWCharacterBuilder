@@ -434,15 +434,17 @@ Public Class Form1
         End If
 
 
-		If Race = 809 Then
-			boxSkillBreakdown.AppendText(" - " & listRacial.Text)
-		ElseIf Race = 810 Then
-			boxSkillBreakdown.AppendText(" - " & listRacial.Text & " Dmg +" & (Int((Level - 1) / 3) + 1))
-		ElseIf Race = 814 Then
+        If Race = 809 Then
+            boxSkillBreakdown.AppendText(" - " & listRacial.Text)
+        ElseIf Race = 810 Then
+            boxSkillBreakdown.AppendText(" - " & listRacial.Text & " Dmg +" & (Int((Level - 1) / 3) + 1))
+        ElseIf Race = 814 Then
 			boxSkillBreakdown.AppendText((Int(Level / 3) + 1))
 		ElseIf Race = 822 Then
-			boxSkillBreakdown.AppendText(" X " & (Int(Level / 4) + 1))
-		ElseIf Race = 829 Then
+            boxSkillBreakdown.AppendText(" X " & (Int(Level / 4) + 1))
+        ElseIf Race = 823 Then
+            boxSkillBreakdown.AppendText(" - " & listRacial.Text & " Str +" & (Int((Level - 1) / 5) + 1))
+        ElseIf Race = 829 Then
             boxSkillBreakdown.AppendText(" Level " & skillRacialAuto.Value)
         ElseIf Race = 831 Then
 			boxSkillBreakdown.AppendText(" " & (Int(Level * 3)))
@@ -2739,10 +2741,10 @@ Public Class Form1
 
             Case 823
                 lblRacial2.Text = "Fae Ward"
-                lblRacialAuto.Text = "Enhanced Strength - Strength +1"
+                lblRacialAuto.Text = "Enhanced Strength"
                 skillRacial2.Maximum = 10
                 skillBPB.Maximum = 0
-                skillStr.Maximum = 4
+                skillStr.Maximum = 0
                 lblRacial2.Visible = True
                 costRacial2.Visible = True
                 skillRacial2.Visible = True
@@ -2750,7 +2752,7 @@ Public Class Form1
                 costRacialAuto.Visible = False
                 skillRacialAuto.Visible = False
                 listRacial.Visible = False
-                NoStr = False
+                NoStr = True
 
             Case 824
                 lblRacial2.Text = "Ogre Smash"
