@@ -1,3 +1,5 @@
+import os
+
 ### Initial Set Costs from File
 
 mercenary_costs = {}
