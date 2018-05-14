@@ -112,8 +112,9 @@ Public Class Form1
 		skillReadMagicRitual.Enabled = True
 		skillSpellRitual.Enabled = True
 		skillSphere1.Enabled = True
-		skillSphere2.Enabled = True
+        skillSphere2.Enabled = True
         skillSphere3.Enabled = True
+        skillMoreSpheres.Enabled = True
         ddlPyramid.Enabled = True
 
         skillAmbidexterity.Enabled = True
@@ -252,8 +253,9 @@ Public Class Form1
 		End Select
 
 		SpentCP = SpentCP + Int(costSphere1.Text) * skillSphere1.Value
-		SpentCP = SpentCP + Int(costSphere2.Text) * skillSphere2.Value
+        SpentCP = SpentCP + Int(costSphere2.Text) * skillSphere2.Value
         SpentCP = SpentCP + Int(costSphere3.Text) * skillSphere3.Value
+        SpentCP = SpentCP + Int(costMoreSpheres.Text) * skillMoreSpheres.Value
         SpentCP = SpentCP + Int(costAdvRitual.Text) * skillAdvRitual.Value
 
         SpentCP = SpentCP + Int(costAmbidexterity.Text) * skillAmbidexterity.Value
@@ -397,6 +399,7 @@ Public Class Form1
         End If
 
         If skillAdvRitual.Value > 0 Then boxSkillBreakdown.AppendText(lblAdvRitual.Text & "   " & costAdvRitual.Text * skillAdvRitual.Value & vbNewLine)
+        If skillMoreSpheres.Value > 0 Then boxSkillBreakdown.AppendText(lblMoreSpheres.Text & "   " & costMoreSpheres.Text * skillMoreSpheres.Value & vbNewLine)
 
         If skillAmbidexterity.Value > 0 Then boxSkillBreakdown.AppendText(lblAmbidexterity.Text & "   " & costAmbidexterity.Text * skillAmbidexterity.Value & vbNewLine)
 		If skillFlorentine.Value > 0 Then boxSkillBreakdown.AppendText(lblFlorentine.Text & "   " & costFlorentine.Text * skillFlorentine.Value & vbNewLine)
@@ -751,6 +754,7 @@ Public Class Form1
                 costSphere1.Text = 100
                 costSphere2.Text = 200
                 costSphere3.Text = 300
+                costMoreSpheres.Text = 300
                 costAdvRitual.Text = 300
             Case 1001
                 costAnatomy.Text = 40
@@ -766,6 +770,7 @@ Public Class Form1
                 costSphere1.Text = 100
                 costSphere2.Text = 200
                 costSphere3.Text = 300
+                costMoreSpheres.Text = 300
                 costAdvRitual.Text = 300
             Case 1002
                 costAnatomy.Text = 40
@@ -781,6 +786,7 @@ Public Class Form1
                 costSphere1.Text = 75
                 costSphere2.Text = 175
                 costSphere3.Text = 275
+                costMoreSpheres.Text = 275
                 costAdvRitual.Text = 275
             Case 1003
                 costAnatomy.Text = 40
@@ -796,6 +802,7 @@ Public Class Form1
                 costSphere1.Text = 75
                 costSphere2.Text = 175
                 costSphere3.Text = 275
+                costMoreSpheres.Text = 275
                 costAdvRitual.Text = 275
             Case 1004
                 costAnatomy.Text = 40
@@ -811,6 +818,7 @@ Public Class Form1
                 costSphere1.Text = 100
                 costSphere2.Text = 200
                 costSphere3.Text = 300
+                costMoreSpheres.Text = 300
                 costAdvRitual.Text = 300
             Case 1005
                 costAnatomy.Text = 40
@@ -826,6 +834,7 @@ Public Class Form1
                 costSphere1.Text = 75
                 costSphere2.Text = 175
                 costSphere3.Text = 275
+                costMoreSpheres.Text = 275
                 costAdvRitual.Text = 275
             Case 1006
                 costAnatomy.Text = 40
@@ -841,6 +850,7 @@ Public Class Form1
                 costSphere1.Text = 25
                 costSphere2.Text = 150
                 costSphere3.Text = 200
+                costMoreSpheres.Text = 200
                 costAdvRitual.Text = 200
             Case 1007
                 costAnatomy.Text = 40
@@ -856,6 +866,7 @@ Public Class Form1
                 costSphere1.Text = 50
                 costSphere2.Text = 175
                 costSphere3.Text = 225
+                costMoreSpheres.Text = 225
                 costAdvRitual.Text = 225
             Case 1008
                 costAnatomy.Text = 35
@@ -871,6 +882,7 @@ Public Class Form1
                 costSphere1.Text = 50
                 costSphere2.Text = 175
                 costSphere3.Text = 225
+                costMoreSpheres.Text = 225
                 costAdvRitual.Text = 225
             Case 1009 To 1010
                 costAnatomy.Text = 40
@@ -886,6 +898,7 @@ Public Class Form1
                 costSphere1.Text = 50
                 costSphere2.Text = 200
                 costSphere3.Text = 300
+                costMoreSpheres.Text = 300
                 costAdvRitual.Text = 275
             Case 1011 To 1013
                 costAnatomy.Text = 40
@@ -901,6 +914,7 @@ Public Class Form1
                 costSphere1.Text = 50
                 costSphere2.Text = 175
                 costSphere3.Text = 225
+                costMoreSpheres.Text = 225
                 costAdvRitual.Text = 200
         End Select
 
@@ -1928,6 +1942,19 @@ Public Class Form1
         Else
             skillSphere3.Enabled = False
             skillSphere3.Value = 0
+        End If
+
+        If skillSphere3.Value > 0 Then
+            skillMoreSpheres.Enabled = True
+            skillMoreSpheres.Visible = True
+            costMoreSpheres.Visible = True
+            lblMoreSpheres.Visible = True
+        Else
+            skillMoreSpheres.Enabled = False
+            skillMoreSpheres.Value = 0
+            skillMoreSpheres.Visible = False
+            costMoreSpheres.Visible = False
+            lblMoreSpheres.Visible = False
         End If
 
         If skillSpellRitual.Value > 0 Then
@@ -3327,13 +3354,10 @@ Public Class Form1
 
 #End Region
     Private Sub ComboRace_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ddlCharRace.SelectedIndexChanged
-
         skillRacial2.Value = 0
         skillBPB.Value = 0
         skillStr.Value = 0
         RaceCP = 0
-        ddlFragGuild.Visible = False
-        ddlFragGuild.SelectedIndex = -1
         ddlFragCharRace.Visible = False
         'ddlFragRace.Visible = False
         ddlFragCharRace.SelectedIndex = -1
@@ -3343,7 +3367,6 @@ Public Class Form1
                 Race = 800 + ddlCharRace.SelectedIndex
             Case 12
                 ddlFragCharRace.Visible = True
-
         End Select
         If Race = 806 Then RaceCP = 50
         listRacial.Items.Clear()
@@ -3847,6 +3870,7 @@ Public Class Form1
         skillSphere1.Value = 0
         skillSphere2.Value = 0
         skillSphere3.Value = 0
+        skillMoreSpheres.Value = 0
         skillAdvRitual.Value = 0
 
         skillAmbidexterity.Value = 0
@@ -3969,7 +3993,7 @@ Public Class Form1
                 & skillParagon.Value & "," & skillSpellVersa1.Value & "," & skillSpellVersa2.Value & "," & skillSpellVersa3.Value & "," & skillSpellVersa4.Value & "," _
                 & skillSpellVersa5.Value & "," & skillSpellVersa6.Value & "," & skillSpellVersa7.Value & "," & skillSpellVersa8.Value & "," & skillSpellVersa9.Value & "," _
                 & ddlEleAttunement1.SelectedIndex & "," & ddlEleAttunement2.SelectedIndex & "," & ddlEleAttunement3.SelectedIndex & "," & ddlEleAttunement4.SelectedIndex & "," _
-                & boxCraft1.Text & "," & boxCraft2.Text & "," & boxCraft3.Text & "," & boxCraft4.Text & "," & skillAdvRitual.Value & "," & skillChemistry.Value & "," & skillArtifice.Value
+                & boxCraft1.Text & "," & boxCraft2.Text & "," & boxCraft3.Text & "," & boxCraft4.Text & "," & skillAdvRitual.Value & "," & skillChemistry.Value & "," & skillArtifice.Value & "," & skillMoreSpheres.Value
                 My.Computer.FileSystem.WriteAllText(saveFileDialog1.FileName, B64b, False)
             End If
         End If
@@ -4237,6 +4261,7 @@ Public Class Form1
             skillAdvRitual.Value = InBox.Items(103)
             skillChemistry.Value = InBox.Items(104)
             skillArtifice.Value = InBox.Items(105)
+            skillMoreSpheres.Value = InBox.Items(106)
 
             OpenSave = False
         End If
@@ -4409,6 +4434,9 @@ Public Class Form1
         Recalc()
     End Sub
     Private Sub SkillSphere3_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillSphere3.ValueChanged
+        Recalc()
+    End Sub
+    Private Sub SkillMoreSpheres_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillMoreSpheres.ValueChanged
         Recalc()
     End Sub
 

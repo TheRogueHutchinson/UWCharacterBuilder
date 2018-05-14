@@ -49,7 +49,6 @@ Partial Class Form1
         Me.btnSaveAsText = New System.Windows.Forms.Button()
         Me.InBox = New System.Windows.Forms.ListBox()
         Me.btnSaveToFile = New System.Windows.Forms.Button()
-        Me.ddlFragGuild = New System.Windows.Forms.ComboBox()
         Me.Rogue = New System.Windows.Forms.TabPage()
         Me.lblExecute = New System.Windows.Forms.Label()
         Me.skillGarrote = New System.Windows.Forms.NumericUpDown()
@@ -187,14 +186,11 @@ Partial Class Form1
         Me.lblSpellLevel5 = New System.Windows.Forms.Label()
         Me.costSphere1 = New System.Windows.Forms.Label()
         Me.lblSpellLevel4 = New System.Windows.Forms.Label()
-        Me.skillSphere2 = New System.Windows.Forms.NumericUpDown()
         Me.lblSpellLevel3 = New System.Windows.Forms.Label()
         Me.lblSphere2 = New System.Windows.Forms.Label()
         Me.lblSpellLevel2 = New System.Windows.Forms.Label()
-        Me.costSphere2 = New System.Windows.Forms.Label()
         Me.lblSpellLevel1 = New System.Windows.Forms.Label()
         Me.skillSphere3 = New System.Windows.Forms.NumericUpDown()
-        Me.lblSphere3 = New System.Windows.Forms.Label()
         Me.costSphere3 = New System.Windows.Forms.Label()
         Me.ddlSphere1 = New System.Windows.Forms.ComboBox()
         Me.ddlSphere2 = New System.Windows.Forms.ComboBox()
@@ -351,6 +347,12 @@ Partial Class Form1
         Me.chkVocation = New System.Windows.Forms.CheckBox()
         Me.ddlVocation = New System.Windows.Forms.ComboBox()
         Me.lblWarning = New System.Windows.Forms.Label()
+        Me.lblSphere3 = New System.Windows.Forms.Label()
+        Me.costSphere2 = New System.Windows.Forms.Label()
+        Me.skillSphere2 = New System.Windows.Forms.NumericUpDown()
+        Me.skillMoreSpheres = New System.Windows.Forms.NumericUpDown()
+        Me.lblMoreSpheres = New System.Windows.Forms.Label()
+        Me.costMoreSpheres = New System.Windows.Forms.Label()
         CType(Me.numericBlanketAmt, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Rogue.SuspendLayout()
         CType(Me.skillGarrote, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -391,7 +393,6 @@ Partial Class Form1
         CType(Me.skillReadMagicAvd, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillReadMagicRitual, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillSphere1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.skillSphere2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillSphere3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillSpellRitual, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.skillSpell1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -443,6 +444,8 @@ Partial Class Form1
         CType(Me.skillTrapsmith, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl.SuspendLayout()
+        CType(Me.skillSphere2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.skillMoreSpheres, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ddlCharRace
@@ -697,17 +700,6 @@ Partial Class Form1
         Me.btnSaveToFile.TabStop = False
         Me.btnSaveToFile.Text = "Save to File"
         Me.btnSaveToFile.UseVisualStyleBackColor = True
-        '
-        'ddlFragGuild
-        '
-        Me.ddlFragGuild.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ddlFragGuild.FormattingEnabled = True
-        Me.ddlFragGuild.Items.AddRange(New Object() {"Jericho", "Kalidor", "Ralinwood"})
-        Me.ddlFragGuild.Location = New System.Drawing.Point(163, 106)
-        Me.ddlFragGuild.Name = "ddlFragGuild"
-        Me.ddlFragGuild.Size = New System.Drawing.Size(56, 21)
-        Me.ddlFragGuild.TabIndex = 270
-        Me.ddlFragGuild.Visible = False
         '
         'Rogue
         '
@@ -1547,6 +1539,9 @@ Partial Class Form1
         '
         'Scholar
         '
+        Me.Scholar.Controls.Add(Me.skillMoreSpheres)
+        Me.Scholar.Controls.Add(Me.lblMoreSpheres)
+        Me.Scholar.Controls.Add(Me.costMoreSpheres)
         Me.Scholar.Controls.Add(Me.lblPyramid)
         Me.Scholar.Controls.Add(Me.lblPyramidOrSpinners)
         Me.Scholar.Controls.Add(Me.ddlPyramid)
@@ -2183,16 +2178,6 @@ Partial Class Form1
         Me.lblSpellLevel4.TabIndex = 244
         Me.lblSpellLevel4.Text = "4"
         '
-        'skillSphere2
-        '
-        Me.skillSphere2.Location = New System.Drawing.Point(298, 229)
-        Me.skillSphere2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.skillSphere2.Name = "skillSphere2"
-        Me.skillSphere2.ReadOnly = True
-        Me.skillSphere2.Size = New System.Drawing.Size(33, 20)
-        Me.skillSphere2.TabIndex = 86
-        Me.skillSphere2.TabStop = False
-        '
         'lblSpellLevel3
         '
         Me.lblSpellLevel3.AutoSize = True
@@ -2222,15 +2207,6 @@ Partial Class Form1
         Me.lblSpellLevel2.TabIndex = 242
         Me.lblSpellLevel2.Text = "2"
         '
-        'costSphere2
-        '
-        Me.costSphere2.AutoSize = True
-        Me.costSphere2.Location = New System.Drawing.Point(273, 231)
-        Me.costSphere2.Name = "costSphere2"
-        Me.costSphere2.Size = New System.Drawing.Size(13, 13)
-        Me.costSphere2.TabIndex = 88
-        Me.costSphere2.Text = "0"
-        '
         'lblSpellLevel1
         '
         Me.lblSpellLevel1.AutoSize = True
@@ -2250,15 +2226,6 @@ Partial Class Form1
         Me.skillSphere3.Size = New System.Drawing.Size(33, 20)
         Me.skillSphere3.TabIndex = 89
         Me.skillSphere3.TabStop = False
-        '
-        'lblSphere3
-        '
-        Me.lblSphere3.AutoSize = True
-        Me.lblSphere3.Location = New System.Drawing.Point(338, 231)
-        Me.lblSphere3.Name = "lblSphere3"
-        Me.lblSphere3.Size = New System.Drawing.Size(50, 13)
-        Me.lblSphere3.TabIndex = 90
-        Me.lblSphere3.Text = "Sphere 3"
         '
         'costSphere3
         '
@@ -3936,6 +3903,66 @@ Partial Class Form1
         Me.lblWarning.TabIndex = 329
         Me.lblWarning.Text = "The rulebook is always right in case of discrepancy."
         '
+        'lblSphere3
+        '
+        Me.lblSphere3.AutoSize = True
+        Me.lblSphere3.Location = New System.Drawing.Point(338, 231)
+        Me.lblSphere3.Name = "lblSphere3"
+        Me.lblSphere3.Size = New System.Drawing.Size(50, 13)
+        Me.lblSphere3.TabIndex = 90
+        Me.lblSphere3.Text = "Sphere 3"
+        '
+        'costSphere2
+        '
+        Me.costSphere2.AutoSize = True
+        Me.costSphere2.Location = New System.Drawing.Point(273, 231)
+        Me.costSphere2.Name = "costSphere2"
+        Me.costSphere2.Size = New System.Drawing.Size(13, 13)
+        Me.costSphere2.TabIndex = 88
+        Me.costSphere2.Text = "0"
+        '
+        'skillSphere2
+        '
+        Me.skillSphere2.Location = New System.Drawing.Point(298, 229)
+        Me.skillSphere2.Maximum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.skillSphere2.Name = "skillSphere2"
+        Me.skillSphere2.ReadOnly = True
+        Me.skillSphere2.Size = New System.Drawing.Size(33, 20)
+        Me.skillSphere2.TabIndex = 86
+        Me.skillSphere2.TabStop = False
+        '
+        'skillMoreSpheres
+        '
+        Me.skillMoreSpheres.Location = New System.Drawing.Point(452, 282)
+        Me.skillMoreSpheres.Maximum = New Decimal(New Integer() {7, 0, 0, 0})
+        Me.skillMoreSpheres.Name = "skillMoreSpheres"
+        Me.skillMoreSpheres.ReadOnly = True
+        Me.skillMoreSpheres.Size = New System.Drawing.Size(33, 20)
+        Me.skillMoreSpheres.TabIndex = 282
+        Me.skillMoreSpheres.TabStop = False
+        Me.skillMoreSpheres.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.skillMoreSpheres.Visible = False
+        '
+        'lblMoreSpheres
+        '
+        Me.lblMoreSpheres.AutoSize = True
+        Me.lblMoreSpheres.Location = New System.Drawing.Point(337, 284)
+        Me.lblMoreSpheres.Name = "lblMoreSpheres"
+        Me.lblMoreSpheres.Size = New System.Drawing.Size(73, 13)
+        Me.lblMoreSpheres.TabIndex = 283
+        Me.lblMoreSpheres.Text = "More Spheres"
+        Me.lblMoreSpheres.Visible = False
+        '
+        'costMoreSpheres
+        '
+        Me.costMoreSpheres.AutoSize = True
+        Me.costMoreSpheres.Location = New System.Drawing.Point(427, 284)
+        Me.costMoreSpheres.Name = "costMoreSpheres"
+        Me.costMoreSpheres.Size = New System.Drawing.Size(19, 13)
+        Me.costMoreSpheres.TabIndex = 284
+        Me.costMoreSpheres.Text = "50"
+        Me.costMoreSpheres.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3947,7 +3974,6 @@ Partial Class Form1
         Me.Controls.Add(Me.boxFragsTotal)
         Me.Controls.Add(Me.boxSkillBreakdown)
         Me.Controls.Add(Me.TabControl)
-        Me.Controls.Add(Me.ddlFragGuild)
         Me.Controls.Add(Me.btnSaveToFile)
         Me.Controls.Add(Me.InBox)
         Me.Controls.Add(Me.lblFrags)
@@ -4023,7 +4049,6 @@ Partial Class Form1
         CType(Me.skillReadMagicAvd, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillReadMagicRitual, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillSphere1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.skillSphere2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillSphere3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillSpellRitual, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.skillSpell1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4076,6 +4101,8 @@ Partial Class Form1
         CType(Me.skillTrapsmith, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl.ResumeLayout(False)
+        CType(Me.skillSphere2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.skillMoreSpheres, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -4106,7 +4133,6 @@ Partial Class Form1
     Friend WithEvents btnSaveAsText As System.Windows.Forms.Button
     Friend WithEvents InBox As System.Windows.Forms.ListBox
     Friend WithEvents btnSaveToFile As System.Windows.Forms.Button
-    Friend WithEvents ddlFragGuild As System.Windows.Forms.ComboBox
     Friend WithEvents Rogue As System.Windows.Forms.TabPage
     Friend WithEvents lblExecute As System.Windows.Forms.Label
     Friend WithEvents skillGarrote As System.Windows.Forms.NumericUpDown
@@ -4229,14 +4255,11 @@ Partial Class Form1
     Friend WithEvents lblSpellLevel5 As System.Windows.Forms.Label
     Friend WithEvents costSphere1 As System.Windows.Forms.Label
     Friend WithEvents lblSpellLevel4 As System.Windows.Forms.Label
-    Friend WithEvents skillSphere2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents lblSpellLevel3 As System.Windows.Forms.Label
     Friend WithEvents lblSphere2 As System.Windows.Forms.Label
     Friend WithEvents lblSpellLevel2 As System.Windows.Forms.Label
-    Friend WithEvents costSphere2 As System.Windows.Forms.Label
     Friend WithEvents lblSpellLevel1 As System.Windows.Forms.Label
     Friend WithEvents skillSphere3 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents lblSphere3 As System.Windows.Forms.Label
     Friend WithEvents costSphere3 As System.Windows.Forms.Label
     Friend WithEvents ddlSphere1 As System.Windows.Forms.ComboBox
     Friend WithEvents ddlSphere2 As System.Windows.Forms.ComboBox
@@ -4408,4 +4431,10 @@ Partial Class Form1
     Friend WithEvents costCreateAlcohol As Label
     Friend WithEvents lblFuckYou As Label
     Friend WithEvents lblFavoured As Label
+    Friend WithEvents skillMoreSpheres As NumericUpDown
+    Friend WithEvents lblMoreSpheres As Label
+    Friend WithEvents costMoreSpheres As Label
+    Friend WithEvents skillSphere2 As NumericUpDown
+    Friend WithEvents costSphere2 As Label
+    Friend WithEvents lblSphere3 As Label
 End Class
