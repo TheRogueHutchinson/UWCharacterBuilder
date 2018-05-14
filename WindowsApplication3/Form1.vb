@@ -200,7 +200,9 @@ Public Class Form1
 		SpentSF = 0
 		SpentCP = 0
 		SpentCP = SpentCP + Int(costAlchemy.Text) * skillAlchemy.Value
-		SpentCP = SpentCP + Int(costBlacksmith.Text) * skillBlacksmith.Value
+        SpentCP = SpentCP + Int(costBlacksmith.Text) * skillBlacksmith.Value
+        SpentCP = SpentCP + Int(costChemistry.Text) * skillChemistry.Value
+        SpentCP = SpentCP + Int(costArtifice.Text) * skillArtifice.Value
         SpentCP = SpentCP + Int(costCraft1.Text) * skillCraft1.Value
         SpentCP = SpentCP + Int(costCreateScroll.Text) * skillCreateScroll.Value
 		SpentCP = SpentCP + Int(costTrapsmith.Text) * skillTrapsmith.Value
@@ -329,6 +331,8 @@ Public Class Form1
 		boxSkillBreakdown.Text = ""
 		If skillAlchemy.Value > 0 Then boxSkillBreakdown.AppendText(lblAlchemy.Text & " X " & skillAlchemy.Value & "   " & costAlchemy.Text * skillAlchemy.Value & vbNewLine)
 		If skillBlacksmith.Value > 0 Then boxSkillBreakdown.AppendText(lblBlacksmith.Text & " X " & skillBlacksmith.Value & "   " & costBlacksmith.Text * skillBlacksmith.Value & vbNewLine)
+        If skillChemistry.Value > 0 Then boxSkillBreakdown.AppendText(lblChemistry.Text & " X " & skillChemistry.Value & "   " & costChemistry.Text * skillChemistry.Value & vbNewLine)
+        If skillArtifice.Value > 0 Then boxSkillBreakdown.AppendText(lblArtifice.Text & " X " & skillArtifice.Value & "   " & costArtifice.Text * skillArtifice.Value & vbNewLine)
         If skillCraft1.Value > 0 Then boxSkillBreakdown.AppendText(lblCraft1.Text & " X " & skillCraft1.Value & "   " & costCraft1.Text * skillCraft1.Value & vbNewLine)
         If skillCraft1.Value > 0 And boxCraft1.Text <> "" Then boxSkillBreakdown.AppendText(lblCraft1.Text & " " & boxCraft1.Text & vbNewLine)
         If skillCraft1.Value > 1 And boxCraft2.Text <> "" Then boxSkillBreakdown.AppendText(lblCraft1.Text & " " & boxCraft2.Text & vbNewLine)
@@ -462,7 +466,7 @@ Public Class Form1
 		If skillHeavyDrinker.Value > 0 Then boxSkillBreakdown.AppendText(lblHeavyDrinker.Text & " X " & skillHeavyDrinker.Value & "   " & costHeavyDrinker.Text * skillHeavyDrinker.Value & vbNewLine)
 
         If skillLooting.Value > 0 Then boxSkillBreakdown.AppendText(lblLooting.Text & " X " & skillLooting.Value & "   " & costLooting.Text * skillLooting.Value & vbNewLine)
-        If skillCreateAlcohol.Value > 0 Then boxSkillBreakdown.AppendText(lblLooting.Text & " X " & skillCreateAlcohol.Value & "   " & costCreateAlcohol.Text * skillCreateAlcohol.Value & vbNewLine)
+        If skillCreateAlcohol.Value > 0 Then boxSkillBreakdown.AppendText(lblCreateAlcohol.Text & " X " & skillCreateAlcohol.Value & "   " & costCreateAlcohol.Text * skillCreateAlcohol.Value & vbNewLine)
         If skillPossum.Value > 0 Then boxSkillBreakdown.AppendText(lblPossum.Text & " X " & skillPossum.Value & "   " & costPossum.Text * skillPossum.Value & vbNewLine)
         If skillParagon.Value > 0 Then boxSkillBreakdown.AppendText(lblParagon.Text & " X " & skillParagon.Value & "   " & costParagon.Text * skillParagon.Value & vbNewLine)
         If skillTeacher.Value > 0 Then boxSkillBreakdown.AppendText(lblFuckYou.Text & " X " & skillTeacher.Value & "   " & costTeacher.Text * skillTeacher.Value & vbNewLine)
@@ -3600,6 +3604,14 @@ Public Class Form1
         Recalc()
     End Sub
 
+    Private Sub SkillChemistry_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillChemistry.ValueChanged
+        Recalc()
+    End Sub
+
+    Private Sub SkillArtifice_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillArtifice.ValueChanged
+        Recalc()
+    End Sub
+
     Private Sub SkillCreateScroll_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillCreateScroll.ValueChanged
         Recalc()
     End Sub
@@ -4002,7 +4014,7 @@ Public Class Form1
         Recalc()
     End Sub
 
-    Private Sub SkillCreateAlcohol_ValueChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub SkillCreateAlcohol_ValueChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles skillCreateAlcohol.ValueChanged
         Recalc()
     End Sub
 

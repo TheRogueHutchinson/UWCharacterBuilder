@@ -57,14 +57,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UnderworldBuilder.exe" size="323584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UnderworldBuilder.exe" size="324096">
       <assemblyIdentity name="UnderworldBuilder" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>EUzGlsDPl42/TxSFp/XjOCXsLV0=</dsig:DigestValue>
+        <dsig:DigestValue>A8IkKMQMO3xFarp3KdLPOdWhIAA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
