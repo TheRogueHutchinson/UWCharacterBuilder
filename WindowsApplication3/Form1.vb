@@ -118,195 +118,195 @@ Public Class Form1
         ddlPyramid.Enabled = True
 
         skillAmbidexterity.Enabled = True
-		skillFlorentine.Enabled = True
-		skillFlurryOfBlows.Enabled = True
-		skillHeavyArmour.Enabled = True
-		skillSelfMut.Enabled = True
-		skillShield.Enabled = True
-		skillSlayParry.Enabled = True
-		skillSlayParryMaster.Enabled = True
-		skillSpecGroup.Enabled = True
-		skillSpecSpecific.Enabled = True
-		skillSimpleProf.Enabled = True
-		skillMedProf.Enabled = True
-		skillLargeProf.Enabled = True
-		skillExoticProf.Enabled = True
-		skillWeaponRefocus.Enabled = True
+        skillFlorentine.Enabled = True
+        skillFlurryOfBlows.Enabled = True
+        skillHeavyArmour.Enabled = True
+        skillSelfMut.Enabled = True
+        skillShield.Enabled = True
+        skillSlayParry.Enabled = True
+        skillSlayParryMaster.Enabled = True
+        skillSpecGroup.Enabled = True
+        skillSpecSpecific.Enabled = True
+        skillSimpleProf.Enabled = True
+        skillMedProf.Enabled = True
+        skillLargeProf.Enabled = True
+        skillExoticProf.Enabled = True
+        skillWeaponRefocus.Enabled = True
 
-		skillCritGroup.Enabled = True
-		skillDodge.Enabled = True
-		skillExecute.Enabled = True
-		skillExecuteMaster.Enabled = True
+        skillCritGroup.Enabled = True
+        skillDodge.Enabled = True
+        skillExecute.Enabled = True
+        skillExecuteMaster.Enabled = True
         skillGarrote.Enabled = True
         skillSap.Enabled = True
-		skillVitalBlow.Enabled = True
-		If Race = 805 Then
-			skillMedProf.Enabled = False
-			skillLargeProf.Enabled = False
-		End If
-		skillBPB.Enabled = True
-		skillStr.Enabled = True
-		RaceBonus()
-		SphereSets()
-		SetSpheres()
-		WeaponLocks()
-		SkillListBuild()
-		DependCheck()
-		HPTotal()
-		BuildSpecGroupList()
-		BuildSpecSpecificList()
-		BuildSlayParryList()
-		BuildSlayParryMasterList()
-		BuildCritList()
-		BuildCritMasterList()
-		BuildExecuteList()
-		BuildExecuteMasterList()
+        skillVitalBlow.Enabled = True
+        If Race = 805 Then
+            skillMedProf.Enabled = False
+            skillLargeProf.Enabled = False
+        End If
+        skillBPB.Enabled = True
+        skillStr.Enabled = True
+        RaceBonus()
+        SphereSets()
+        SetSpheres()
+        WeaponLocks()
+        SkillListBuild()
+        DependCheck()
+        HPTotal()
+        BuildSpecGroupList()
+        BuildSpecSpecificList()
+        BuildSlayParryList()
+        BuildSlayParryMasterList()
+        BuildCritList()
+        BuildCritMasterList()
+        BuildExecuteList()
+        BuildExecuteMasterList()
 
-	End Sub
+    End Sub
 
-	Public Function HPTotal()
-		Select Case Job
-			Case 1000 To 1002
-				JobHP = Level * 2 + 4
-			Case 1003 To 1005
-				JobHP = Level + 3
-			Case 1006 To 1008
-				If Level = 1 Then JobHP = 3 Else
-				JobHP = 3
-				For i = 1 To (Level - 1)
-					If Int(JobHP) Mod 2 Then JobHP = JobHP + 1 Else JobHP = JobHP + 0.5
-				Next i
-				JobHP = Int(JobHP)
-			Case 1009 To 1010
-				JobHP = Level * 2 + 4
-			Case 1011 To 1013
-				If Level = 1 Then JobHP = 3 Else
-				JobHP = 3
-				For i = 1 To (Level - 1)
-					If Int(JobHP) Mod 2 Then JobHP = JobHP + 1 Else JobHP = JobHP + 0.5
-				Next i
-				JobHP = Int(JobHP)
-		End Select
+    Public Function HPTotal()
+        Select Case Job
+            Case 1000 To 1002
+                JobHP = Level * 2 + 4
+            Case 1003 To 1005
+                JobHP = Level + 3
+            Case 1006 To 1008
+                If Level = 1 Then JobHP = 3 Else
+                JobHP = 3
+                For i = 1 To (Level - 1)
+                    If Int(JobHP) Mod 2 Then JobHP = JobHP + 1 Else JobHP = JobHP + 0.5
+                Next i
+                JobHP = Int(JobHP)
+            Case 1009 To 1010
+                JobHP = Level * 2 + 4
+            Case 1011 To 1013
+                If Level = 1 Then JobHP = 3 Else
+                JobHP = 3
+                For i = 1 To (Level - 1)
+                    If Int(JobHP) Mod 2 Then JobHP = JobHP + 1 Else JobHP = JobHP + 0.5
+                Next i
+                JobHP = Int(JobHP)
+        End Select
 
-		If Race = 819 Then
+        If Race = 819 Then
             BOnusHP = Level * 2 + 5
         ElseIf Race = 808 Then
-			BOnusHP = skillRacial2.Value * 5
-		Else : BOnusHP = skillBPB.Value * 5
-		End If
-		HPTotal = BOnusHP + JobHP
-		boxHP.Text = HPTotal
-	End Function
-	Private Sub Costs()
-		SpentSF = 0
-		SpentCP = 0
-		SpentCP = SpentCP + Int(costAlchemy.Text) * skillAlchemy.Value
+            BOnusHP = skillRacial2.Value * 5
+        Else : BOnusHP = skillBPB.Value * 5
+        End If
+        HPTotal = BOnusHP + JobHP
+        boxHP.Text = HPTotal
+    End Function
+    Private Sub Costs()
+        SpentSF = 0
+        SpentCP = 0
+        SpentCP = SpentCP + Int(costAlchemy.Text) * skillAlchemy.Value
         SpentCP = SpentCP + Int(costBlacksmith.Text) * skillBlacksmith.Value
         SpentCP = SpentCP + Int(costChemistry.Text) * skillChemistry.Value
         SpentCP = SpentCP + Int(costArtifice.Text) * skillArtifice.Value
         SpentCP = SpentCP + Int(costCraft1.Text) * skillCraft1.Value
         SpentCP = SpentCP + Int(costCreateScroll.Text) * skillCreateScroll.Value
-		SpentCP = SpentCP + Int(costTrapsmith.Text) * skillTrapsmith.Value
+        SpentCP = SpentCP + Int(costTrapsmith.Text) * skillTrapsmith.Value
 
-		SpentCP = SpentCP + Int(costAnatomy.Text) * skillAnatomy.Value
-		SpentCP = SpentCP + Int(costMysticism.Text) * skillMysticism.Value
-		SpentCP = SpentCP + Int(costDemonAngelArts.Text) * skillDemonAngelArts.Value
-		SpentCP = SpentCP + Int(costEleAttunement.Text) * skillEleAttunement.Value
-		SpentCP = SpentCP + Int(costFirstAid.Text) * skillFirstAid.Value
-		SpentCP = SpentCP + Int(costNecroArts.Text) * skillNecroArts.Value
-		SpentCP = SpentCP + Int(costPhysician.Text) * skillPhysician.Value
-		SpentCP = SpentCP + Int(costReadAndWrite.Text) * skillReadAndWrite.Value
-		SpentCP = SpentCP + Int(costReadMagic.Text) * skillReadMagic.Value
-		SpentCP = SpentCP + Int(costReadMagicAvd.Text) * skillReadMagicAvd.Value
-		SpentCP = SpentCP + Int(costReadMagicRitual.Text) * skillReadMagicRitual.Value
-		SpentCP = SpentCP + Int(costSpell1.Text) * skillSpell1.Value
-		SpentCP = SpentCP + Int(costSpell2.Text) * skillSpell2.Value
-		SpentCP = SpentCP + Int(costSpell3.Text) * skillSpell3.Value
-		SpentCP = SpentCP + Int(costSpell4.Text) * skillSpell4.Value
-		SpentCP = SpentCP + Int(costSpell5.Text) * skillSpell5.Value
-		SpentCP = SpentCP + Int(costSpell6.Text) * skillSpell6.Value
-		SpentCP = SpentCP + Int(costSpell7.Text) * skillSpell7.Value
-		SpentCP = SpentCP + Int(costSpell8.Text) * skillSpell8.Value
-		SpentCP = SpentCP + Int(costSpell9.Text) * skillSpell9.Value
-		Select Case skillSpellRitual.Value
-			Case 1
-				SpentCP = SpentCP + Int(CostRitualCircle.Text) * skillSpellRitual.Value
-			Case 2
-				SpentCP = SpentCP + Int(CostRitualCircle.Text) * 3
-			Case 3
-				SpentCP = SpentCP + Int(CostRitualCircle.Text) * 6
-			Case 4
-				SpentCP = SpentCP + Int(CostRitualCircle.Text) * 10
-			Case 5
-				SpentCP = SpentCP + Int(CostRitualCircle.Text) * 15
-			Case 6
-				SpentCP = SpentCP + Int(CostRitualCircle.Text) * 21
-			Case 7
-				SpentCP = SpentCP + Int(CostRitualCircle.Text) * 28
-			Case 8
-				SpentCP = SpentCP + Int(CostRitualCircle.Text) * 36
-			Case 9
-				SpentCP = SpentCP + Int(CostRitualCircle.Text) * 45
-			Case 10
-				SpentCP = SpentCP + Int(CostRitualCircle.Text) * 55
+        SpentCP = SpentCP + Int(costAnatomy.Text) * skillAnatomy.Value
+        SpentCP = SpentCP + Int(costMysticism.Text) * skillMysticism.Value
+        SpentCP = SpentCP + Int(costDemonAngelArts.Text) * skillDemonAngelArts.Value
+        SpentCP = SpentCP + Int(costEleAttunement.Text) * skillEleAttunement.Value
+        SpentCP = SpentCP + Int(costFirstAid.Text) * skillFirstAid.Value
+        SpentCP = SpentCP + Int(costNecroArts.Text) * skillNecroArts.Value
+        SpentCP = SpentCP + Int(costPhysician.Text) * skillPhysician.Value
+        SpentCP = SpentCP + Int(costReadAndWrite.Text) * skillReadAndWrite.Value
+        SpentCP = SpentCP + Int(costReadMagic.Text) * skillReadMagic.Value
+        SpentCP = SpentCP + Int(costReadMagicAvd.Text) * skillReadMagicAvd.Value
+        SpentCP = SpentCP + Int(costReadMagicRitual.Text) * skillReadMagicRitual.Value
+        SpentCP = SpentCP + Int(costSpell1.Text) * skillSpell1.Value
+        SpentCP = SpentCP + Int(costSpell2.Text) * skillSpell2.Value
+        SpentCP = SpentCP + Int(costSpell3.Text) * skillSpell3.Value
+        SpentCP = SpentCP + Int(costSpell4.Text) * skillSpell4.Value
+        SpentCP = SpentCP + Int(costSpell5.Text) * skillSpell5.Value
+        SpentCP = SpentCP + Int(costSpell6.Text) * skillSpell6.Value
+        SpentCP = SpentCP + Int(costSpell7.Text) * skillSpell7.Value
+        SpentCP = SpentCP + Int(costSpell8.Text) * skillSpell8.Value
+        SpentCP = SpentCP + Int(costSpell9.Text) * skillSpell9.Value
+        Select Case skillSpellRitual.Value
+            Case 1
+                SpentCP = SpentCP + Int(CostRitualCircle.Text) * skillSpellRitual.Value
+            Case 2
+                SpentCP = SpentCP + Int(CostRitualCircle.Text) * 3
+            Case 3
+                SpentCP = SpentCP + Int(CostRitualCircle.Text) * 6
+            Case 4
+                SpentCP = SpentCP + Int(CostRitualCircle.Text) * 10
+            Case 5
+                SpentCP = SpentCP + Int(CostRitualCircle.Text) * 15
+            Case 6
+                SpentCP = SpentCP + Int(CostRitualCircle.Text) * 21
+            Case 7
+                SpentCP = SpentCP + Int(CostRitualCircle.Text) * 28
+            Case 8
+                SpentCP = SpentCP + Int(CostRitualCircle.Text) * 36
+            Case 9
+                SpentCP = SpentCP + Int(CostRitualCircle.Text) * 45
+            Case 10
+                SpentCP = SpentCP + Int(CostRitualCircle.Text) * 55
 
-		End Select
+        End Select
 
-		SpentCP = SpentCP + Int(costSphere1.Text) * skillSphere1.Value
+        SpentCP = SpentCP + Int(costSphere1.Text) * skillSphere1.Value
         SpentCP = SpentCP + Int(costSphere2.Text) * skillSphere2.Value
         SpentCP = SpentCP + Int(costSphere3.Text) * skillSphere3.Value
         SpentCP = SpentCP + Int(costMoreSpheres.Text) * skillMoreSpheres.Value
         SpentCP = SpentCP + Int(costAdvRitual.Text) * skillAdvRitual.Value
 
         SpentCP = SpentCP + Int(costAmbidexterity.Text) * skillAmbidexterity.Value
-		SpentCP = SpentCP + Int(costFlorentine.Text) * skillFlorentine.Value
-		SpentCP = SpentCP + Int(costFlurryOfBlows.Text) * skillFlurryOfBlows.Value
-		SpentCP = SpentCP + Int(costHeavyArmour.Text) * skillHeavyArmour.Value
-		SpentCP = SpentCP + Int(costSelfMut.Text) * skillSelfMut.Value
-		SpentCP = SpentCP + Int(costShield.Text) * skillShield.Value
-		SpentCP = SpentCP + Int(costSlayParry.Text) * skillSlayParry.Value
-		SpentCP = SpentCP + Int(costSlayParryMaster.Text) * skillSlayParryMaster.Value
-		SpentCP = SpentCP + Int(costSpecGroup.Text) * skillSpecGroup.Value
-		SpentCP = SpentCP + Int(costSpecSpecific.Text) * skillSpecSpecific.Value
-		SpentCP = SpentCP + Int(costSimpleProf.Text) * skillSimpleProf.Value
-		SpentCP = SpentCP + Int(costMedProf.Text) * skillMedProf.Value
-		SpentCP = SpentCP + Int(costLargeProf.Text) * skillLargeProf.Value
-		SpentCP = SpentCP + Int(costExoticProf.Text) * skillExoticProf.Value
-		SpentCP = SpentCP + Int(costWeaponRefocus.Text) * skillWeaponRefocus.Value
+        SpentCP = SpentCP + Int(costFlorentine.Text) * skillFlorentine.Value
+        SpentCP = SpentCP + Int(costFlurryOfBlows.Text) * skillFlurryOfBlows.Value
+        SpentCP = SpentCP + Int(costHeavyArmour.Text) * skillHeavyArmour.Value
+        SpentCP = SpentCP + Int(costSelfMut.Text) * skillSelfMut.Value
+        SpentCP = SpentCP + Int(costShield.Text) * skillShield.Value
+        SpentCP = SpentCP + Int(costSlayParry.Text) * skillSlayParry.Value
+        SpentCP = SpentCP + Int(costSlayParryMaster.Text) * skillSlayParryMaster.Value
+        SpentCP = SpentCP + Int(costSpecGroup.Text) * skillSpecGroup.Value
+        SpentCP = SpentCP + Int(costSpecSpecific.Text) * skillSpecSpecific.Value
+        SpentCP = SpentCP + Int(costSimpleProf.Text) * skillSimpleProf.Value
+        SpentCP = SpentCP + Int(costMedProf.Text) * skillMedProf.Value
+        SpentCP = SpentCP + Int(costLargeProf.Text) * skillLargeProf.Value
+        SpentCP = SpentCP + Int(costExoticProf.Text) * skillExoticProf.Value
+        SpentCP = SpentCP + Int(costWeaponRefocus.Text) * skillWeaponRefocus.Value
 
 
-		SpentCP = SpentCP + Int(costCritSpecific.Text) * skillCritSpecific.Value
-		SpentCP = SpentCP + Int(costCritGroup.Text) * skillCritGroup.Value
-		SpentCP = SpentCP + Int(costDodge.Text) * skillDodge.Value
-		SpentCP = SpentCP + Int(costExecute.Text) * skillExecute.Value
-		SpentCP = SpentCP + Int(costExecuteMaster.Text) * skillExecuteMaster.Value
+        SpentCP = SpentCP + Int(costCritSpecific.Text) * skillCritSpecific.Value
+        SpentCP = SpentCP + Int(costCritGroup.Text) * skillCritGroup.Value
+        SpentCP = SpentCP + Int(costDodge.Text) * skillDodge.Value
+        SpentCP = SpentCP + Int(costExecute.Text) * skillExecute.Value
+        SpentCP = SpentCP + Int(costExecuteMaster.Text) * skillExecuteMaster.Value
         SpentCP = SpentCP + Int(costGarrote.Text) * skillGarrote.Value
         SpentCP = SpentCP + Int(costSap.Text) * skillSap.Value
-		SpentCP = SpentCP + Int(costVitalBlow.Text) * skillVitalBlow.Value
+        SpentCP = SpentCP + Int(costVitalBlow.Text) * skillVitalBlow.Value
 
-		costJob1.Text = 30
-		costJob2.Text = 60
-		costJob3.Text = 90
-		costJob4.Text = 120
-		costRacial2.Text = 50
-		costBPB.Text = 50
-		costStr.Text = 50
-		SpentCP = SpentCP + Int(costJob1.Text) * skillJob1.Value
-		SpentCP = SpentCP + Int(costJob2.Text) * skillJob2.Value
-		SpentCP = SpentCP + Int(costJob3.Text) * skillJob3.Value
-		SpentCP = SpentCP + Int(costJob4.Text) * skillJob4.Value
+        costJob1.Text = 30
+        costJob2.Text = 60
+        costJob3.Text = 90
+        costJob4.Text = 120
+        costRacial2.Text = 50
+        costBPB.Text = 50
+        costStr.Text = 50
+        SpentCP = SpentCP + Int(costJob1.Text) * skillJob1.Value
+        SpentCP = SpentCP + Int(costJob2.Text) * skillJob2.Value
+        SpentCP = SpentCP + Int(costJob3.Text) * skillJob3.Value
+        SpentCP = SpentCP + Int(costJob4.Text) * skillJob4.Value
 
-		SpentCP = SpentCP + Int(costRacial2.Text) * skillRacial2.Value
-		SpentCP = SpentCP + Int(costBPB.Text) * skillBPB.Value
-		SpentCP = SpentCP + Int(costStr.Text) * skillStr.Value
+        SpentCP = SpentCP + Int(costRacial2.Text) * skillRacial2.Value
+        SpentCP = SpentCP + Int(costBPB.Text) * skillBPB.Value
+        SpentCP = SpentCP + Int(costStr.Text) * skillStr.Value
         If Race = 821 Then SpentCP = SpentCP + (Int(costRacialAuto.Text)) * (skillRacialAuto.Value - 1)
 
         SpentCP = SpentCP + Int(costFrag1.Text) * skillFrag1.Value
-		SpentCP = SpentCP + Int(costFrag2.Text) * skillFrag2.Value
-		SpentCP = SpentCP + Int(costFrag3.Text) * skillFrag3.Value
-		SpentCP = SpentCP + Int(costFrag4.Text) * skillFrag4.Value
-		SpentCP = SpentCP + Int(costFrag5.Text) * skillFrag5.Value
-		SpentCP = SpentCP + Int(costFrag6.Text) * skillFrag6.Value
+        SpentCP = SpentCP + Int(costFrag2.Text) * skillFrag2.Value
+        SpentCP = SpentCP + Int(costFrag3.Text) * skillFrag3.Value
+        SpentCP = SpentCP + Int(costFrag4.Text) * skillFrag4.Value
+        SpentCP = SpentCP + Int(costFrag5.Text) * skillFrag5.Value
+        SpentCP = SpentCP + Int(costFrag6.Text) * skillFrag6.Value
         SpentCP = SpentCP + Int(costLooting.Text) * skillLooting.Value
         SpentCP = SpentCP + Int(costCreateAlcohol.Text) * skillCreateAlcohol.Value
         SpentCP = SpentCP + Int(costTeacher.Text) * skillTeacher.Value
@@ -314,14 +314,14 @@ Public Class Form1
         SpentCP = SpentCP + Int(costParagon.Text) * skillParagon.Value
         SpentCP = SpentCP + Int(costHeavyDrinker.Text) * skillHeavyDrinker.Value
 
-		SpentCP = SpentCP + Int(costSpellVersa1.Text) * skillSpellVersa1.Value
-		SpentCP = SpentCP + Int(costSpellVersa2.Text) * skillSpellVersa2.Value
-		SpentCP = SpentCP + Int(costSpellVersa3.Text) * skillSpellVersa3.Value
-		SpentCP = SpentCP + Int(costSpellVersa4.Text) * skillSpellVersa4.Value
-		SpentCP = SpentCP + Int(costSpellVersa5.Text) * skillSpellVersa5.Value
-		SpentCP = SpentCP + Int(costSpellVersa6.Text) * skillSpellVersa6.Value
-		SpentCP = SpentCP + Int(costSpellVersa7.Text) * skillSpellVersa7.Value
-		SpentCP = SpentCP + Int(costSpellVersa8.Text) * skillSpellVersa8.Value
+        SpentCP = SpentCP + Int(costSpellVersa1.Text) * skillSpellVersa1.Value
+        SpentCP = SpentCP + Int(costSpellVersa2.Text) * skillSpellVersa2.Value
+        SpentCP = SpentCP + Int(costSpellVersa3.Text) * skillSpellVersa3.Value
+        SpentCP = SpentCP + Int(costSpellVersa4.Text) * skillSpellVersa4.Value
+        SpentCP = SpentCP + Int(costSpellVersa5.Text) * skillSpellVersa5.Value
+        SpentCP = SpentCP + Int(costSpellVersa6.Text) * skillSpellVersa6.Value
+        SpentCP = SpentCP + Int(costSpellVersa7.Text) * skillSpellVersa7.Value
+        SpentCP = SpentCP + Int(costSpellVersa8.Text) * skillSpellVersa8.Value
         SpentCP = SpentCP + Int(costSpellVersa9.Text) * skillSpellVersa9.Value
 
         If Job > 1008 Then
@@ -329,10 +329,10 @@ Public Class Form1
         End If
 
     End Sub
-	Public Sub SkillListBuild()
-		boxSkillBreakdown.Text = ""
-		If skillAlchemy.Value > 0 Then boxSkillBreakdown.AppendText(lblAlchemy.Text & " X " & skillAlchemy.Value & "   " & costAlchemy.Text * skillAlchemy.Value & vbNewLine)
-		If skillBlacksmith.Value > 0 Then boxSkillBreakdown.AppendText(lblBlacksmith.Text & " X " & skillBlacksmith.Value & "   " & costBlacksmith.Text * skillBlacksmith.Value & vbNewLine)
+    Public Sub SkillListBuild()
+        boxSkillBreakdown.Text = ""
+        If skillAlchemy.Value > 0 Then boxSkillBreakdown.AppendText(lblAlchemy.Text & " X " & skillAlchemy.Value & "   " & costAlchemy.Text * skillAlchemy.Value & vbNewLine)
+        If skillBlacksmith.Value > 0 Then boxSkillBreakdown.AppendText(lblBlacksmith.Text & " X " & skillBlacksmith.Value & "   " & costBlacksmith.Text * skillBlacksmith.Value & vbNewLine)
         If skillChemistry.Value > 0 Then boxSkillBreakdown.AppendText(lblChemistry.Text & " X " & skillChemistry.Value & "   " & costChemistry.Text * skillChemistry.Value & vbNewLine)
         If skillArtifice.Value > 0 Then boxSkillBreakdown.AppendText(lblArtifice.Text & " X " & skillArtifice.Value & "   " & costArtifice.Text * skillArtifice.Value & vbNewLine)
         If skillCraft1.Value > 0 Then boxSkillBreakdown.AppendText(lblCraft1.Text & " X " & skillCraft1.Value & "   " & costCraft1.Text * skillCraft1.Value & vbNewLine)
@@ -341,56 +341,56 @@ Public Class Form1
         If skillCraft1.Value > 2 And boxCraft3.Text <> "" Then boxSkillBreakdown.AppendText(lblCraft1.Text & " " & boxCraft3.Text & vbNewLine)
         If skillCraft1.Value > 3 And boxCraft4.Text <> "" Then boxSkillBreakdown.AppendText(lblCraft1.Text & " " & boxCraft4.Text & vbNewLine)
         If skillCreateScroll.Value > 0 Then boxSkillBreakdown.AppendText(lblCreateScroll.Text & " X " & skillCreateScroll.Value & "   " & costCreateScroll.Text * skillCreateScroll.Value & vbNewLine)
-		If skillTrapsmith.Value > 0 Then boxSkillBreakdown.AppendText(lblTrapsmith.Text & " X " & skillTrapsmith.Value & "   " & costTrapsmith.Text * skillTrapsmith.Value & vbNewLine)
-		If skillAnatomy.Value > 0 Then boxSkillBreakdown.AppendText(lblAnatomy.Text & "   " & costAnatomy.Text * skillAnatomy.Value & vbNewLine)
-		If skillMysticism.Value > 0 Then boxSkillBreakdown.AppendText(lblMysticism.Text & " X " & skillMysticism.Value & "   " & costMysticism.Text * skillMysticism.Value & vbNewLine)
-		If skillDemonAngelArts.Value > 0 Then boxSkillBreakdown.AppendText(lblDemonAngelArts.Text & "   " & costDemonAngelArts.Text * skillDemonAngelArts.Value & vbNewLine)
+        If skillTrapsmith.Value > 0 Then boxSkillBreakdown.AppendText(lblTrapsmith.Text & " X " & skillTrapsmith.Value & "   " & costTrapsmith.Text * skillTrapsmith.Value & vbNewLine)
+        If skillAnatomy.Value > 0 Then boxSkillBreakdown.AppendText(lblAnatomy.Text & "   " & costAnatomy.Text * skillAnatomy.Value & vbNewLine)
+        If skillMysticism.Value > 0 Then boxSkillBreakdown.AppendText(lblMysticism.Text & " X " & skillMysticism.Value & "   " & costMysticism.Text * skillMysticism.Value & vbNewLine)
+        If skillDemonAngelArts.Value > 0 Then boxSkillBreakdown.AppendText(lblDemonAngelArts.Text & "   " & costDemonAngelArts.Text * skillDemonAngelArts.Value & vbNewLine)
 
-		If skillEleAttunement.Value > 0 Then
-			Select Case skillEleAttunement.Value
-				Case 1
-					boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement2.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
-				Case 2
-					boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement2.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
-					boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement3.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
-				Case 3
-					boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement2.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
-					boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement3.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
-					boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement4.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
-			End Select
-		End If
+        If skillEleAttunement.Value > 0 Then
+            Select Case skillEleAttunement.Value
+                Case 1
+                    boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement2.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
+                Case 2
+                    boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement2.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
+                    boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement3.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
+                Case 3
+                    boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement2.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
+                    boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement3.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
+                    boxSkillBreakdown.AppendText(lblEleAttunement.Text & " " & ddlEleAttunement4.SelectedItem & "   " & costEleAttunement.Text & vbNewLine)
+            End Select
+        End If
 
-		If skillFirstAid.Value > 0 Then boxSkillBreakdown.AppendText(lblFirstAid.Text & "   " & costFirstAid.Text * skillFirstAid.Value & vbNewLine)
-		If skillNecroArts.Value > 0 Then boxSkillBreakdown.AppendText(lblNecroArts.Text & "   " & costNecroArts.Text * skillNecroArts.Value & vbNewLine)
-		If skillPhysician.Value > 0 Then boxSkillBreakdown.AppendText(lblPhysician.Text & "   " & costPhysician.Text * skillPhysician.Value & vbNewLine)
-		If skillReadAndWrite.Value > 0 Then boxSkillBreakdown.AppendText(lblReadAndWrite.Text & "   " & costReadAndWrite.Text * skillReadAndWrite.Value & vbNewLine)
-		If skillReadMagic.Value > 0 Then boxSkillBreakdown.AppendText(lblReadMagic.Text & "   " & costReadMagic.Text * skillReadMagic.Value & vbNewLine)
-		If skillReadMagicAvd.Value > 0 Then boxSkillBreakdown.AppendText(lblReadMagicAvd.Text & "   " & costReadMagicAvd.Text * skillReadMagicAvd.Value & vbNewLine)
-		If skillReadMagicRitual.Value > 0 Then boxSkillBreakdown.AppendText(lblReadMagicRitual.Text & "   " & costReadMagicRitual.Text * skillReadMagicRitual.Value & vbNewLine)
-		If skillSpell1.Value > 0 Then boxSkillBreakdown.AppendText("1st Circle slots:" & skillSpell1.Value & "   " & costSpell1.Text * skillSpell1.Value & vbNewLine)
-		If skillSpell2.Value > 0 Then boxSkillBreakdown.AppendText("2nd Circle slots:" & skillSpell2.Value & "   " & costSpell2.Text * skillSpell2.Value & vbNewLine)
-		If skillSpell3.Value > 0 Then boxSkillBreakdown.AppendText("3rd Circle slots:" & skillSpell3.Value & "   " & costSpell3.Text * skillSpell3.Value & vbNewLine)
-		If skillSpell4.Value > 0 Then boxSkillBreakdown.AppendText("4th Circle slots:" & skillSpell4.Value & "   " & costSpell4.Text * skillSpell4.Value & vbNewLine)
-		If skillSpell5.Value > 0 Then boxSkillBreakdown.AppendText("5th Circle slots:" & skillSpell5.Value & "   " & costSpell5.Text * skillSpell5.Value & vbNewLine)
-		If skillSpell6.Value > 0 Then boxSkillBreakdown.AppendText("6th Circle slots:" & skillSpell6.Value & "   " & costSpell6.Text * skillSpell6.Value & vbNewLine)
-		If skillSpell7.Value > 0 Then boxSkillBreakdown.AppendText("7th Circle slots:" & skillSpell7.Value & "   " & costSpell7.Text * skillSpell7.Value & vbNewLine)
-		If skillSpell8.Value > 0 Then boxSkillBreakdown.AppendText("8th Circle slots:" & skillSpell8.Value & "   " & costSpell8.Text * skillSpell8.Value & vbNewLine)
-		If skillSpell9.Value > 0 Then boxSkillBreakdown.AppendText("9th Circle slots:" & skillSpell9.Value & "   " & costSpell9.Text * skillSpell9.Value & vbNewLine)
+        If skillFirstAid.Value > 0 Then boxSkillBreakdown.AppendText(lblFirstAid.Text & "   " & costFirstAid.Text * skillFirstAid.Value & vbNewLine)
+        If skillNecroArts.Value > 0 Then boxSkillBreakdown.AppendText(lblNecroArts.Text & "   " & costNecroArts.Text * skillNecroArts.Value & vbNewLine)
+        If skillPhysician.Value > 0 Then boxSkillBreakdown.AppendText(lblPhysician.Text & "   " & costPhysician.Text * skillPhysician.Value & vbNewLine)
+        If skillReadAndWrite.Value > 0 Then boxSkillBreakdown.AppendText(lblReadAndWrite.Text & "   " & costReadAndWrite.Text * skillReadAndWrite.Value & vbNewLine)
+        If skillReadMagic.Value > 0 Then boxSkillBreakdown.AppendText(lblReadMagic.Text & "   " & costReadMagic.Text * skillReadMagic.Value & vbNewLine)
+        If skillReadMagicAvd.Value > 0 Then boxSkillBreakdown.AppendText(lblReadMagicAvd.Text & "   " & costReadMagicAvd.Text * skillReadMagicAvd.Value & vbNewLine)
+        If skillReadMagicRitual.Value > 0 Then boxSkillBreakdown.AppendText(lblReadMagicRitual.Text & "   " & costReadMagicRitual.Text * skillReadMagicRitual.Value & vbNewLine)
+        If skillSpell1.Value > 0 Then boxSkillBreakdown.AppendText("1st Circle slots:" & skillSpell1.Value & "   " & costSpell1.Text * skillSpell1.Value & vbNewLine)
+        If skillSpell2.Value > 0 Then boxSkillBreakdown.AppendText("2nd Circle slots:" & skillSpell2.Value & "   " & costSpell2.Text * skillSpell2.Value & vbNewLine)
+        If skillSpell3.Value > 0 Then boxSkillBreakdown.AppendText("3rd Circle slots:" & skillSpell3.Value & "   " & costSpell3.Text * skillSpell3.Value & vbNewLine)
+        If skillSpell4.Value > 0 Then boxSkillBreakdown.AppendText("4th Circle slots:" & skillSpell4.Value & "   " & costSpell4.Text * skillSpell4.Value & vbNewLine)
+        If skillSpell5.Value > 0 Then boxSkillBreakdown.AppendText("5th Circle slots:" & skillSpell5.Value & "   " & costSpell5.Text * skillSpell5.Value & vbNewLine)
+        If skillSpell6.Value > 0 Then boxSkillBreakdown.AppendText("6th Circle slots:" & skillSpell6.Value & "   " & costSpell6.Text * skillSpell6.Value & vbNewLine)
+        If skillSpell7.Value > 0 Then boxSkillBreakdown.AppendText("7th Circle slots:" & skillSpell7.Value & "   " & costSpell7.Text * skillSpell7.Value & vbNewLine)
+        If skillSpell8.Value > 0 Then boxSkillBreakdown.AppendText("8th Circle slots:" & skillSpell8.Value & "   " & costSpell8.Text * skillSpell8.Value & vbNewLine)
+        If skillSpell9.Value > 0 Then boxSkillBreakdown.AppendText("9th Circle slots:" & skillSpell9.Value & "   " & costSpell9.Text * skillSpell9.Value & vbNewLine)
 
-		If skillSpellRitual.Value > 0 Then
-			For i = 1 To skillSpellRitual.Value
-				boxSkillBreakdown.AppendText("Ritual Magic Level: " & i & "   " & CostRitualCircle.Text * i & vbNewLine)
-			Next i
-		End If
-		If skillSphere1.Value > 0 Then
-			boxSkillBreakdown.AppendText("Sphere 1: " & ddlSphere1.SelectedItem & " ")
-			If ddlSphere1.SelectedItem = "Elemental" Then boxSkillBreakdown.AppendText(ddlEleAttunement1.SelectedItem & "   " & costSphere1.Text * skillSphere1.Value & vbNewLine) Else boxSkillBreakdown.AppendText("   " & costSphere1.Text * skillSphere1.Value & vbNewLine)
-		End If
+        If skillSpellRitual.Value > 0 Then
+            For i = 1 To skillSpellRitual.Value
+                boxSkillBreakdown.AppendText("Ritual Magic Level: " & i & "   " & CostRitualCircle.Text * i & vbNewLine)
+            Next i
+        End If
+        If skillSphere1.Value > 0 Then
+            boxSkillBreakdown.AppendText("Sphere 1: " & ddlSphere1.SelectedItem & " ")
+            If ddlSphere1.SelectedItem = "Elemental" Then boxSkillBreakdown.AppendText(ddlEleAttunement1.SelectedItem & "   " & costSphere1.Text * skillSphere1.Value & vbNewLine) Else boxSkillBreakdown.AppendText("   " & costSphere1.Text * skillSphere1.Value & vbNewLine)
+        End If
 
-		If skillSphere2.Value > 0 Then
-			boxSkillBreakdown.AppendText("Sphere 2: " & ddlSphere2.SelectedItem & "   ")
-			If ddlSphere2.SelectedItem = "Elemental" Then boxSkillBreakdown.AppendText(ddlEleAttunement1.SelectedItem & "   " & costSphere2.Text * skillSphere2.Value & vbNewLine) Else boxSkillBreakdown.AppendText("   " & costSphere2.Text * skillSphere2.Value & vbNewLine)
-		End If
+        If skillSphere2.Value > 0 Then
+            boxSkillBreakdown.AppendText("Sphere 2: " & ddlSphere2.SelectedItem & "   ")
+            If ddlSphere2.SelectedItem = "Elemental" Then boxSkillBreakdown.AppendText(ddlEleAttunement1.SelectedItem & "   " & costSphere2.Text * skillSphere2.Value & vbNewLine) Else boxSkillBreakdown.AppendText("   " & costSphere2.Text * skillSphere2.Value & vbNewLine)
+        End If
 
 
         If skillSphere3.Value > 0 Then
@@ -402,37 +402,37 @@ Public Class Form1
         If skillMoreSpheres.Value > 0 Then boxSkillBreakdown.AppendText(lblMoreSpheres.Text & "   " & costMoreSpheres.Text * skillMoreSpheres.Value & vbNewLine)
 
         If skillAmbidexterity.Value > 0 Then boxSkillBreakdown.AppendText(lblAmbidexterity.Text & "   " & costAmbidexterity.Text * skillAmbidexterity.Value & vbNewLine)
-		If skillFlorentine.Value > 0 Then boxSkillBreakdown.AppendText(lblFlorentine.Text & "   " & costFlorentine.Text * skillFlorentine.Value & vbNewLine)
-		If skillFlurryOfBlows.Value > 0 Then boxSkillBreakdown.AppendText(lblFlurryofBlows.Text & " X " & skillFlurryOfBlows.Value & "   " & costFlurryOfBlows.Text * skillFlurryOfBlows.Value & vbNewLine)
-		If skillHeavyArmour.Value > 0 Then boxSkillBreakdown.AppendText(lblHeavyArmour.Text & "   " & costHeavyArmour.Text * skillHeavyArmour.Value & vbNewLine)
-		If skillSelfMut.Value > 0 Then boxSkillBreakdown.AppendText(lblSelfMut.Text & "   " & costSelfMut.Text * skillSelfMut.Value & vbNewLine)
-		If skillShield.Value > 0 Then boxSkillBreakdown.AppendText(lblShield.Text & "   " & costShield.Text * skillShield.Value & vbNewLine)
-		If skillSlayParry.Value > 0 AndAlso ddlSlayParryWeapon.SelectedIndex <> -1 Then boxSkillBreakdown.AppendText(lblSlayParry.Text & " " & ddlSlayParryWeapon.SelectedItem & " X " & skillSlayParry.Value & "   " & costSlayParry.Text * skillSlayParry.Value & vbNewLine)
-		If skillSlayParryMaster.Value > 0 AndAlso ddlSlayParryMasterWeapon.SelectedIndex <> -1 Then boxSkillBreakdown.AppendText(lblSlayParryMaster.Text & " " & ddlSlayParryMasterWeapon.SelectedItem & " X " & skillSlayParryMaster.Value & "   " & costSlayParryMaster.Text * skillSlayParryMaster.Value & vbNewLine)
-		If skillSpecGroup.Value > 0 AndAlso ddlSpecGroup.SelectedIndex <> -1 Then boxSkillBreakdown.AppendText(lblSpecGroup.Text & " " & ddlSpecGroup.SelectedItem & "   " & costSpecGroup.Text * skillSpecGroup.Value & vbNewLine)
-		If skillSpecSpecific.Value > 0 AndAlso ddlSpecSpecific.SelectedIndex <> -1 Then boxSkillBreakdown.AppendText(lblSpecSpecific.Text & " " & ddlSpecSpecific.SelectedItem & "   " & costSpecSpecific.Text * skillSpecSpecific.Value & vbNewLine)
-		If skillSimpleProf.Value > 0 Then boxSkillBreakdown.AppendText(lblSimpleProf.Text & "   " & costSimpleProf.Text * skillSimpleProf.Value & vbNewLine)
-		If skillMedProf.Value > 0 Then boxSkillBreakdown.AppendText(lblMedProf.Text & "   " & costMedProf.Text * skillMedProf.Value & vbNewLine)
-		If skillLargeProf.Value > 0 Then boxSkillBreakdown.AppendText(lblLargeProf.Text & "   " & costLargeProf.Text * skillLargeProf.Value & vbNewLine)
-		If skillExoticProf.Value > 0 AndAlso ddlExoticWeapon.SelectedIndex <> -1 Then boxSkillBreakdown.AppendText(lblExoticProf.Text & " " & ddlExoticWeapon.SelectedItem & "   " & costExoticProf.Text * skillExoticProf.Value & vbNewLine)
-		If skillWeaponRefocus.Value > 0 Then boxSkillBreakdown.AppendText(lblWeaponRefocus.Text & " X " & skillWeaponRefocus.Value & "   " & costWeaponRefocus.Text * skillWeaponRefocus.Value & vbNewLine)
-		If skillCritSpecific.Value > 0 Then boxSkillBreakdown.AppendText(lblCritSpecific.Text & " X " & skillCritSpecific.Value & "   " & costCritSpecific.Text * skillCritSpecific.Value & vbNewLine)
-		If skillCritGroup.Value > 0 Then boxSkillBreakdown.AppendText(lblCritGroup.Text & " X " & skillCritGroup.Value & "   " & costCritGroup.Text * skillCritGroup.Value & vbNewLine)
-		If skillDodge.Value > 0 Then boxSkillBreakdown.AppendText(lblDodge.Text & " X " & skillDodge.Value & "   " & costDodge.Text * skillDodge.Value & vbNewLine)
-		If skillExecute.Value > 0 Then boxSkillBreakdown.AppendText(lblExecute.Text & " X " & skillExecute.Value & "   " & costExecute.Text * skillExecute.Value & vbNewLine)
-		If skillExecuteMaster.Value > 0 Then boxSkillBreakdown.AppendText(lblExecuteMaster.Text & " X " & skillExecuteMaster.Value & "   " & costExecuteMaster.Text * skillExecuteMaster.Value & vbNewLine)
-		If skillGarrote.Value > 0 Then boxSkillBreakdown.AppendText(lblGarrote.Text & "   " & costGarrote.Text * skillGarrote.Value & vbNewLine)
+        If skillFlorentine.Value > 0 Then boxSkillBreakdown.AppendText(lblFlorentine.Text & "   " & costFlorentine.Text * skillFlorentine.Value & vbNewLine)
+        If skillFlurryOfBlows.Value > 0 Then boxSkillBreakdown.AppendText(lblFlurryofBlows.Text & " X " & skillFlurryOfBlows.Value & "   " & costFlurryOfBlows.Text * skillFlurryOfBlows.Value & vbNewLine)
+        If skillHeavyArmour.Value > 0 Then boxSkillBreakdown.AppendText(lblHeavyArmour.Text & "   " & costHeavyArmour.Text * skillHeavyArmour.Value & vbNewLine)
+        If skillSelfMut.Value > 0 Then boxSkillBreakdown.AppendText(lblSelfMut.Text & "   " & costSelfMut.Text * skillSelfMut.Value & vbNewLine)
+        If skillShield.Value > 0 Then boxSkillBreakdown.AppendText(lblShield.Text & "   " & costShield.Text * skillShield.Value & vbNewLine)
+        If skillSlayParry.Value > 0 AndAlso ddlSlayParryWeapon.SelectedIndex <> -1 Then boxSkillBreakdown.AppendText(lblSlayParry.Text & " " & ddlSlayParryWeapon.SelectedItem & " X " & skillSlayParry.Value & "   " & costSlayParry.Text * skillSlayParry.Value & vbNewLine)
+        If skillSlayParryMaster.Value > 0 AndAlso ddlSlayParryMasterWeapon.SelectedIndex <> -1 Then boxSkillBreakdown.AppendText(lblSlayParryMaster.Text & " " & ddlSlayParryMasterWeapon.SelectedItem & " X " & skillSlayParryMaster.Value & "   " & costSlayParryMaster.Text * skillSlayParryMaster.Value & vbNewLine)
+        If skillSpecGroup.Value > 0 AndAlso ddlSpecGroup.SelectedIndex <> -1 Then boxSkillBreakdown.AppendText(lblSpecGroup.Text & " " & ddlSpecGroup.SelectedItem & "   " & costSpecGroup.Text * skillSpecGroup.Value & vbNewLine)
+        If skillSpecSpecific.Value > 0 AndAlso ddlSpecSpecific.SelectedIndex <> -1 Then boxSkillBreakdown.AppendText(lblSpecSpecific.Text & " " & ddlSpecSpecific.SelectedItem & "   " & costSpecSpecific.Text * skillSpecSpecific.Value & vbNewLine)
+        If skillSimpleProf.Value > 0 Then boxSkillBreakdown.AppendText(lblSimpleProf.Text & "   " & costSimpleProf.Text * skillSimpleProf.Value & vbNewLine)
+        If skillMedProf.Value > 0 Then boxSkillBreakdown.AppendText(lblMedProf.Text & "   " & costMedProf.Text * skillMedProf.Value & vbNewLine)
+        If skillLargeProf.Value > 0 Then boxSkillBreakdown.AppendText(lblLargeProf.Text & "   " & costLargeProf.Text * skillLargeProf.Value & vbNewLine)
+        If skillExoticProf.Value > 0 AndAlso ddlExoticWeapon.SelectedIndex <> -1 Then boxSkillBreakdown.AppendText(lblExoticProf.Text & " " & ddlExoticWeapon.SelectedItem & "   " & costExoticProf.Text * skillExoticProf.Value & vbNewLine)
+        If skillWeaponRefocus.Value > 0 Then boxSkillBreakdown.AppendText(lblWeaponRefocus.Text & " X " & skillWeaponRefocus.Value & "   " & costWeaponRefocus.Text * skillWeaponRefocus.Value & vbNewLine)
+        If skillCritSpecific.Value > 0 Then boxSkillBreakdown.AppendText(lblCritSpecific.Text & " X " & skillCritSpecific.Value & "   " & costCritSpecific.Text * skillCritSpecific.Value & vbNewLine)
+        If skillCritGroup.Value > 0 Then boxSkillBreakdown.AppendText(lblCritGroup.Text & " X " & skillCritGroup.Value & "   " & costCritGroup.Text * skillCritGroup.Value & vbNewLine)
+        If skillDodge.Value > 0 Then boxSkillBreakdown.AppendText(lblDodge.Text & " X " & skillDodge.Value & "   " & costDodge.Text * skillDodge.Value & vbNewLine)
+        If skillExecute.Value > 0 Then boxSkillBreakdown.AppendText(lblExecute.Text & " X " & skillExecute.Value & "   " & costExecute.Text * skillExecute.Value & vbNewLine)
+        If skillExecuteMaster.Value > 0 Then boxSkillBreakdown.AppendText(lblExecuteMaster.Text & " X " & skillExecuteMaster.Value & "   " & costExecuteMaster.Text * skillExecuteMaster.Value & vbNewLine)
+        If skillGarrote.Value > 0 Then boxSkillBreakdown.AppendText(lblGarrote.Text & "   " & costGarrote.Text * skillGarrote.Value & vbNewLine)
         If skillSap.Value > 0 Then boxSkillBreakdown.AppendText(lblSap.Text & " X " & skillSap.Value & "   " & costSap.Text * skillSap.Value & vbNewLine)
         If skillVitalBlow.Value > 0 Then boxSkillBreakdown.AppendText(lblVitalBlow.Text & " X " & skillVitalBlow.Value & "   " & costVitalBlow.Text * skillVitalBlow.Value & vbNewLine)
-		If skillJob1.Value > 0 Then boxSkillBreakdown.AppendText(lblJob1.Text & " X " & skillJob1.Value & "   " & costJob1.Text * skillJob1.Value & vbNewLine)
-		If skillJob2.Value > 0 Then boxSkillBreakdown.AppendText(lblJob2.Text & " X " & skillJob2.Value & "   " & costJob2.Text * skillJob2.Value & vbNewLine)
-		If skillJob3.Value > 0 Then boxSkillBreakdown.AppendText(lblJob3.Text & " X " & skillJob3.Value & "   " & costJob3.Text * skillJob3.Value & vbNewLine)
-		If skillJob4.Value > 0 Then boxSkillBreakdown.AppendText(lblJob4.Text & " X " & skillJob4.Value & "   " & costJob4.Text * skillJob4.Value & vbNewLine)
+        If skillJob1.Value > 0 Then boxSkillBreakdown.AppendText(lblJob1.Text & " X " & skillJob1.Value & "   " & costJob1.Text * skillJob1.Value & vbNewLine)
+        If skillJob2.Value > 0 Then boxSkillBreakdown.AppendText(lblJob2.Text & " X " & skillJob2.Value & "   " & costJob2.Text * skillJob2.Value & vbNewLine)
+        If skillJob3.Value > 0 Then boxSkillBreakdown.AppendText(lblJob3.Text & " X " & skillJob3.Value & "   " & costJob3.Text * skillJob3.Value & vbNewLine)
+        If skillJob4.Value > 0 Then boxSkillBreakdown.AppendText(lblJob4.Text & " X " & skillJob4.Value & "   " & costJob4.Text * skillJob4.Value & vbNewLine)
 
-		If skillRacial2.Value > 0 Then boxSkillBreakdown.AppendText(lblRacial2.Text & " X " & skillRacial2.Value & "   " & costRacial2.Text * skillRacial2.Value & vbNewLine)
-		If skillBPB.Value > 0 Then boxSkillBreakdown.AppendText(lblBPB.Text & " X " & skillBPB.Value & "   " & costBPB.Text * skillBPB.Value & vbNewLine)
-		If skillStr.Value > 0 Then boxSkillBreakdown.AppendText(lblStr.Text & " X " & skillStr.Value & "   " & costStr.Text * skillStr.Value & vbNewLine)
-		If Race <> 802 AndAlso Race <> 0 Then
+        If skillRacial2.Value > 0 Then boxSkillBreakdown.AppendText(lblRacial2.Text & " X " & skillRacial2.Value & "   " & costRacial2.Text * skillRacial2.Value & vbNewLine)
+        If skillBPB.Value > 0 Then boxSkillBreakdown.AppendText(lblBPB.Text & " X " & skillBPB.Value & "   " & costBPB.Text * skillBPB.Value & vbNewLine)
+        If skillStr.Value > 0 Then boxSkillBreakdown.AppendText(lblStr.Text & " X " & skillStr.Value & "   " & costStr.Text * skillStr.Value & vbNewLine)
+        If Race <> 802 AndAlso Race <> 0 Then
             boxSkillBreakdown.AppendText("Racial: " & lblRacialAuto.Text)
         End If
 
@@ -442,33 +442,33 @@ Public Class Form1
         ElseIf Race = 810 Then
             boxSkillBreakdown.AppendText(" - " & listRacial.Text & " Dmg +" & (Int((Level - 1) / 3) + 1))
         ElseIf Race = 814 Then
-			boxSkillBreakdown.AppendText((Int(Level / 3) + 1))
-		ElseIf Race = 822 Then
+            boxSkillBreakdown.AppendText((Int(Level / 3) + 1))
+        ElseIf Race = 822 Then
             boxSkillBreakdown.AppendText(" X " & (Int(Level / 4) + 1))
         ElseIf Race = 823 Then
             boxSkillBreakdown.AppendText(" - " & listRacial.Text & " Str +" & (Int((Level - 1) / 5) + 1))
         ElseIf Race = 829 Then
             boxSkillBreakdown.AppendText(" Level " & skillRacialAuto.Value)
         ElseIf Race = 831 Then
-			boxSkillBreakdown.AppendText(" " & (Int(Level * 3)))
-		End If
-		If Race <> 802 AndAlso Race <> 0 Then
-			boxSkillBreakdown.AppendText(vbNewLine)
-		End If
+            boxSkillBreakdown.AppendText(" " & (Int(Level * 3)))
+        End If
+        If Race <> 802 AndAlso Race <> 0 Then
+            boxSkillBreakdown.AppendText(vbNewLine)
+        End If
 
-		If skillFrag1.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag1.Text & " X " & skillFrag1.Value & "   " & costFrag1.Text * skillFrag1.Value & vbNewLine)
+        If skillFrag1.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag1.Text & " X " & skillFrag1.Value & "   " & costFrag1.Text * skillFrag1.Value & vbNewLine)
 
-		If skillFrag2.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag2.Text & " X " & skillFrag2.Value & "   " & costFrag2.Text * skillFrag2.Value & vbNewLine)
+        If skillFrag2.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag2.Text & " X " & skillFrag2.Value & "   " & costFrag2.Text * skillFrag2.Value & vbNewLine)
 
-		If skillFrag3.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag3.Text & " X " & skillFrag3.Value & "   " & costFrag3.Text * skillFrag3.Value & vbNewLine)
+        If skillFrag3.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag3.Text & " X " & skillFrag3.Value & "   " & costFrag3.Text * skillFrag3.Value & vbNewLine)
 
-		If skillFrag4.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag4.Text & " X " & skillFrag4.Value & "   " & costFrag4.Text * skillFrag4.Value & vbNewLine)
+        If skillFrag4.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag4.Text & " X " & skillFrag4.Value & "   " & costFrag4.Text * skillFrag4.Value & vbNewLine)
 
-		If skillFrag5.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag5.Text & " X " & skillFrag5.Value & "   " & costFrag5.Text * skillFrag5.Value & vbNewLine)
+        If skillFrag5.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag5.Text & " X " & skillFrag5.Value & "   " & costFrag5.Text * skillFrag5.Value & vbNewLine)
 
-		If skillFrag6.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag6.Text & " X " & skillFrag6.Value & "   " & costFrag6.Text * skillFrag6.Value & vbNewLine)
+        If skillFrag6.Value > 0 Then boxSkillBreakdown.AppendText(lblFrag6.Text & " X " & skillFrag6.Value & "   " & costFrag6.Text * skillFrag6.Value & vbNewLine)
 
-		If skillHeavyDrinker.Value > 0 Then boxSkillBreakdown.AppendText(lblHeavyDrinker.Text & " X " & skillHeavyDrinker.Value & "   " & costHeavyDrinker.Text * skillHeavyDrinker.Value & vbNewLine)
+        If skillHeavyDrinker.Value > 0 Then boxSkillBreakdown.AppendText(lblHeavyDrinker.Text & " X " & skillHeavyDrinker.Value & "   " & costHeavyDrinker.Text * skillHeavyDrinker.Value & vbNewLine)
 
         If skillLooting.Value > 0 Then boxSkillBreakdown.AppendText(lblLooting.Text & " X " & skillLooting.Value & "   " & costLooting.Text * skillLooting.Value & vbNewLine)
         If skillCreateAlcohol.Value > 0 Then boxSkillBreakdown.AppendText(lblCreateAlcohol.Text & " X " & skillCreateAlcohol.Value & "   " & costCreateAlcohol.Text * skillCreateAlcohol.Value & vbNewLine)
@@ -2611,6 +2611,20 @@ Public Class Form1
                 listRacial.Visible = False
 
             Case 812
+                lblRacial2.Text = "Clobber"
+                lblRacialAuto.Text = "Simple Weapon Bonus Damage"
+                lblRacial2.Visible = True
+                costRacial2.Visible = True
+                skillRacial2.Visible = True
+                skillRacial2.Maximum = 10
+                skillBPB.Maximum = 0
+                skillStr.Maximum = 0
+                lblRacialAuto.Visible = False
+                costRacialAuto.Visible = False
+                skillRacialAuto.Visible = False
+                listRacial.Visible = False
+
+            Case 813
                 lblRacial2.Text = "Create Goggles"
                 lblRacialAuto.Text = "Spirit Anchor"
                 skillRacial2.Maximum = 10
@@ -2624,7 +2638,7 @@ Public Class Form1
                 skillRacialAuto.Visible = False
                 listRacial.Visible = False
 
-            Case 813
+            Case 814
                 lblRacial2.Text = "Resist Magic"
                 lblRacialAuto.Text = "Destroy Light"
                 skillRacial2.Maximum = 10
@@ -2639,7 +2653,7 @@ Public Class Form1
                 listRacial.Visible = False
                 NoStr = False
 
-            Case 814
+            Case 815
                 lblRacial2.Text = "Reflect Divine"
                 lblRacialAuto.Text = "Natural Threshold"
                 skillRacial2.Maximum = 10
@@ -2653,7 +2667,7 @@ Public Class Form1
                 skillRacialAuto.Visible = False
                 listRacial.Visible = False
 
-            Case 815
+            Case 816
                 lblRacial2.Text = "Unmasked"
                 lblRacialAuto.Text = "Permanent Non-Detection"
                 skillRacial2.Maximum = 10
@@ -2667,7 +2681,7 @@ Public Class Form1
                 skillRacialAuto.Visible = False
                 listRacial.Visible = False
 
-            Case 816
+            Case 817
                 lblRacial2.Text = "Companion"
                 lblRacialAuto.Text = "Forest Revival"
                 skillRacial2.Maximum = 10
@@ -2676,20 +2690,6 @@ Public Class Form1
                 lblRacial2.Visible = True
                 costRacial2.Visible = True
                 skillRacial2.Visible = True
-                lblRacialAuto.Visible = False
-                costRacialAuto.Visible = False
-                skillRacialAuto.Visible = False
-                listRacial.Visible = False
-
-            Case 817
-                lblRacial2.Text = "Clobber"
-                lblRacialAuto.Text = "Simple Weapon Bonus Damage"
-                lblRacial2.Visible = True
-                costRacial2.Visible = True
-                skillRacial2.Visible = True
-                skillRacial2.Maximum = 10
-                skillBPB.Maximum = 0
-                skillStr.Maximum = 0
                 lblRacialAuto.Visible = False
                 costRacialAuto.Visible = False
                 skillRacialAuto.Visible = False
