@@ -444,7 +444,11 @@ Public Class Form1
         ElseIf Race = 814 Then
             boxSkillBreakdown.AppendText((Int(Level / 3) + 1))
         ElseIf Race = 822 Then
-            boxSkillBreakdown.AppendText(" X " & (Int(Level / 4) + 1))
+            If Level < 20 Then
+                boxSkillBreakdown.AppendText(" X " & Math.Floor(Int(Level + 1) / 2))
+            Else
+                boxSkillBreakdown.AppendText(" X 10")
+            End If
         ElseIf Race = 823 Then
             boxSkillBreakdown.AppendText(" - " & listRacial.Text & " Str +" & (Int((Level - 1) / 5) + 1))
         ElseIf Race = 829 Then
@@ -716,15 +720,15 @@ Public Class Form1
                 CostRitualCircle.Text = 10
         End Select
 
-        costSpellVersa1.Text = 10 + Integer.Parse(costSpell1.Text)
-        costSpellVersa2.Text = 10 + Integer.Parse(costSpell2.Text)
-        costSpellVersa3.Text = 10 + Integer.Parse(costSpell3.Text)
-        costSpellVersa4.Text = 10 + Integer.Parse(costSpell4.Text)
-        costSpellVersa5.Text = 10 + Integer.Parse(costSpell5.Text)
-        costSpellVersa6.Text = 10 + Integer.Parse(costSpell6.Text)
-        costSpellVersa7.Text = 10 + Integer.Parse(costSpell7.Text)
-        costSpellVersa8.Text = 10 + Integer.Parse(costSpell8.Text)
-        costSpellVersa9.Text = 10 + Integer.Parse(costSpell9.Text)
+        costSpellVersa1.Text = 5 + Integer.Parse(costSpell1.Text) / 2
+        costSpellVersa2.Text = 5 + Integer.Parse(costSpell2.Text) / 2
+        costSpellVersa3.Text = 5 + Integer.Parse(costSpell3.Text) / 2
+        costSpellVersa4.Text = 5 + Integer.Parse(costSpell4.Text) / 2
+        costSpellVersa5.Text = 5 + Integer.Parse(costSpell5.Text) / 2
+        costSpellVersa6.Text = 5 + Integer.Parse(costSpell6.Text) / 2
+        costSpellVersa7.Text = 5 + Integer.Parse(costSpell7.Text) / 2
+        costSpellVersa8.Text = 5 + Integer.Parse(costSpell8.Text) / 2
+        costSpellVersa9.Text = 5 + Integer.Parse(costSpell9.Text) / 2
 
         If skillSpellRitual.Value < 10 Then
             costSpellRitual.Text = CostRitualCircle.Text * (skillSpellRitual.Value + 1)
@@ -2316,6 +2320,11 @@ Public Class Form1
             JobName = ddlVocation.SelectedItem
         End If
 
+        skillJob1.Maximum = 10
+        skillJob2.Maximum = 10
+        skillJob3.Maximum = 10
+        skillJob4.Maximum = 10
+
         Select Case Job
             Case 1000
                 lblJob1.Text = "Hamstring"
@@ -2682,8 +2691,8 @@ Public Class Form1
                 listRacial.Visible = False
 
             Case 817
-                lblRacial2.Text = "Companion"
-                lblRacialAuto.Text = "Forest Revival"
+                lblRacial2.Text = "Forest Revival"
+                lblRacialAuto.Text = "Companion"
                 skillRacial2.Maximum = 10
                 skillBPB.Maximum = 0
                 skillStr.Maximum = 0
@@ -2710,8 +2719,8 @@ Public Class Form1
                 listRacial.Visible = False
 
             Case 819
-                lblRacial2.Text = "Maintenance"
-                lblRacialAuto.Text = "Tinkering"
+                lblRacial2.Text = "Gnomish Device"
+                lblRacialAuto.Text = "Scavenger"
                 lblRacial2.Visible = True
                 costRacial2.Visible = True
                 skillRacial2.Visible = True
@@ -2725,7 +2734,7 @@ Public Class Form1
 
             Case 820
                 lblRacial2.Text = "Amorphic Mucus"
-                lblRacialAuto.Text = "Learning Aptitude - Shenanigans"
+                lblRacialAuto.Text = "Parasites"
                 skillRacial2.Maximum = 10
                 skillBPB.Maximum = 0
                 skillStr.Maximum = 0
@@ -2741,7 +2750,7 @@ Public Class Form1
                 lblRacial2.Text = "Memories in Flesh"
                 lblRacialAuto.Text = "Scion of Suffering"
                 skillRacial2.Maximum = 10
-                skillBPB.Maximum = 1
+                skillBPB.Maximum = 0
                 skillStr.Maximum = 0
                 lblRacial2.Visible = True
                 costRacial2.Visible = True
@@ -2750,7 +2759,6 @@ Public Class Form1
                 costRacialAuto.Visible = False
                 skillRacialAuto.Visible = False
                 listRacial.Visible = False
-                NoBod = False
 
             Case 822
                 lblRacial2.Text = "KABOOM!"

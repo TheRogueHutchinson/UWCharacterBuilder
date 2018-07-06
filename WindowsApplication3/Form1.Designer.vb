@@ -3887,7 +3887,7 @@ Partial Class Form1
         '
         Me.ddlVocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ddlVocation.FormattingEnabled = True
-        Me.ddlVocation.Items.AddRange(New Object() {"Archer", "Battle Mage", "Brew Master", "Stalwart", "Undead Hunter"})
+        Me.ddlVocation.Items.AddRange(New Object() {"Archer", "Artisan", "Battle Mage", "Brew Master", "Shaman", "Stalwart", "Swashbuckler", "Undead Hunter"})
         Me.ddlVocation.Location = New System.Drawing.Point(118, 203)
         Me.ddlVocation.Name = "ddlVocation"
         Me.ddlVocation.Size = New System.Drawing.Size(100, 21)
